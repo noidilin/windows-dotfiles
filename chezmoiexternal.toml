@@ -23,10 +23,10 @@ type = "git-repo"
 url = "https://github.com/KiKaraage/ArcWTF.git"
 refreshPeriod = "168h"
 
-[".config/wezterm"]
-type = "git-repo"
-url = "https://github.com/KevinSilvester/wezterm-config.git"
-refreshPeriod = "168h"
+# [".config/wezterm"]
+# type = "git-repo"
+# url = "https://github.com/KevinSilvester/wezterm-config.git"
+# refreshPeriod = "168h"
 
 [".config/cursor/Windows-11-Cursor-by-rosea92"]
 type = "git-repo"
