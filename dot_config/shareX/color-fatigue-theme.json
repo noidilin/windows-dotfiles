@@ -1,0 +1,21 @@
+﻿{
+  "Name": "Color-Fatigue",
+  "BackgroundColor": "25, 25, 25",
+  "LightBackgroundColor": "53, 53, 53",
+  "DarkBackgroundColor": "30, 30, 30",
+  "TextColor": "234, 234, 234",
+  "BorderColor": "30, 30, 30",
+  "CheckerColor": "65, 65, 65",
+  "CheckerColor2": "42, 42, 42",
+  "CheckerSize": 15,
+  "LinkColor": "192, 186, 173",
+  "MenuHighlightColor": "218, 213, 200",
+  "MenuHighlightBorderColor": "53, 53, 53",
+  "MenuBorderColor": "25, 25, 25",
+  "MenuCheckBackgroundColor": "36, 36, 36",
+  "MenuFont": "Lucida Sans, 12pt",
+  "ContextMenuFont": "Lucida Sans, 12pt",
+  "ContextMenuOpacity": 100,
+  "SeparatorLightColor": "53, 53, 53",
+  "SeparatorDarkColor": "30, 30, 30"
+}
