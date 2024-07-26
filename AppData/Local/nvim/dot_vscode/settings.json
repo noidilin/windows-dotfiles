@@ -1,0 +1,8 @@
+{
+  "Lua.runtime.path": [
+    "?.lua",
+    "?/init.lua",
+    "C:\\Program Files\\Neovim\\share\\nvim\\runtime\\"
+  ],
+  "Lua.diagnostics.globals": ["vim"]
+}

@@ -1,0 +1,51 @@
+[include]
+  path = .config/delta/color-fatigue.gitconfig
+
+[init]
+	defaultBranch = main
+
+[user]
+	name = noidilin
+	email = linganinja.0120@gmail.com
+
+[core]
+	# editor = "code --wait"
+	autocrlf = true
+	eidtor = nvim -f
+  pager = delta
+	# Config git to ensure line endings in files you checkout are correct for Windows.
+	# For compatibility, line endings are converted to Unix style when you commit files.
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  features = color-fatigue
+  navigate = true
+  side-by-side = true
+  show-syntax-themes = true
+  hyperlinks = true
+  dark = true
+  line-numbers = true
+  ; true-color = always
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[log]
+  data = iso
+
+[rerere]
+  enabled = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[safe]
+	directory = D:/area/obsidian-remote

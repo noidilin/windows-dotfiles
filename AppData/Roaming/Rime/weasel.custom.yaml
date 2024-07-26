@@ -1,0 +1,91 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.16.1
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Thu Jun 20 01:18:15 2024"
+  rime_version: 1.11.2
+patch:
+  preset_color_schemes:
+    scutum:
+      name: scutum # 方案名。中文西文皆可。
+      author: noidilin
+      back_color: 0x2d2d2d # 底色
+      text_color: 0x7CBAD6 # 候選項顏色。
+      border_color: 0x353535 # 邊框顏色，與底色相同則爲無邊框的效果
+      hilited_text_color: 0xDDDDDD # 高亮文字，即與當前高亮候選對應的那部份輸入碼
+      hilited_back_color: 0x484848 # 設定高亮文字的底色，可起到凸顯高亮部份的作用
+      hilited_candidate_text_color: 0x1D1D1D # 高亮候選項的文字顏色，要醒目！
+      hilited_candidate_back_color: 0x7CBAD6 # 高亮候選項的底色，若與背景色不同就會顯出光棒
+      hilited_candidate_label_color: 0x1D1D1D
+      hilited_comment_text_color: 0x1D1D1D # 高亮編碼提示顏色
+      candidate_text_color: 0xB8B8B8 # 候選項文字顏色，當與文字顏色不同時指定
+      label_color: 0xB8B8B8 # 序號顏色，鼠鬚管有效
+      comment_text_color: 0x757575 # 編碼提示顏色
+      # color_format:  rgba  #defalt not set, rgba or argb optional
+      # candidate_back_color: 0x00000000 #defalt transparent
+      # candidate_shadow_color: 0x00000000 #defalt transparent
+      # candidate_border_color: 0x00000000 #defalt transparent
+      # hilited_mark_color: 0x00000000 #defalt transparent
+      # hilited_shadow_color: 0x00000000 #defalt transparent
+      # hilited_candidate_shadow_color: 0x00000000 #defalt transparent
+      # hilited_candidate_border_color: 0x00000000 #defalt transparent
+      # shadow_color: 0x00000000 #defalt transparent
+      # prevpage_color: 0x00000000 #default transparent
+      # nextpage_color: 0x00000000 #default transparent
+      # if both prevpage_color and nextpage_color not transparent, pager mark button will be shown when no inline_preedit
+
+
+  style:
+    color_scheme: scutum
+    # color_scheme_dark: scutum
+
+    display_tray_icon: false # 顯示托盤圖標
+    # click_to_capture: true
+    memorize_size: true
+    preedit_type: composition # "composition" | "preview" | "preview_all"
+
+    mark_text: "" # 輸入法高亮提示標記 
+    label_format: "%s"
+    blur_window: true #使字較模糊看起來較柔順。
+    antialias_mode: cleartype # {force_dword|cleartype|grayscale|aliased|default}
+
+    # 小狼毫得且僅得設一個字體；鼠鬚管得設多個字體，後面的字體自動補前面字體不含的字
+    # font_face: font_name[:start_code_point:end_code_point][:weight_set][:style_set][,font2...]
+    ### example: "Segoe UI Emoji:20:39:bold:italic, Segoe UI Emoji:1f51f:1f51f, Noto Color Emoji SVG:80, Arial:600:6ff, Segoe UI Emoji:80, LXGW Wenkai Narrow"
+
+    font_face: "Swei Gothic CJK TC:Bold"
+    # font_face: "jf-openhuninn-1.1"
+    font_point: 16 # 字號，可帶小數
+    label_font_face: "Swei Gothic CJK TC:Medium"
+    label_font_point: 14
+    comment_font_face: "Swei Gothic CJK TC"
+    comment_font_point: 14
+
+    text_orientation: "horizontal" # "horizontal" | "vertical"
+
+    # vertical_text: true      # set true to use vertical text layout, 
+    # vertical_text_left_to_right: false    # flow direction setting for vertical text layout
+    # vertical_text_with_wrap: false        # vertical text layout with wrap-whole-candidate feature, work with style/vertical_text: true  and style/layout/max_height: not_zero_value
+
+    layout:
+      border_width: 3
+      enhanced_position: true # 允許在光標位置獲取失敗時於窗口左上角繪製候選框（而不是桌面左上角） 
+
+      spacing: 16 # 鍵入碼區與候選項區之間的間距，可帶小數，可爲負。默認0
+      candidate_spacing: 8 # 候選字間隔
+      hilite_spacing: 16 # 序號和候選字之間的間隔
+      hilite_padding: 8 #候選字背景色色塊高度 若想候選字背景色塊無邊界填充候選框，僅需其高度和候選字上下邊距一致即可
+
+      margin_x: 24 # 候選字左右邊距
+      margin_y: 20 # 候選字上下邊距
+
+      # feature in fixlang version
+      align_type: center #  options: top, center, bottom , for the situation when label_font_point, font_point, comment_font_point not the same.
+      # for vertical text layout, 'top' redirect to the direction where your preedit is.
+      round_corner: 10 #候選、編碼背景色塊圓角
+      corner_radius: 16 #窗口圓角半徑
+      shadow_radius: 5 #全局陰影模糊半徑，如果為0則全局禁用陰影
+      shadow_offset_x: 3
+      shadow_offset_y: 3
+      # max_width: 0   # max window width for horizontal layout, set 0 to disable max width; strings over this value will wrap to next row, candidates's right over this value will be turn to next row(when horizontal layout). if over length, multi row for candidates
+      # max_height: 0  #  max window height for vertical text layout with wrap, set 0 to disable max height; string over this value will wrap, candidate's bottom over this value will be turn to next column(when vertical_text_with_wrap) 

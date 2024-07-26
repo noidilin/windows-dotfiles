@@ -1,0 +1,178 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# ┌ ⠀ pwsh⠀ ScutumLin
+# └[  ]
+
+format = """
+[┌](bold clr_white)\
+$os$shell$username$git_branch$git_status\
+$c$rust$golang$php$python$nodejs$lua\
+$fill\
+$cmd_duration$time\
+$line_break\
+[└](bold clr_white)\
+$directory$package\
+$line_break\
+$character"""
+
+palette = "scutum"
+
+[palettes.scutum]
+# special
+clr_fg = "#eaeaea"
+clr_fg_dim = "#b3b3b3"
+clr_text = "#191919"
+clr_selection = "#303030"
+# normal
+clr_black = "#474747"
+clr_red = "#af5f5f"
+clr_green = "#5f875f"
+clr_yellow = "#b09661"
+clr_blue = "#5f87af"
+clr_magenta = "#5f5f87"
+clr_cyan = "#5f8787"
+clr_white = "#dad5c8"
+# bright
+clr_bright_black = "#5d5d5d"
+clr_bright_red = "#de7878"
+clr_bright_green = "#87af87"
+clr_bright_yellow = "#e0bf7b"
+clr_bright_blue = "#8fafd7"
+clr_bright_magenta = "#8c8cbd"
+clr_bright_cyan = "#79b8b8"
+clr_bright_white = "#faf5eb"
+
+[fill]
+symbol = " "
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = "[❯](bold fg:clr_white)"
+error_symbol = "[❯](bold fg:clr_red)"
+vimcmd_symbol = "[❮](bold fg:clr_green)"
+vimcmd_replace_one_symbol = "[❮](bold fg:clr_cyan)"
+vimcmd_replace_symbol = "[❮](bold fg:clr_cyan)"
+vimcmd_visual_symbol = "[❮](bold fg:clr_yellow)"
+
+[os]
+disabled = false
+format = " [ $symbol ]($style)"
+style = "bg:clr_black fg:clr_fg"
+
+[shell]
+disabled = false
+format = "[  $indicator ]($style)"
+style = "bg:clr_white bold fg:clr_text "
+
+[username]
+show_always = true
+format = "[  $user ]($style)"
+style_user = "bg:clr_fg_dim fg:clr_text"
+style_root = "bg:clr_bright_white fg:clr_text bold"
+
+[cmd_duration]
+disabled = false
+format = "[took [$duration](clr_black bold)]($style)"
+min_time = 0
+show_milliseconds = true
+style = "fg:clr_bright_black bold"
+
+[time]
+disabled = false
+format = "[  [$time](fg:clr_black)]($style)"
+time_format = "%m/%d %R"
+style = "fg:clr_white bold"
+
+# directory
+[directory]
+format = "[ \\[  $path \\] ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+style = "fg:clr_fg_dim"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[package]
+format = "[is $symbol$version]($style)"
+symbol = " "
+style = "clr_black bold"
+
+# git
+[git_branch]
+symbol = ""
+format = "[[ $symbol $branch ](fg:clr_fg bg:clr_bright_black)]($style)"
+style = "bg:clr_bright_black"
+
+[git_status]
+format = "[[($all_status$ahead_behind )](fg:clr_fg bg:clr_bright_black)]($style)"
+style = "bg:clr_bright_black"
+
+# lang
+[nodejs]
+symbol = ""
+format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
+style = "bg:clr_black"
+
+[c]
+symbol = ""
+format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
+style = "bg:clr_black"
+
+[rust]
+symbol = ""
+format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
+style = "bg:clr_black"
+
+[lua]
+symbol = ""
+format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
+style = "bg:clr_black"
+
+[golang]
+symbol = ""
+format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
+style = "bg:clr_black"
+
+[php]
+symbol = ""
+format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
+style = "bg:clr_black"
+
+[python]
+symbol = ""
+format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
+style = "bg:clr_black"
+
+[docker_context]
+symbol = ""
+style = "bg:clr_black"
+format = "[[ $symbol( $context) ](fg:clr_cyan bg:clr_black)]($style)"
+
+[os.symbols]
+Windows = ""
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
