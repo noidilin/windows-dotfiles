@@ -78,10 +78,10 @@ type = "git-repo"
 url = "https://github.com/catppuccin/powershell.git"
 refreshPeriod = "168h"
 
-[".config/delta/themes/catppuccin"]
-type = "git-repo"
-url = "https://github.com/catppuccin/delta.git"
-refreshPeriod = "168h"
+# [".config/delta/themes/catppuccin"]
+# type = "git-repo"
+# url = "https://github.com/catppuccin/delta.git"
+# refreshPeriod = "168h"
 
 # ["AppData/Local/glow/Config/themes/catppuccin-mocha.json"]
 # type = "file"
