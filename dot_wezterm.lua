@@ -73,9 +73,13 @@ config.colors = {
 	background = "#191919",
 	cursor_bg = "#878787",
 	selection_bg = "#303030",
+
 	-- order: black > red > green > yellow > blue > magenta > cyan > white
-	ansi = { "#474747", "#af5f5f", "#5f875f", "#b09661", "#5f87af", "#5f5f87", "#5f8787", "#dad5c8" },
-	brights = { "#5d5d5d", "#de7878", "#87af87", "#e0bf7b", "#8fafd7", "#8c8cbd", "#79b8b8", "#faf5eb" },
+	--[[ 	ansi = { "#474747", "#af5f5f", "#5f875f", "#e0ca9d", "#5f87af", "#5f5f87", "#5f8787", "#dad5c8" },
+	brights = { "#5d5d5d", "#de7878", "#87af87", "#f5dcab", "#8fafd7", "#8c8cbd", "#79b8b8", "#faf5eb" }, ]]
+
+	ansi = { "#474747", "#b07878", "#778777", "#d6caab", "#7d96ad", "#797994", "#769494", "#dad5c8" },
+	brights = { "#5d5d5d", "#cc9393", "#9bb09b", "#ebd6b7", "#9db2cf", "#9f9fbd", "#92b3b3", "#faf5eb" },
 
 	-- further customization
 	cursor_border = "#878787",

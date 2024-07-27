@@ -25,15 +25,15 @@ $Colors = @{
   # Powershell colours
   ContinuationPrompt     = "#5d5d5d" # white
   Emphasis               = "#eaeaea" # bright-cyan
-  # Selection              = "" # $Flavor.Surface0.Background()
+  # Selection              = "#878787" # $Flavor.Surface0.Background()
 	
   # PSReadLine prediction colours
   InlinePrediction       = "#474747" # 
   ListPrediction         = "#474747" # yellow
-  # ListPredictionSelected = "" # $Flavor.Surface0.Background()
+  # ListPredictionSelected = "#" # $Flavor.Surface0.Background()
 
   # Syntax highlighting
-  Command                = "#b3ad9f" # bright-yellow
+  Command                = "#dad5c8" # bright-yellow
   Comment                = "#555555" # green
   Default                = "#b3b3b3" # white
   Error                  = "#af5f5f" # bright-red
