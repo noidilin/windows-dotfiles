@@ -1,0 +1,38 @@
+ex=>bool===False
+thumbnail_crash_fix=>bool===False
+auto_clear_search=>bool===True
+ta_directory=>str===D:\resource\asset-browser\
+objects_directory=>str===D:\resource\asset-browser\Objects
+worlds_directory=>str===D:\resource\asset-browser\Worlds
+materials_directory=>str===D:\resource\asset-browser\Materials
+node_groups_directory=>str===D:\resource\asset-browser\Node Groups
+online_assets_directory=>str===D:\resource\asset-browser\Online Assets
+downloads_directory=>str===D:\resource\asset-browser\Temps\
+add_downloads_directory_to_ab=>bool===False
+blends_directory=>str===D:\resource\asset-browser\Blend Files
+object_library_name=>str===TA-Object
+material_library_name=>str===TA-Material
+world_library_name=>str===TA-World-Light
+node_group_library_name=>str===TA-Node-Group
+online_library_name=>str===TA-Online-Asset
+blends_library_name=>str===TA-Blend-File
+non_blocking=>bool===True
+add_ground_plane=>bool===False
+use_studio_background=>bool===False
+world_strength=>float===5.0
+fbx_importer=>str===Blender
+show_default_settings=>bool===False
+show_default_settings_this_file=>bool===False
+default_settings_this_file=>Create_Assets_From_This_File_Props_Base===<bpy_struct, Create_Assets_From_This_File_Props_Base("") at 0x00000143314D1128>
+show_default_settings_from_directory=>bool===False
+default_settings_from_directory=>Create_Assets_From_Directory_Props_Base===<bpy_struct, Create_Assets_From_Directory_Props_Base("") at 0x00000143314D0868>
+show_default_settings_fbx=>bool===False
+default_settings_fbx=>Create_Assets_FBX_Props_Base===<bpy_struct, Create_Assets_FBX_Props_Base("") at 0x00000143314D1C68>
+show_default_settings_obj=>bool===False
+default_settings_obj=>Create_Assets_From_OBJ_Props_Base===<bpy_struct, Create_Assets_From_OBJ_Props_Base("") at 0x00000143314D0188>
+show_default_settings_usd=>bool===False
+default_settings_usd=>Create_Assets_From_USD_Props_Base===<bpy_struct, Create_Assets_From_USD_Props_Base("") at 0x00000143314D3BA8>
+show_default_settings_materials=>bool===False
+default_settings_materials=>Create_Materials_Props_Base===<bpy_struct, Create_Materials_Props_Base("") at 0x00000143314D1BC8>
+show_default_settings_worlds=>bool===False
+default_settings_worlds=>Create_Worlds_Props_Base===<bpy_struct, Create_Worlds_Props_Base("") at 0x00000143314D09A8>
