@@ -73,7 +73,7 @@ type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
 refreshPeriod = "168h"
 
-["Document/PowerShell/Modules/Catppuccin"]
+["Documents/PowerShell/Modules/Catppuccin"]
 type = "git-repo"
 url = "https://github.com/catppuccin/powershell.git"
 refreshPeriod = "168h"
