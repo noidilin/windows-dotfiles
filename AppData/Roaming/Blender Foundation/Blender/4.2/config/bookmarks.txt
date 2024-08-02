@@ -1,15 +1,16 @@
 [Bookmarks]
-D:\resource\
 D:\area\addon-blender\
 D:\area\addon-blender\special\script\
+D:\resource\
+D:\resource\tex\pbr\
 [Recent]
+C:\Users\Lin\blender\asset\matcap\
+C:\Users\Lin\blender\temp\
+C:\Users\Lin\blender\temp\matcap\
+D:\resource\tex\pbr\clay\00_Clay base long strokes\
+D:\area\downloads\blender-stuff\mega-pack-5000\
+D:\resource\tex\pbr\clay\00_Clay base broad strokes\
+D:\resource\tex\pbr\clay\
 D:\area\downloads\MOFA-2024\
 D:\area\downloads\MOFA-2024\render\
 D:\archive\blender-turbo-tool-cache\
-D:\area\downloads\MOFA-2024\textures\
-D:\area\downloads\notion-illustrations-free-sample\PNG\
-F:\archive\artworks\mograph-hard\3D-MOFA-original\
-F:\archive\artworks\mograph-hard\3D-MOFA-original\Screenshot\facebook-web\
-F:\archive\artworks\mograph-hard\3D-MOFA-original\Screenshot\facebook\
-F:\archive\artworks\mograph-hard\3D-MOFA-original\Screenshot\youtube\
-D:\resource\tex\decal\active\
