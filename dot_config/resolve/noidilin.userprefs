@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--DbAppVer="18.6.5.0007" DbPrjVer="13"-->
-<SM_UserPrefs DbId="68f428f3-1a36-431d-b091-5bf69a616b14">
+<SM_UserPrefs DbId="17e3a4b6-b637-4028-8ee6-ab4c292c6f96">
  <FieldsBlob/>
  <Name>noidilin</Name>
  <Language>en</Language>
@@ -25,7 +25,7 @@
  <LastWorkingProject/>
  <LastWorkingProjectFolder/>
  <ShowFocusIndicators>false</ShowFocusIndicators>
- <ProjectBackupLocation>D:/area/resolve/Resolve Backups/Resolve Project Backups</ProjectBackupLocation>
+ <ProjectBackupLocation>D:/archive/resolve/Backups/Resolve Project Backups</ProjectBackupLocation>
  <GreyBackground>true</GreyBackground>
  <SmartBinForTimelines>false</SmartBinForTimelines>
  <SmartBinForKeywords>true</SmartBinForKeywords>
@@ -38,7 +38,7 @@
  <OutputFieldInStopMode>false</OutputFieldInStopMode>
  <HighContrastMatte>false</HighContrastMatte>
  <PanelSensitivity>
-  <SM_PanelSensitivity DbId="094d917f-5cd8-448b-9f44-1e8fb284a402">
+  <SM_PanelSensitivity DbId="97db97da-f0b8-4ecc-8d49-f561a7d0dc5a">
    <FieldsBlob/>
    <BallA>50</BallA>
    <BallB>50</BallB>
@@ -76,7 +76,7 @@
  <WipeWrap>true</WipeWrap>
  <GraphNodeHighLightMode>0</GraphNodeHighLightMode>
  <ImpresarioColorScheme>
-  <SM_ImpresarioScheme DbId="215e6125-babe-406d-9948-b7c88303c558">
+  <SM_ImpresarioScheme DbId="1001f8e3-0731-473a-ae42-0e3ddc7156b2">
    <FieldsBlob/>
    <LCDBaseR>100</LCDBaseR>
    <LCDBaseG>100</LCDBaseG>
@@ -109,7 +109,7 @@
  <HighVisibilityPowerWindowOutlines>false</HighVisibilityPowerWindowOutlines>
  <PanelRippleMode>0</PanelRippleMode>
  <DeliverableSetup>
-  <SM_DeliverableSetup DbId="71c4b212-5e1d-4694-afa6-99f7c234d798">
+  <SM_DeliverableSetup DbId="92bdb7f3-0ca4-410a-8a7f-5e9b9f6124db">
    <FieldsBlob/>
    <PLLabAimY>25</PLLabAimY>
    <PLLabAimR>25</PLLabAimR>
