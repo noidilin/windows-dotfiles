@@ -98,10 +98,10 @@ all_cpu_color = "#d6d3cc"
 avg_cpu_color = "#bdbab2"
 # Represents the colour the core will use in the CPU legend and graph.
 cpu_core_colors = [
-  "#de7878",
-  "#e0bf7b",
-  "#87af87",
-  "#ddac89",
+  "#cc9393",
+  "#ebd6b7",
+  "#9bb09b",
+  "#dcb5a5",
   "#dad5c8",
   "#b3ad9f",
   "#9a9487",
@@ -117,12 +117,12 @@ swap_color = "#9d9d9d"
 arc_color = "#5d5d5d"
 # Represents the colour the GPU will use in the memory legend and graph.
 gpu_core_colors = [
-  "#af5f5f",
-  "#5f5f87",
-  "#5f8787",
-  "#b09661",
-  "#ad7c58",
-  "#5f875f",
+  "#b07878",
+  "#797994",
+  "#769494",
+  "#d6caab",
+  "#c8a492",
+  "#778777",
 ]
 # Represents the colour rx will use in the network legend and graph.
 rx_color = "#b3b3b3"
@@ -142,9 +142,9 @@ selected_bg_color = "#414141"
 # Represents the colour of the lines and text of the graph.
 graph_color = "#707070"
 # Represents the colours of the battery based on charge
-high_battery_color = "#5f875f"
-medium_battery_color = "#b09661"
-low_battery_color = "#af5f5f"
+high_battery_color = "#778777"
+medium_battery_color = "#d6caab"
+low_battery_color = "#b07878"
 
 # Layout - layouts follow a pattern like this:
 # [[row]] represents a row in the application.

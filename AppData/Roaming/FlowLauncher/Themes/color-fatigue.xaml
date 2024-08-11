@@ -219,7 +219,7 @@
         x:Key="PreviewItemSubTitleStyle"
         BasedOn="{StaticResource BasePreviewItemSubTitleStyle}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Foreground" Value="#7b858f" /> <!-- preview sub-title text color -->
+        <Setter Property="Foreground" Value="#8e8b85" /> <!-- preview sub-title text color -->
     </Style>
     
 </ResourceDictionary>
