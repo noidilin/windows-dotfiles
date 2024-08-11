@@ -46,9 +46,9 @@ return { -- Navigate code with Treesitter
         swap = {
           enable = true,
           -- swap (param/arg), (prop), (func) with next
-          swap_next = { ["<leader>na"] = "@parameter.inner", ["<leader>n:"] = "@property.outer", ["<leader>nf"] = "@function.outer", },
+          swap_next = { ["<leader>na"] = "@parameter.inner", ["<leader>nr"] = "@property.outer", ["<leader>nf"] = "@function.outer", },
           -- swap (param/arg), (prop), (func) with prev
-          swap_previous = { ["<leader>pa"] = "@parameter.inner", ["<leader>p:"] = "@property.outer", ["<leader>pf"] = "@function.outer", },
+          swap_previous = { ["<leader>pa"] = "@parameter.inner", ["<leader>pr"] = "@property.outer", ["<leader>pf"] = "@function.outer", },
         },
         move = {
           enable = true,
@@ -60,11 +60,11 @@ return { -- Navigate code with Treesitter
           -- ["]s"] = { query = "@scope", query_group = "locals", desc = "Next scope" },
           -- ["]z"] = { query = "@fold", query_group = "folds", desc = "Next fold" },
 
-          -- [ ";:", "@property.outer" ], [ "iI", "@conditional.outer" ], [ "lL", "@loop.outer" ]
-          goto_next_start = { ["]i"] = "@call.outer", ["]f"] = "@function.outer", ["]c"] = "@class.outer", ["]a"] = "@parameter.inner", },
-          goto_next_end = { ["]I"] = "@call.outer", ["]F"] = "@function.outer", ["]C"] = "@class.outer", ["]A"] = "@parameter.inner", },
-          goto_previous_start = { ["[i"] = "@call.outer", ["[f"] = "@function.outer", ["[c"] = "@class.outer", ["[a"] = "@parameter.inner", },
-          goto_previous_end = { ["[I"] = "@call.outer", ["[F"] = "@function.outer", ["[C"] = "@class.outer", ["[A"] = "@parameter.inner", },
+          -- [ "iI", "@conditional.outer" ], [ "lL", "@loop.outer" ]
+          goto_next_start = { ["]a"] = "@parameter.outer", ["]i"] = "@call.outer", ["]f"] = "@function.outer", ["]c"] = "@class.outer", ["]r"] = "@property.outer", },
+          goto_next_end = { ["]A"] = "@parameter.outer", ["]I"] = "@call.outer", ["]F"] = "@function.outer", ["]C"] = "@class.outer", ["]R"] = "@property.outer", },
+          goto_previous_start = { ["[a"] = "@parameter.outer", ["[i"] = "@call.outer", ["[f"] = "@function.outer", ["[c"] = "@class.outer", ["[r"] = "@property.outer", },
+          goto_previous_end = { ["[A"] = "@parameter.outer", ["[I"] = "@call.outer", ["[F"] = "@function.outer", ["[C"] = "@class.outer", ["[R"] = "@property.outer", },
         },
       },
     })

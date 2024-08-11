@@ -1,3 +1,14 @@
+## general
+
+| neovim                   |              | vscode                      |              |
+| ------------------------ | ------------ | --------------------------- | ------------ |
+| colorscheme with preview | `<leader>uc` | preferences: color theme    | `<C-k><C-t>` |
+| toggle word wrap         | `<leader>uw` | toggle word wrap            |              |
+|                          | `<leader>sc` | open settings               | `<C-,>`      |
+|                          | `<leader>sk` | open global keybindings     | `<C-k><C-s>` |
+|                          | `<leader>fc` | open setting json           |              |
+|                          | `<leader>fk` | open global keybinding json |              |
+
 ## fold mapping
 
 | neovim |      | vscode             |     |
@@ -49,6 +60,8 @@
 | ---------------------------- | ------------ | ----------------------------- | ---------------------- |
 | explorer neo-tree (root dir) | `<leader>e`  | view: show explorer           | `<CS-e>`               |
 | explorer neo-tree (root dir) | `<leader>fe` | view: show explorer           | `<CS-e>`               |
+|                              | `<leader>fo` | open file                     |                        |
+|                              | `<leader>fO` | open folder                   |                        |
 | find files                   | `<leader>ff` | go to file...                 | `<C-e>` / `<A-o>`      |
 | recent                       | `<leader>fr` | open recent                   | `<C-r>` / `<C-w><C-r>` |
 | buffers, switch buffer       | `<leader>fb` | show all editor by appearance |                        |
@@ -131,7 +144,33 @@
 - gsn: Update MiniSurround.config.n_lines
 - gsr: Replace Surrounding
 
-### Yanky
+### text object
+
+#### custom text object [mini.ai]
+
+- o: code block (block, conditional, loop)
+- a: param
+- i: call (invoke)
+- f: function
+- c: class
+
+#### regex [mini.ai]
+
+- t: tags
+- d: digits
+- e: word with case
+
+#### swap
+
+- next: <leader>na (param), <leader>nr (prop), <leader>nf (func)
+- prev: <leader>pa (param), <leader>pr (prop), <leader>pf (func)
+
+#### move
+
+- next start: `]a` (param), `]i` (call), `]f` (func), `]c` (class), `]r` (prop)
+- next end: `]A` (param), `]I` (call), `]F` (func), `]C` (class), `]R` (prop)
+- prev start: `[a` (param), `[i` (call), `[f` (func), `[c` (class), `[r` (prop)
+- prev end: `[A` (param), `[I` (call), `[F` (func), `[C` (class), `[R` (prop)
 
 ---
 

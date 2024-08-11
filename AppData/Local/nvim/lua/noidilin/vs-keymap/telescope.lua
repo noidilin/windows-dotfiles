@@ -13,6 +13,10 @@ map("n", "<leader>fr", function() vscode.call("workbench.action.openRecent") end
 map("n", "<leader>fb", function() vscode.call("workbench.action.showAllEditors") end, { silent = true }) -- buffers, switch buffer | show all editor by appearance
 map("n", "<leader>,", function() vscode.call("workbench.action.showAllEditors") end, { silent = true })  -- buffers, switch buffer | show all editor by appearance
 
+-- [[ vscode only ]]
+map("n", "<leader>fo", function() vscode.call("workbench.action.files.openFile") end, { silent = true })
+map("n", "<leader>fO", function() vscode.call("workbench.action.files.openFolder") end, { silent = true })
+
 -- [[ Search ]]
 map("n", "<leader>sb", function() vscode.call("actions.find") end, { silent = true })                    -- buffers | find <C-f>
 map("n", "<leader>sg", function() vscode.call("workbench.action.findInFiles") end, { silent = true })    -- grep (root dir) | search: find in files (view: show search) <CS-f>

@@ -15,6 +15,7 @@ return {
         i = ai.gen_spec.treesitter({ a = "@call.outer", i = "@call.inner" }),           -- function call
         f = ai.gen_spec.treesitter({ a = "@function.outer", i = "@function.inner" }),   -- function method
         c = ai.gen_spec.treesitter({ a = "@class.outer", i = "@class.inner" }),         -- class
+        r = ai.gen_spec.treesitter({ a = "@property.outer", i = "@property.inner" }),   -- property
 
         -- regex
         t = { "<([%p%w]-)%f[^<%w][^<>]->.-</%1>", "^<.->().*()</[^/]->$" }, -- tags
