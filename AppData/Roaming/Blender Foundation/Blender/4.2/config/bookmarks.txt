@@ -4,13 +4,13 @@ D:\area\addon-blender\special\script\
 D:\resource\
 D:\resource\tex\pbr\
 [Recent]
-C:\Users\Lin\blender\asset\matcap\
-C:\Users\Lin\blender\temp\
-C:\Users\Lin\blender\temp\matcap\
-D:\resource\tex\pbr\clay\00_Clay base long strokes\
-D:\area\downloads\blender-stuff\mega-pack-5000\
-D:\resource\tex\pbr\clay\00_Clay base broad strokes\
-D:\resource\tex\pbr\clay\
-D:\area\downloads\MOFA-2024\
-D:\area\downloads\MOFA-2024\render\
-D:\archive\blender-turbo-tool-cache\
+C:\WINDOWS\Fonts\
+D:\resource\tex\pbr\extreme\wood\plain\009\1k\
+D:\resource\tex\pbr\extreme\tiles\grid\square beige 005\1k\
+D:\resource\tex\pbr\extreme\tiles\grid\square brown 002\1k\
+D:\Resource\blender\mesh-archviz\akai-mpk-mini\textures\
+D:\resource\tex\pbr\extreme\wood\light\008\1k\
+D:\resource\tex\pbr\extreme\metal\raw\brushed iron 02\1k\
+D:\resource\tex\pbr\extreme\wood\dark\026\1k\
+D:\resource\tex\pbr\extreme\fabric\carpet\001\1k\
+D:\resource\blender\mesh-archviz\manga\MANGA_Naruto\
