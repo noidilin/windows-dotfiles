@@ -13,14 +13,14 @@
 # url = "git@github.com:KevinNitroG/NvChad-Starter.git"
 # refreshPeriod = "168h"
 
-# ["AppData/Roaming/alacritty/catppuccin-alacritty"]
-# type = "git-repo"
-# url = "https://github.com/catppuccin/alacritty.git"
-# refreshPeriod = "168h"
-
 ["AppData/Roaming/Mozilla/Firefox/Profiles/d0rco9tk.default-release/chrome"]
 type = "git-repo"
 url = "https://github.com/KiKaraage/ArcWTF.git"
+refreshPeriod = "168h"
+
+["AppData/Roaming/yazi/config/flavors/color-fatigue.yazi"]
+type = "git-repo"
+url = "https://github.com/noidilin/color-fatigue.yazi.git"
 refreshPeriod = "168h"
 
 # [".config/wezterm"]
@@ -32,11 +32,6 @@ refreshPeriod = "168h"
 type = "git-repo"
 url = "https://github.com/YT-Advanced/Windows-11-Cursor-by-rosea92.git"
 refreshPeriod = "168h"
-
-# [".config/wakatime/posh-wakatime"]
-# type = "git-repo"
-# url = "https://github.com/Gravifer/posh-wakatime.git"
-# refreshPeriod = "168h"
 
 # [".config/windows-terminal/windows-terminal-shaders"]
 # type = "git-repo"

@@ -7,6 +7,7 @@
 $env:EDITOR = "nvim"
 # $env:VISUAL = "code"
 $env:PAGER = "delta"
+$env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
 
 Import-Module posh-git 
 Import-Module PSReadLine # Better auto-completion
@@ -27,14 +28,18 @@ $PSStyle.Formatting.TableHeader = $PSStyle.Foreground.BrightBlack # bright-green
  
 # PSReadLine config
 . "$env:USERPROFILE/Documents/PowerShell/Scripts/PSReadLine.ps1"
-# Eza config
+# eza config
 . "$env:USERPROFILE/Documents/PowerShell/Scripts/eza.ps1"
 # fzf config
 . "$env:USERPROFILE/Documents/PowerShell/Scripts/Fzf.ps1"
-# Clean (Delete recycle bin, temp, cache, disk cleanup)
+# clean (Delete recycle bin, temp, cache, disk cleanup)
 . "$env:USERPROFILE/Documents/PowerShell/Scripts/clean.ps1"
+# replace mocha color palette with color-fatigue
+. "$env:USERPROFILE/Documents/PowerShell/Scripts/color-fatigue.ps1"
 # generate stylus userstyle
-# . "$env:USERPROFILE/Documents/PowerShell/Scripts/stylus.ps1"
+. "$env:USERPROFILE/Documents/PowerShell/Scripts/stylus.ps1"
+# yazi command
+. "$env:USERPROFILE/Documents/PowerShell/Scripts/yazi.ps1"
 
 Invoke-Expression (&starship init powershell) # starship
 Invoke-Expression (& { (zoxide init powershell | Out-String) }) # zoxide
