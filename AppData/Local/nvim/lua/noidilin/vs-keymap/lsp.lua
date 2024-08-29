@@ -33,6 +33,6 @@ map("n", "gpr", function() vscode.call("editor.action.referenceSearch.trigger") 
 
 -- [[ Action ]]
 map("n", "<leader>cs", function() vscode.call("breadcrumbs.focusAndSelect") end, { silent = true })       -- symbols (trouble) "<leader>cs" | focus and select breadcrumbs "<CS-.>"
-map("n", "<leader>ca", function() vscode.call("editor.action.quickFix") end, { silent = true })           -- code action "<leader>ca" | quick fix... "<C-.>"
+map({ "n", "v" }, "<leader>ca", function() vscode.call("editor.action.quickFix") end, { silent = true })  -- code action "<leader>ca" | quick fix... "<C-.>"
 map("n", "<leader>cc", function() vscode.call("codelens.showLensesInCurrentLine") end, { silent = true }) -- run codelens "<leader>cc" | show code lens command for current line
 map("n", "<leader>cr", function() vscode.call("editor.action.rename") end, { silent = true })             -- rename "<leader>cr" | rename symbol "<F2>"

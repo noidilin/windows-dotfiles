@@ -11,11 +11,12 @@ return {
           a = { "@block.outer", "@conditional.outer", "@loop.outer" },
           i = { "@block.inner", "@conditional.inner", "@loop.inner" },
         }),
-        a = ai.gen_spec.treesitter({ a = "@parameter.outer", i = "@parameter.inner" }), -- parameter
-        i = ai.gen_spec.treesitter({ a = "@call.outer", i = "@call.inner" }),           -- function call
-        f = ai.gen_spec.treesitter({ a = "@function.outer", i = "@function.inner" }),   -- function method
-        c = ai.gen_spec.treesitter({ a = "@class.outer", i = "@class.inner" }),         -- class
-        r = ai.gen_spec.treesitter({ a = "@property.outer", i = "@property.inner" }),   -- property
+        f = ai.gen_spec.treesitter({ a = "@function.outer", i = "@function.inner" }),     -- function method
+        c = ai.gen_spec.treesitter({ a = "@class.outer", i = "@class.inner" }),           -- class
+        a = ai.gen_spec.treesitter({ a = "@parameter.outer", i = "@parameter.inner" }),   -- parameter
+        i = ai.gen_spec.treesitter({ a = "@call.outer", i = "@call.inner" }),             -- function call
+        s = ai.gen_spec.treesitter({ a = "@assignment.outer", i = "@assignment.inner" }), -- assignment
+        r = ai.gen_spec.treesitter({ a = "@property.outer", i = "@property.inner" }),     -- property
 
         -- regex
         t = { "<([%p%w]-)%f[^<%w][^<>]->.-</%1>", "^<.->().*()</[^/]->$" }, -- tags

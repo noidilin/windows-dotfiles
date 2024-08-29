@@ -2,7 +2,7 @@ return {
   { "tpope/vim-repeat" }, { 'rktjmp/lush.nvim' },
 
   -- yanky highlight time
-  { "gbprod/yanky.nvim", opts = { highlight = { timer = 250 }, }, },
+  -- { "gbprod/yanky.nvim", opts = { highlight = { timer = 150 }, }, },
 
   -- mini-move
   {
