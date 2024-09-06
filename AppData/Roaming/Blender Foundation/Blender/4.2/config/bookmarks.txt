@@ -4,6 +4,8 @@ D:\area\addon-blender\special\script\
 D:\resource\
 D:\resource\tex\pbr\
 [Recent]
+D:\project\jp-202401\assets\
+D:\project\blender\
 C:\WINDOWS\Fonts\
 D:\resource\tex\pbr\extreme\wood\plain\009\1k\
 D:\resource\tex\pbr\extreme\tiles\grid\square beige 005\1k\
@@ -12,5 +14,3 @@ D:\Resource\blender\mesh-archviz\akai-mpk-mini\textures\
 D:\resource\tex\pbr\extreme\wood\light\008\1k\
 D:\resource\tex\pbr\extreme\metal\raw\brushed iron 02\1k\
 D:\resource\tex\pbr\extreme\wood\dark\026\1k\
-D:\resource\tex\pbr\extreme\fabric\carpet\001\1k\
-D:\resource\blender\mesh-archviz\manga\MANGA_Naruto\
