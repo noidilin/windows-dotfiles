@@ -1,0 +1,343 @@
+# Yaml is white-space sensitive (use 2 spaces to indent).
+
+###
+# Define a new window with an id of 'bar'. This window can then be opened
+# via the Zebar cli by running 'zebar open bar --args <ARGS...>'.
+#
+# Docs regarding window: https://some-future-docs-link.com
+window/bar:
+  providers: ["self"]
+  # Width of the window in physical pixels.
+  width: "{{ parseInt(self.args.MONITOR_WIDTH) - 24 }}"
+  # Height of the window in physical pixels.
+  height: "48"
+  # X-position of the window in physical pixels.
+  position_x: "{{ parseInt(self.args.MONITOR_X) + 12 }}"
+  # Y-position of the window in physical pixels.
+  position_y: "{{ parseInt(self.args.MONITOR_Y) + 12 }}"
+  # position_y: "{{ parseInt(self.args.MONITOR_HEIGHT) - 60 }}"
+  # Whether to show the window above/below all others.
+  # Allowed values: 'always_on_top', 'always_on_bottom', 'normal'.
+  z_order: "normal"
+  # Whether the window should be shown in the taskbar.
+  shown_in_taskbar: false
+  # Whether the window should have resize handles.
+  resizable: false
+  # Styles to apply globally within the window. For example, we can use
+  # this to import the Nerdfonts icon font. Ref https://www.nerdfonts.com/cheat-sheet
+  # for a cheatsheet of available Nerdfonts icons.
+  global_styles: |
+    @import "https://www.nerdfonts.com/assets/css/webfont.css";
+  # CSS styles to apply to the root element within the window. Using CSS
+  # nesting, we can also target nested elements (e.g. below we set the
+  # color and margin-right of icons).
+  styles: |
+    --rosewater: #dcb5a5;
+    --flamingo: #c8a492;
+    --pink: #9f9fbd;
+    --mauve: #797994;
+    --red: #b07878;
+    --maroon: #cc9393;
+    --peach: #d6caab;
+    --yellow: #ebd6b7;
+    --green: #778777;
+    --teal: #9bb09b;
+    --sky: #92b3b3;
+    --sapphire: #769494;
+    --blue: #7d96ad;
+    --lavender: #9db2cf;
+
+    --text: #b3b3b3;
+    --subtext1: #9d9d9d;
+    --subtext0: #878787;
+    --overlay2: #707070;
+    --overlay1: #5d5d5d;
+    --overlay0: #4e4e4e;
+    --surface2: #414141;
+    --surface1: #353535;
+    --surface0: #2a2a2a;
+    --base: #1e1e1e;
+    --mantle: #191919;
+    --crust: #151515;
+
+    --accent8: #faf5eb;
+    --accent7: #dad5c8;
+    --accent6: #c0baad;
+    --accent5: #b3ad9f;
+    --accent4: #a69f91;
+    --accent3: #9a9487;
+    --accent2: #8e897d;
+    --accent1: #7f7b70;
+    --accent0: #706c62;
+
+    --accent-dim8: #f7f4ed;
+    --accent-dim7: #d6d3cc;
+    --accent-dim6: #bdbab2;
+    --accent-dim5: #b4b0a7;
+    --accent-dim4: #a19d97;
+    --accent-dim3: #97948c;
+    --accent-dim2: #8e8b85;
+    --accent-dim1: #7b7974;
+    --accent-dim0: #6c6a65;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 100%;
+    color: var(--overlay0);
+    font-family: 'CommitMono Nerd Font Mono', ui-monospace, monospace;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border: 1px solid var(--surface2);
+    border-radius: 10px;
+    background: var(--mantle);
+
+    i {
+      color: var(--overlay1);
+      margin-right: 7px;
+    }
+
+  group/left:
+    styles: |
+      display: flex;
+      align-items: center;
+
+      .template {
+        margin-left: 10px;
+      }
+
+    # template/logo:
+    #   styles: |
+    #     margin-right: 4px;
+    #   template: |
+    #     <i class="nf nf-fa-windows"></i>
+
+    template/glazewm_workspaces:
+      styles: |
+        display: flex;
+        align-items: center;
+
+        .workspace {
+          font-size: 18px;
+          color: var(--overlay2);
+          background: var(--mantle);
+          padding: 0px 8px;
+          border: none;
+          border-radius: 2px;
+          cursor: pointer;
+
+          &.displayed {
+            background: var(--mantle);
+            color: var(--overlay2);
+          }
+
+          &.focused,
+          &:hover {
+            background: var(--1e1e1e);
+            color: var(--accent7);
+          }
+        }
+      providers: ["glazewm"]
+      events:
+        - type: "click"
+          fn_path: "script.js#focusWorkspace"
+          selector: ".workspace"
+      template: |
+        @for (workspace of glazewm.currentWorkspaces) {
+          <button
+            class="workspace {{ workspace.hasFocus ? 'focused' : '' }} {{ workspace.isDisplayed ? 'displayed' : '' }}"
+            id="{{ workspace.name }}"
+          >
+            {{ workspace.displayName ?? workspace.name }}
+          </button>
+        }
+
+    template/sep1:
+      styles: |
+        color: var(--overlay0);
+        background: transparent;
+        padding: 0px 8px;
+      template: |
+        <span>  |  </span>
+
+    template/cpu:
+      providers: ["cpu"]
+      styles: |
+        padding: 3px 8px;
+        border-bottom: 1px solid var(--subtext0);
+
+        .high-usage {
+          color: var(--red);
+        }
+      template: |
+        <i class="nf nf-oct-cpu"></i>
+
+        <!-- Change the text color if the CPU usage is high. -->
+        @if (cpu.usage > 85) {
+          <span class="high-usage">{{ Math.round(cpu.usage) }}%</span>
+        } @else {
+          <span>{{ Math.round(cpu.usage) }}%</span>
+        }
+
+    template/memory:
+      providers: ["memory"]
+      styles: |
+        padding: 3px 8px;
+        border-bottom: 1px solid var(--subtext0);
+
+      template: |
+        <i class="nf nf-fae-chip"></i>
+        {{ Math.round(memory.usage) }}%
+
+    template/sep2:
+      styles: |
+        color: var(--overlay0);
+        background: transparent;
+        padding: 0px 8px;
+      template: |
+        <span>  |  </span>
+
+    template/glazewm_binding:
+      providers: ["glazewm"]
+      styles: |
+        .binding-mode {
+          background: var(--overlay1);
+          color: var(--crust);
+          padding: 3px 12px;
+        }
+      template: |
+        @for (bindingMode of glazewm.bindingModes) {
+          <span class="binding-mode">
+            {{ bindingMode.displayName ?? bindingMode.name }}
+          </span>
+        }
+
+  group/center:
+    styles: |
+      justify-self: center;
+
+    template/title:
+      styles: |
+        color: var(--overlay1);
+      providers: ["glazewm"]
+      template: |
+        @if ( glazewm.focusedContainer.type === 'window') {
+          @if (String(glazewm.focusedContainer.title).length > 50) {
+            <span class="current-window"> {{ String(glazewm.focusedContainer.title).substring(0,50) + '...' }} </span>
+          } @else {
+            <span class="current-window"> {{ glazewm.focusedContainer.title }} </span>
+          }
+        } @else {
+          <span class="current-window"></span>
+        }
+
+  group/right:
+    styles: |
+      justify-self: end;
+      display: flex;
+
+      .template {
+        margin-left: 10px;
+      }
+
+    template/sep1:
+      styles: |
+        color: var(--overlay0);
+        background: transparent;
+        padding: 0px 8px;
+      template: |
+        <span>  |  </span>
+
+    template/network:
+      providers: ["network"]
+      template: |
+        <!-- Show icon based on signal strength. -->
+        @if (network.defaultInterface?.type === 'ethernet') {
+          <i class="nf nf-md-ethernet_cable"></i>
+        } @else if (network.defaultInterface?.type === 'wifi') {
+          @if (network.defaultGateway?.signalStrength >= 80) {<i class="nf nf-md-wifi_strength_4"></i>}
+          @else if (network.defaultGateway?.signalStrength >= 65) {<i class="nf nf-md-wifi_strength_3"></i>}
+          @else if (network.defaultGateway?.signalStrength >= 40) {<i class="nf nf-md-wifi_strength_2"></i>}
+          @else if (network.defaultGateway?.signalStrength >= 25) {<i class="nf nf-md-wifi_strength_1"></i>}
+          @else {<i class="nf nf-md-wifi_strength_outline"></i>}
+          {{ network.defaultGateway?.ssid }}
+        } @else {
+          <i class="nf nf-md-wifi_strength_off_outline"></i>
+        }
+
+    template/battery:
+      providers: ["battery"]
+      styles: |
+        position: relative;
+
+        .charging-icon {
+          position: absolute;
+          font-size: 11px;
+          left: 7px;
+          top: 2px;
+        }
+      template: |
+        <!-- Show icon for whether battery is charging. -->
+        @if (battery.isCharging) {<i class="nf nf-md-power_plug charging-icon"></i>}
+
+        <!-- Show icon for how much of the battery is charged. -->
+        @if (battery.chargePercent > 90) {<i class="nf nf-fa-battery_4"></i>}
+        @else if (battery.chargePercent > 70) {<i class="nf nf-fa-battery_3"></i>}
+        @else if (battery.chargePercent > 40) {<i class="nf nf-fa-battery_2"></i>}
+        @else if (battery.chargePercent > 20) {<i class="nf nf-fa-battery_1"></i>}
+        @else {<i class="nf nf-fa-battery_0"></i>}
+
+        {{ Math.round(battery.chargePercent) }}%
+
+    template/weather:
+      providers: ["weather"]
+      template: |
+        @switch (weather.status) {
+          @case ('clear_day') {<i class="nf nf-weather-day_sunny"></i>}
+          @case ('clear_night') {<i class="nf nf-weather-night_clear"></i>}
+          @case ('cloudy_day') {<i class="nf nf-weather-day_cloudy"></i>}
+          @case ('cloudy_night') {<i class="nf nf-weather-night_alt_cloudy"></i>}
+          @case ('light_rain_day') {<i class="nf nf-weather-day_sprinkle"></i>}
+          @case ('light_rain_night') {<i class="nf nf-weather-night_alt_sprinkle"></i>}
+          @case ('heavy_rain_day') {<i class="nf nf-weather-day_rain"></i>}
+          @case ('heavy_rain_night') {<i class="nf nf-weather-night_alt_rain"></i>}
+          @case ('snow_day') {<i class="nf nf-weather-day_snow"></i>}
+          @case ('snow_night') {<i class="nf nf-weather-night_alt_snow"></i>}
+          @case ('thunder_day') {<i class="nf nf-weather-day_lightning"></i>}
+          @case ('thunder_night') {<i class="nf nf-weather-night_alt_lightning"></i>}
+        }
+        {{ weather.celsiusTemp }}°
+
+    template/clock:
+      providers: ["date"]
+      # Available date tokens: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+      template: |
+        {{ date.toFormat(date.now, 'HH:mm') }}
+
+    template/sep2:
+      styles: |
+        color: var(--overlay0);
+        background: transparent;
+        padding: 0px 8px;
+      template: |
+        <span>  |  </span>
+
+    template/glazewm_tiling:
+      providers: ["glazewm"]
+      styles: |
+        .tiling-direction {
+          background: var(--overlay0);
+          color: var(--crust);
+          padding: 4px 6px;
+          border-radius: 4px;
+        }
+      template: |
+        @if (glazewm.tilingDirection === 'horizontal') {
+          <i class="tiling-direction nf nf-md-swap_horizontal"></i>
+        } @else {
+          <i class="tiling-direction nf nf-md-swap_vertical"></i>
+        }}
+
+    # template/reload:
+    #   providers: ["self"]
