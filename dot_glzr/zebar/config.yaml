@@ -175,9 +175,9 @@ window/bar:
 
         <!-- Change the text color if the CPU usage is high. -->
         @if (cpu.usage > 85) {
-          <span class="high-usage">{{ Math.round(cpu.usage) }}%</span>
+          <span class="high-usage">{{ Math.round(cpu.usage).toString().padStart(2,"0") }}%</span>
         } @else {
-          <span>{{ Math.round(cpu.usage) }}%</span>
+          <span>{{ Math.round(cpu.usage).toString().padStart(2,"0") }}%</span>
         }
 
     template/memory:
@@ -188,7 +188,7 @@ window/bar:
 
       template: |
         <i class="nf nf-fae-chip"></i>
-        {{ Math.round(memory.usage) }}%
+        {{ Math.round(memory.usage).toString().padStart(2,"0") }}%
 
     template/sep2:
       styles: |

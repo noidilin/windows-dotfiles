@@ -13,6 +13,7 @@
 	autocrlf = true
 	eidtor = nvim -f
   pager = delta
+	editor = \"C:\\Users\\Lin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 	# Config git to ensure line endings in files you checkout are correct for Windows.
 	# For compatibility, line endings are converted to Unix style when you commit files.
 
