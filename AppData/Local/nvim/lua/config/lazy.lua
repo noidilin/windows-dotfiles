@@ -5,7 +5,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	if vim.v.shell_error ~= 0 then
 		vim.api.nvim_echo({
 			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-			{ out, "WarningMsg" },
+			{ out,                            "WarningMsg" },
 			{ "\nPress any key to exit..." },
 		}, true, {})
 		vim.fn.getchar()
@@ -18,30 +18,8 @@ require("lazy").setup({
 	spec = {
 		-- add LazyVim and import its plugins
 		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
-
 		-- import/override with your plugins
 		{ import = "plugins" },
-
-		-- [[ add LazyExtras plugins ]]
-		--- { import = "lazyvim.plugins.extras.editor.telescope" },
-		--- { import = "lazyvim.plugins.extras.coding.mini-surround" },
-		--- { import = "lazyvim.plugins.extras.coding.mini-comment" },
-		--- { import = "lazyvim.plugins.extras.coding.yanky" },
-		--- { import = "lazyvim.plugins.extras.util.dot" },
-		--- { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-
-		-- [[ add LazyExtras formatter and eslint ]]
-		--- { import = "lazyvim.plugins.extras.formatting.prettier" },
-		--- { import = "lazyvim.plugins.extras.formatting.black" },
-		--- { import = "lazyvim.plugins.extras.linting.eslint" },
-
-		-- [[ add LazyExtras lang ]]
-		--- { import = "lazyvim.plugins.extras.lang.typescript" },
-		--- { import = "lazyvim.plugins.extras.lang.python" },
-		--- { import = "lazyvim.plugins.extras.lang.tailwind" },
-		--- { import = "lazyvim.plugins.extras.lang.json" },
-		--- { import = "lazyvim.plugins.extras.lang.toml" },
-		--- { import = "lazyvim.plugins.extras.lang.yaml" },
 	},
 	defaults = {
 		-- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

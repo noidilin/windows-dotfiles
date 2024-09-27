@@ -1,127 +1,89 @@
 return {
-  { "rebelot/kanagawa.nvim" }, { "aktersnurra/no-clown-fiesta.nvim" }, { "vague2k/vague.nvim" }, { "sho-87/kanagawa-paper.nvim" },
-  {
-    "slugbyte/lackluster.nvim",
-    opts = {
-      tweak_syntax = { comment = '#555555', keyword = '#878787' },
-      tweak_background = { normal = '#191919', telescope = '#1e1e1e', menu = '#242424', popup = '#1e1e1e' }
-    },
-  },
+	-- { "rebelot/kanagawa.nvim" }, { "sho-87/kanagawa-paper.nvim" },
+	{ "aktersnurra/no-clown-fiesta.nvim" },
+	{
+		"slugbyte/lackluster.nvim",
+		opts = {
+			tweak_syntax = { comment = "#555555", keyword = "#878787" },
+			tweak_background = { normal = "#191919", telescope = "#1e1e1e", menu = "#242424", popup = "#1e1e1e" },
+		},
+	},
 
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    opts = {},
-  },
+	{
+		"folke/tokyonight.nvim",
+		lazy = true,
+		opts = {},
+	},
 
+	{
+		"vague2k/vague.nvim",
+		opts = {
+			transparent = false, -- don't set background
+			style = {
+				-- "none" is the same thing as default. But "italic" and "bold" are also valid options
+				boolean = "none",
+				number = "none",
+				float = "none",
+				error = "none",
+				comments = "italic",
+				conditionals = "none",
+				functions = "none",
+				headings = "bold",
+				operators = "none",
+				strings = "italic",
+				variables = "none",
+				-- keywords
+				keywords = "bold",
+				keyword_return = "none",
+				keywords_loop = "none",
+				keywords_label = "none",
+				keywords_exception = "none",
+				-- builtin
+				builtin_constants = "italic",
+				builtin_functions = "italic",
+				builtin_types = "italic",
+				builtin_variables = "italic",
+			},
+			-- Override colors
+			colors = {
+				bg = "#191919", -- "#18191a",
+				fg = "#878787", -- "#cdcdcd",
+				floatBorder = "#414141", -- "#878787",
+				line = "#2a2a2a", -- "#282830",
+				comment = "#505050", -- "#646477",
+				builtin = "#aaaaaa", -- "#bad1ce",
+				func = "#c0c0c0", -- "#be8c8c",
+				string = "#707070", -- "#deb896",
+				number = "#878787", -- "#d2a374",
+				property = "#8e8b85", -- "#c7c7d4",
+				constant = "#b4b0a7", -- "#b4b4ce",
+				parameter = "#878787", -- "#b9a3ba",
+				visual = "#353535", -- "#363738",
+				error = "#b07878", -- "#d2788c",
+				warning = "#c8a492", -- "#e6be8c",
+				hint = "#8e897d", -- "#8ca0dc",
+				operator = "#9d9d9d", -- "#96a3b2",
+				keyword = "#9d9d9d", -- "#7894ab",
+				type = "#eaeaea", -- "#a1b3b9",
+				search = "#474747", -- "#465362",
+				plus = "#778777", -- "#8faf77",
+				delta = "#d6caab", -- "#e6be8c",
+			},
+		},
+	},
 
-  -- catppuccin theme
-  {
-    "catppuccin/nvim",
-    lazy = true,
-    name = "catppuccin",
-    opts = {
-      integrations = {
-        aerial = true,
-        alpha = true,
-        cmp = true,
-        dashboard = true,
-        flash = true,
-        gitsigns = true,
-        headlines = true,
-        illuminate = true,
-        indent_blankline = { enabled = true },
-        leap = true,
-        lsp_trouble = true,
-        mason = true,
-        markdown = true,
-        mini = true,
-        native_lsp = {
-          enabled = true,
-          underlines = {
-            errors = { "undercurl" },
-            hints = { "undercurl" },
-            warnings = { "undercurl" },
-            information = { "undercurl" },
-          },
-        },
-        navic = { enabled = true, custom_bg = "lualine" },
-        neotest = true,
-        neotree = true,
-        noice = true,
-        notify = true,
-        semantic_tokens = true,
-        telescope = true,
-        treesitter = true,
-        treesitter_context = true,
-        which_key = true,
-      },
-      color_overrides = {
-        all = {
-          rosewater = "#ddac89",
-          flamingo = "#ad7c58",
-          pink = "#8c8cbd",
-          mauve = "#5f5f87",
-          red = "#af5f5f",
-          maroon = "#de7878",
-          peach = "#b09661",
-          yellow = "#e0bf7b",
-          green = "#5f875f",
-          teal = "#87af87",
-          sky = "#79b8b8",
-          sapphire = "#5f8787",
-          blue = "#5f87af",
-          lavender = "#8fafd7",
-          text = "#b3b3b3",
-          subtext1 = "#9d9d9d",
-          subtext0 = "#878787",
-          overlay2 = "#707070",
-          overlay1 = "#5d5d5d",
-          overlay0 = "#4e4e4e",
-          surface2 = "#414141",
-          surface1 = "#353535",
-          surface0 = "#2a2a2a",
-          base = "#1e1e1e",
-          mantle = "#191919",
-          crust = "#151515",
-        },
-      },
-      custom_highlights = function(colors)
-        return {
-          LineNr = { fg = "#474747" },                 -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-          LineNrAbove = { fg = "#474747" },            -- Line number for when the 'relativenumber' option is set, above the cursor line
-          LineNrBelow = { fg = "#474747" },            -- Line number for when the 'relativenumber' option is set, below the cursor line
-          CursorLineNr = { fg = "#707070" },           -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-          Normal = { fg = "#b3b3b3", bg = "#191919" }, -- Normal text
-          -- Syntax
-          --[[ example: catppuccin syntax customization
-          ["@variable"] = { fg = "#878787" },
-          ["@namespace"] = { fg = "#eaeaea", style = { "underline" } },
-          ["@lsp.type.variable"] = { fg = "#878787" },
-          ["@lsp.type.namespace"] = { fg = "#eaeaea", style = { "underline" } },
-          ["@lsp.type.unresolvedReference"] = { sp = colors.surface2, style = { "undercurl" } },
-          ["@lsp.typemod.variable.static"] = { style = { "underdashed" } },
-          ["@lsp.typemod.variable.callable"] = { fg = colors.teal },
-          ]]
-        }
-      end,
-    },
-  },
+	-- Configure LazyVim to load gruvbox
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "vague", -- from vague.nvim
+			-- colorscheme = "lackluster-hack", -- from lackluster.nvim
 
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "lackluster-hack", -- from lackluster.nvim
-      -- colorscheme = "no-clown-fiesta" -- from no-clown-fiesta.nvim
-      -- colorscheme = "kanagawa-dragon", -- from kanagawa.nvim
+			-- colorscheme = "no-clown-fiesta" -- from no-clown-fiesta.nvim
+			-- colorscheme = "kanagawa-dragon", -- from kanagawa.nvim
 
-      -- these two looks purpleish
-      -- colorscheme = "vague" -- from vague.nvim
-      -- colorscheme = "kanagawa-paper", -- from kanagawa-paper.nvim
-
-      -- used for customize colorscheme
-      -- colorscheme = "catppuccin", -- from catppuccin
-    },
-  },
+			-- purpleish
+			-- colorscheme = "kanagawa-paper", -- from kanagawa-paper.nvim
+		},
+	},
 }
