@@ -1,5 +1,6 @@
 return {
 	-- { "rebelot/kanagawa.nvim" }, { "sho-87/kanagawa-paper.nvim" },
+	{ "folke/tokyonight.nvim", lazy = true, opts = {} },
 	{ "aktersnurra/no-clown-fiesta.nvim" },
 	{
 		"slugbyte/lackluster.nvim",
@@ -10,13 +11,8 @@ return {
 	},
 
 	{
-		"folke/tokyonight.nvim",
-		lazy = true,
-		opts = {},
-	},
-
-	{
 		"vague2k/vague.nvim",
+		lazy = true,
 		opts = {
 			transparent = false, -- don't set background
 			style = {
@@ -44,13 +40,12 @@ return {
 				builtin_types = "italic",
 				builtin_variables = "italic",
 			},
-			-- Override colors
 			colors = {
 				bg = "#191919", -- "#18191a",
 				fg = "#878787", -- "#cdcdcd",
 				floatBorder = "#414141", -- "#878787",
 				line = "#2a2a2a", -- "#282830",
-				comment = "#505050", -- "#646477",
+				comment = "#555555", -- "#646477",
 				builtin = "#aaaaaa", -- "#bad1ce",
 				func = "#c0c0c0", -- "#be8c8c",
 				string = "#707070", -- "#deb896",
@@ -72,18 +67,11 @@ return {
 		},
 	},
 
-	-- Configure LazyVim to load gruvbox
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "vague", -- from vague.nvim
-			-- colorscheme = "lackluster-hack", -- from lackluster.nvim
-
-			-- colorscheme = "no-clown-fiesta" -- from no-clown-fiesta.nvim
-			-- colorscheme = "kanagawa-dragon", -- from kanagawa.nvim
-
-			-- purpleish
-			-- colorscheme = "kanagawa-paper", -- from kanagawa-paper.nvim
+			colorscheme = "color-fatigue",
+			-- colorscheme = "vague",
 		},
 	},
 }
