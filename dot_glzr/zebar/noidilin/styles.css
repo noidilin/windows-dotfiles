@@ -1,0 +1,128 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+i {
+  /* color: rgb(115 130 175 / 95%); */
+  color: var(--overlay1);
+  margin-right: 7px;
+}
+
+body {
+  /* color: rgb(255 255 255 / 90%); */
+  /* font-family: ui-monospace, monospace; */
+  font-family: 'CommitMono Nerd Font Mono', ui-monospace, monospace;
+  color: var(--overlay0);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  /* border-bottom: 1px solid rgb(255 255 255 / 5%); */
+  /* background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%)); */
+  border: 1px solid var(--surface2);
+  border-radius: 10px;
+  background: var(--mantle);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 4px 24px;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  justify-self: center;
+}
+
+.right {
+  justify-self: end;
+}
+
+.logo,
+.binding-mode,
+.network,
+.memory,
+.cpu,
+.battery,
+.weather,
+.clock {
+  margin-right: 20px;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  font-size: 18px;
+  color: var(--overlay2);
+  background: var(--mantle);
+  margin-right: 4px;
+  padding: 0px 8px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.displayed {
+    background: var(--mantle);
+    color: var(--overlay2);
+  }
+
+  &.focused,
+  &:hover {
+    background: var(--1e1e1e);
+    color: var(--accent7);
+  }
+}
+
+.binding-mode,
+.tiling-direction {
+  background: rgb(255 255 255 / 15%);
+  color: rgb(255 255 255 / 90%);
+  border-radius: 2px;
+  line-height: 1;
+  padding: 4px 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.binding-mode {
+  margin-right: 4px;
+}
+
+.cpu .high-usage {
+  color: #900029;
+}
+
+.battery .charging-icon {
+  position: absolute;
+  font-size: 11px;
+  left: 7px;
+  top: 2px;
+}
+
+.sep {
+  color: var(--overlay0);
+  background: transparent;
+  /* padding: 0px 8px; */
+  margin-right: 16px;
+}
