@@ -13,10 +13,10 @@
 # url = "git@github.com:KevinNitroG/NvChad-Starter.git"
 # refreshPeriod = "168h"
 
-["AppData/Roaming/Mozilla/Firefox/Profiles/d0rco9tk.default-release/chrome"]
-type = "git-repo"
-url = "https://github.com/KiKaraage/ArcWTF.git"
-refreshPeriod = "168h"
+# ["AppData/Roaming/Mozilla/Firefox/Profiles/d0rco9tk.default-release/chrome"]
+# type = "git-repo"
+# url = "https://github.com/KiKaraage/ArcWTF.git"
+# refreshPeriod = "168h"
 
 ["AppData/Roaming/yazi/config/flavors/color-fatigue.yazi"]
 type = "git-repo"
@@ -63,16 +63,16 @@ refreshPeriod = "168h"
 # url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
 # refreshPeriod = "168h"
 
-["AppData/Roaming/bat/themes/Catppuccin Mocha.tmTheme"]
-type = "file"
-url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
-refreshPeriod = "168h"
+# ["AppData/Roaming/bat/themes/Catppuccin Mocha.tmTheme"]
+# type = "file"
+# url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
+# refreshPeriod = "168h"
 
-["Documents/PowerShell/Modules/Catppuccin"]
-type = "git-repo"
-url = "https://github.com/catppuccin/powershell.git"
-refreshPeriod = "168h"
-
+# ["Documents/PowerShell/Modules/Catppuccin"]
+# type = "git-repo"
+# url = "https://github.com/catppuccin/powershell.git"
+# refreshPeriod = "168h"
+#
 # [".config/delta/themes/catppuccin"]
 # type = "git-repo"
 # url = "https://github.com/catppuccin/delta.git"
