@@ -58,8 +58,8 @@ return {
 	opts = {
 		workspaces = {
 			{
-				name = "obsidian-remote",
-				path = "D:\\area\\obsidian-remote",
+				name = "obsidian",
+				path = "D:\\area\\obsidian",
 				-- Optional, override certain settings.
 				overrides = {
 					notes_subdir = "source",
