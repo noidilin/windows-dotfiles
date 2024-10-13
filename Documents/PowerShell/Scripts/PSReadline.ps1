@@ -56,8 +56,8 @@ $PSReadLineOptions = @{
   HistorySearchCursorMovesToEnd = $true
   MaximumHistoryCount = 5000
   # support by completion predictor (https://github.com/PowerShell/CompletionPredictor)
-  PredictionSource = "HistoryAndPlugin" 
-  PredictionViewStyle = "ListView"
+  # PredictionSource = "HistoryAndPlugin" 
+  # PredictionViewStyle = "ListView"
   ShowToolTips = $true
   BellStyle = "None"
 }
