@@ -4,43 +4,81 @@
 # └[  ]
 
 format = """
-[┌](bold clr_white)\
+[┌](bold acc02)\
 $os$shell$username$git_branch$git_status\
 $c$rust$golang$php$python$nodejs$lua\
 $fill\
 $cmd_duration$time\
 $line_break\
-[└](bold clr_white)\
+[└](bold acc02)\
 $directory$package\
 $line_break\
 $character"""
 
-palette = "scutum"
+palette = "noidilin"
 
-[palettes.scutum]
-# special
-clr_fg = "#eaeaea"
-clr_fg_dim = "#b3b3b3"
-clr_text = "#191919"
-clr_selection = "#303030"
-# normal
-clr_black = "#474747"
-clr_red = "#b07878"
-clr_green = "#778777"
-clr_yellow = "#d6caab"
-clr_blue = "#7d96ad"
-clr_magenta = "#797994"
-clr_cyan = "#769494"
-clr_white = "#dad5c8"
-# bright
-clr_bright_black = "#5d5d5d"
-clr_bright_red = "#cc9393"
-clr_bright_green = "#9bb09b"
-clr_bright_yellow = "#ebd6b7"
-clr_bright_blue = "#9db2cf"
-clr_bright_magenta = "#9f9fbd"
-clr_bright_cyan = "#92b3b3"
-clr_bright_white = "#faf5eb"
+[palettes.noidilin]
+# monochrome
+mono25 = "#eaeaea"
+mono24 = "#dcdcdc"
+mono23 = "#cccccc"
+mono22 = "#c0c0c0"
+mono21 = "#b3b3b3" # text
+mono20 = "#aaaaaa"
+mono19 = "#9d9d9d" # subtext1
+mono18 = "#8e8e8e"
+mono17 = "#878787" # subtext0
+mono16 = "#7f7f7f"
+mono15 = "#707070" # overlay2
+mono14 = "#686868"
+mono13 = "#5d5d5d" # overlay1
+mono12 = "#555555"
+mono11 = "#4e4e4e" # overlay0
+mono10 = "#474747"
+mono09 = "#414141" # surface2
+mono08 = "#3a3a3a"
+mono07 = "#353535" # surface1
+mono06 = "#303030"
+mono05 = "#2a2a2a" # surface0
+mono04 = "#242424"
+mono03 = "#1e1e1e" # base
+mono02 = "#191919" # mantle
+mono01 = "#151515" # crust
+mono00 = "#101010"
+# accent
+acc08 = "#faf5eb"
+acc07 = "#dad5c8"
+acc06 = "#c0baad"
+acc05 = "#b3ad9f"
+acc04 = "#a69f91"
+acc03 = "#9a9487"
+acc02 = "#8e897d"
+acc01 = "#7f7b70"
+acc00 = "#706c62"
+acc_dim08 = "#f7f4ed"
+acc_dim07 = "#d6d3cc"
+acc_dim06 = "#bdbab2"
+acc_dim05 = "#b4b0a7"
+acc_dim04 = "#a19d97"
+acc_dim03 = "#97948c"
+acc_dim02 = "#8e8b85"
+acc_dim01 = "#7b7974"
+acc_dim00 = "#6c6a65"
+# color
+red01 = "#cc9393"
+red00 = "#b07878"
+green01 = "#9bb09b"
+green00 = "#778777"
+yellow01 = "#ebd6b7"
+yellow00 = "#d6caab"
+blue01 = "#9db2cf"
+blue00 = "#7d96ad"
+magenta01 = "#9f9fbd"
+magenta00 = "#797994"
+cyan01 = "#92b3b3"
+cyan00 = "#769494"
+orange01 = "#dcb5a5"
+orange00 = "#c8a492"
 
 [fill]
 symbol = " "
@@ -50,48 +88,47 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = "[❯](bold fg:clr_white)"
-error_symbol = "[❯](bold fg:clr_red)"
-vimcmd_symbol = "[❮](bold fg:clr_green)"
-vimcmd_replace_one_symbol = "[❮](bold fg:clr_cyan)"
-vimcmd_replace_symbol = "[❮](bold fg:clr_cyan)"
-vimcmd_visual_symbol = "[❮](bold fg:clr_yellow)"
+success_symbol = "[❯](bold fg:acc08)"
+error_symbol = "[❯](bold fg:red00)"
+vimcmd_symbol = "[❮](bold fg:green00)"
+vimcmd_replace_one_symbol = "[❮](bold fg:cyan00)"
+vimcmd_replace_symbol = "[❮](bold fg:cyan00)"
+vimcmd_visual_symbol = "[❮](bold fg:yellow00)"
 
 [os]
 disabled = false
 format = " [ $symbol ]($style)"
-style = "bg:clr_black fg:clr_fg"
+style = "bg:mono10 fg:mono25"
 
 [shell]
 disabled = false
 format = "[  $indicator ]($style)"
-style = "bg:clr_white bold fg:clr_text "
+style = "bg:acc07 bold fg:mono02 "
 
 [username]
 show_always = true
 format = "[  $user ]($style)"
-style_user = "bg:clr_fg_dim fg:clr_text"
-style_root = "bg:clr_bright_white fg:clr_text bold"
+style_user = "bg:mono21 fg:mono02 bold"
+style_root = "bg:acc_dim08 fg:mono02 bold"
 
 [cmd_duration]
 disabled = false
-format = "[took [$duration](clr_black bold)]($style)"
+format = "[took [$duration](mono10 bold)]($style)"
 min_time = 0
 show_milliseconds = true
-style = "fg:clr_bright_black bold"
+style = "fg:mono12 bold"
 
 [time]
 disabled = false
-format = "[  [$time](fg:clr_black)]($style)"
+format = "[  [$time](fg:mono10)]($style)"
 time_format = "%m/%d %R"
-style = "fg:clr_white bold"
+style = "fg:mono12 bold"
 
-# directory
 [directory]
 format = "[ \\[  $path \\] ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
-style = "fg:clr_fg_dim"
+style = "fg:mono19"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -103,58 +140,58 @@ style = "fg:clr_fg_dim"
 [package]
 format = "[is $symbol$version]($style)"
 symbol = " "
-style = "clr_black bold"
+style = "mono10 bold"
 
 # git
 [git_branch]
 symbol = ""
-format = "[[ $symbol $branch ](fg:clr_fg bg:clr_bright_black)]($style)"
-style = "bg:clr_bright_black"
+format = "[[ $symbol $branch ](fg:mono25 bg:mono14)]($style)"
+style = "bg:mono14"
 
 [git_status]
-format = "[[($all_status$ahead_behind )](fg:clr_fg bg:clr_bright_black)]($style)"
-style = "bg:clr_bright_black"
+format = "[[($all_status$ahead_behind )](fg:mono25 bg:mono14)]($style)"
+style = "bg:mono14"
 
 # lang
 [nodejs]
 symbol = ""
-format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
-style = "bg:clr_black"
+format = "[[ $symbol( $version) ](fg:mono25 bg:mono08)]($style)"
+style = "bg:mono08"
 
 [c]
 symbol = ""
-format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
-style = "bg:clr_black"
+format = "[[ $symbol( $version) ](fg:mono25 bg:mono08)]($style)"
+style = "bg:mono08"
 
 [rust]
 symbol = ""
-format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
-style = "bg:clr_black"
+format = "[[ $symbol( $version) ](fg:mono25 bg:mono08)]($style)"
+style = "bg:mono08"
 
 [lua]
 symbol = ""
-format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
-style = "bg:clr_black"
+format = "[[ $symbol( $version) ](fg:mono25 bg:mono08)]($style)"
+style = "bg:mono08"
 
 [golang]
 symbol = ""
-format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
-style = "bg:clr_black"
+format = "[[ $symbol( $version) ](fg:mono25 bg:mono08)]($style)"
+style = "bg:mono08"
 
 [php]
 symbol = ""
-format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
-style = "bg:clr_black"
+format = "[[ $symbol( $version) ](fg:mono25 bg:mono08)]($style)"
+style = "bg:mono08"
 
 [python]
 symbol = ""
-format = "[[ $symbol( $version) ](fg:clr_fg bg:clr_black)]($style)"
-style = "bg:clr_black"
+format = "[[ $symbol( $version) ](fg:mono25 bg:mono08)]($style)"
+style = "bg:mono08"
 
 [docker_context]
 symbol = ""
-style = "bg:clr_black"
-format = "[[ $symbol( $context) ](fg:clr_cyan bg:clr_black)]($style)"
+style = "bg:mono08"
+format = "[[ $symbol( $context) ](fg:cyan00 bg:mono08)]($style)"
 
 [os.symbols]
 Windows = ""
