@@ -105,6 +105,18 @@
                 "name": "Git Bash",
                 "padding": "10",
                 "source": "Git"
+            },
+            {
+                "guid": "{35d67fbd-96f1-5cc1-8da0-45c2bdf047cf}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{874b8feb-ec16-5622-ae69-12180b8eeb5a}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
