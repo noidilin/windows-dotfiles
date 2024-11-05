@@ -76,37 +76,35 @@ config.colors = {
 	tab_bar = {
 		-- The color of the strip that goes along the top of the window
 		-- (does not apply when fancy tab bar is in use)
-		background = "#1e1e1e",
+		background = "#191919",
 		active_tab = {
 			bg_color = "#242424", -- background color
 			fg_color = "#9d9d9d", -- text color
-			-- options: "Half", "Normal" or "Bold"
-			intensity = "Bold", -- default is "Normal"
-			-- options: "None", "Single" or "Double"
-			underline = "Single", -- default is "None"
+			intensity = "Bold", -- default is "Normal" (options: "Half", "Normal" or "Bold")
+			underline = "Single", -- default is "None" (options: "None", "Single" or "Double")
 			italic = false, -- default is false
 			strikethrough = false, -- default is false
 		},
 
 		--[[ inactive_tab = { -- same options as `active_tab` section
-			bg_color = "#1e1e1e",
+			bg_color = "#191919",
 			fg_color = "#4e4e4e",
 			italic = true,
 		}, ]]
 
 		--[[ inactive_tab_hover = { -- same options as `active_tab` section
-			bg_color = "#1e1e1e",
+			bg_color = "#191919",
 			fg_color = "#5d5d5d",
 			italic = true,
 		}, ]]
 
 		new_tab = { -- same options as `active_tab` section
-			bg_color = "#1e1e1e",
+			bg_color = "#191919",
 			fg_color = "#4e4e4e",
 		},
 
 		new_tab_hover = { -- same options as `active_tab` section
-			bg_color = "#1e1e1e",
+			bg_color = "#191919",
 			fg_color = "#5d5d5d",
 		},
 	},
@@ -124,10 +122,10 @@ config.line_height = 1.5
 
 config.window_decorations = "RESIZE"
 config.window_padding = {
-	left = 5,
+	left = 10,
 	right = 10,
-	top = 12,
-	bottom = 7,
+	top = 10,
+	bottom = 10,
 }
 
 -- config.window_background_opacity = 1
@@ -139,8 +137,8 @@ config.cursor_blink_rate = 700
 
 -- Dim inactive panes
 config.inactive_pane_hsb = {
-	saturation = 0.4,
-	brightness = is_dark and 0.5 or 0.95,
+	saturation = 0.1,
+	brightness = is_dark and 0.7 or 0.95,
 }
 
 -- Wezterm
@@ -149,7 +147,6 @@ config.warn_about_missing_glyphs = false
 config.show_update_window = true
 config.check_for_updates = false
 -- config.enable_scroll_bar = false
--- config.hide_tab_bar_if_only_one_tab = true
 config.visual_bell = {
 	fade_in_duration_ms = 75,
 	fade_out_duration_ms = 75,
@@ -158,7 +155,7 @@ config.visual_bell = {
 
 -- Tab bar
 config.enable_tab_bar = true
-config.hide_tab_bar_if_only_one_tab = false
+-- config.hide_tab_bar_if_only_one_tab = false
 config.use_fancy_tab_bar = false
 config.tab_max_width = 15
 config.show_tab_index_in_tab_bar = false
