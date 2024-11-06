@@ -5,17 +5,17 @@ if (!(Get-Command -Name "eza" -ErrorAction SilentlyContinue))
 
 $DEFAULT_EZA_ARGS = @(
   "--colour=always",
-  "--grid",
-  "--icons=always",
-  "--sort=type",
   "--git",
+  "--group-directories-first",
+  "--icons=always",
   "--ignore-glob=.DS_Store",
-  "--no-quotes"
+  "--no-quotes",
+  "--sort=type"
 )
 
 function _ls
 {
-  eza -1 @DEFAULT_EZA_ARGS @args
+  eza @DEFAULT_EZA_ARGS @args
 }
 
 function l
@@ -35,7 +35,7 @@ function ld
 
 function lt
 {
-  eza --tree @DEFAULT_EZA_ARGS @args
+  eza --tree --level=3 @DEFAULT_EZA_ARGS @args
 }
 # how to setup alias: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/set-alias?view=powershell-7.4
 Set-Alias -Name ls -Value _ls -Force

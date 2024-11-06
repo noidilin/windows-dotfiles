@@ -1,6 +1,7 @@
 # Import-Module Catppuccin
 # $Flavor = $Catppuccin['Mocha']
 
+# used in fzf
 $ScriptBlock = {
   Param([string]$line)
   if ($line -like " *")
@@ -19,9 +20,6 @@ $ScriptBlock = {
 
 # Ref: https://learn.microsoft.com/en-us/powershell/module/psreadline/set-psreadlineoption?view=powershell-7.4
 $Colors = @{
-  # Largely based on the Code Editor style guide
-  # Emphasis, ListPrediction and ListPredictionSelected are inspired by the Catppuccin fzf theme
-	
   # Powershell colours
   ContinuationPrompt     = "#5d5d5d" # white
   Emphasis               = "#eaeaea" # bright-cyan
@@ -56,21 +54,21 @@ $PSReadLineOptions = @{
   HistorySearchCursorMovesToEnd = $true
   MaximumHistoryCount = 5000
   # support by completion predictor (https://github.com/PowerShell/CompletionPredictor)
-  # PredictionSource = "HistoryAndPlugin" 
+  PredictionSource = "HistoryAndPlugin" 
   # PredictionViewStyle = "ListView"
   ShowToolTips = $true
   BellStyle = "None"
 }
-
 Set-PSReadLineOption @PSReadLineOptions
 
 Set-PSReadLineKeyHandler -Key "Ctrl+p" -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key "Ctrl+n" -Function HistorySearchForward
-Set-PSReadLineKeyHandler -Key "Ctrl+w" -Function BackwardDeleteWord
-Set-PSReadLineKeyHandler -Key "Ctrl+f" -Function ForwardWord
-Set-PSReadLineKeyHandler -Key "Ctrl+b" -Function BackwardWord
+# Set-PSReadLineKeyHandler -Key "Ctrl+w" -Function BackwardDeleteWord
+# Set-PSReadLineKeyHandler -Key "Ctrl+f" -Function ForwardWord
+# Set-PSReadLineKeyHandler -Key "Ctrl+b" -Function BackwardWord
 
 # https://ianmorozoff.com/2023/01/10/predictive-intellisense-on-by-default-in-powershell-7-3/#keybinding
+<#
 $parameters = @{
   Key = 'F4'
   BriefDescription = 'Toggle PSReadLineOption PredictionSource'
@@ -111,6 +109,7 @@ $parameters = @{
   }
 }
 Set-PSReadLineKeyHandler @parameters
+#>
 
 # Clear PSReadLine history
 function Clear-PSReadLineHistory
