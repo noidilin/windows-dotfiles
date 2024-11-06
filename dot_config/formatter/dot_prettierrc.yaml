@@ -1,0 +1,6 @@
+singleQuote: true
+jsxSingleQuote: true
+overrides:
+  - files: "**/keybindings.json"
+    options:
+      printWidth: 500
