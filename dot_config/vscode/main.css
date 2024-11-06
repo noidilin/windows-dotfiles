@@ -1,0 +1,85 @@
+/* vscode app icon in win11 */
+.titlebar-left .window-appicon {
+  background-size: 0px !important;
+}
+
+/* statusbar */
+.monaco-workbench .part.statusbar {
+  height: 26px !important;
+  font-size: 11px !important;
+}
+
+#command-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(1px);
+}
+
+/* activity bar height */
+/* .composite-bar-container > * {
+  height: 26px !important;
+} */
+
+.shadow-root-host,
+.monaco-editor,
+.mac,
+.mac:lang(zh-Hans),
+.mac:lang(zh-Hant),
+.mac:lang(ja),
+.mac:lang(ko),
+.windows,
+.windows:lang(zh-Hans),
+.windows:lang(zh-Hant),
+.windows:lang(ja),
+.windows:lang(ko),
+.linux,
+.linux:lang(zh-Hans),
+.linux:lang(zh-Hant),
+.linux:lang(ja),
+.linux:lang(ko) {
+  font-family: 'CommitMono Nerd Font Mono' !important;
+}
+
+.monaco-list-row {
+  font-size: 12px !important;
+  line-height: 26px !important;
+}
+
+.monaco-list-row .explorer-item {
+  height: 100% !important;
+  align-items: center !important;
+}
+
+.open-editors .monaco-list-row .monaco-icon-label,
+.open-editors .monaco-list-row .monaco-icon-label:before,
+.open-editors .monaco-list-row .monaco-icon-label .monaco-icon-label-container {
+  height: 100% !important;
+  line-height: 26px !important;
+}
+
+.results .monaco-list-row a {
+  line-height: 26px !important;
+}
+
+.results .monaco-list-row .badge {
+  line-height: 26px !important;
+}
+
+.results .monaco-list-row .monaco-icon-label:before {
+  height: 100% !important;
+}
+
+/*
+.tree .monaco-list-row .contents {
+  height: 100% !important;
+}
+
+.tree .monaco-list-row .contents .main {
+  line-height: 26px !important;
+  height: 100% !important;
+}
+*/
