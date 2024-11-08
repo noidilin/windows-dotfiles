@@ -19,7 +19,7 @@ require("events.left-status").setup()
 require("events.tab-title").setup()
 require("events.new-tab-button").setup()
 -- Load GPU adapters
-local gpu_adapters = require("utils.gpu_adapter")
+-- local gpu_adapters = require("utils.gpu_adapter")
 
 -- [[ Neovim: smart-splits ]]
 ---- if you are *NOT* lazy-loading smart-splits.nvim (recommended)
@@ -178,7 +178,7 @@ config.animation_fps = 60
 config.max_fps = 60
 config.front_end = "WebGpu" -- OpenGL, WebGpu, Software
 config.webgpu_power_preference = "HighPerformance"
-config.webgpu_preferred_adapter = gpu_adapters:pick_best()
+-- config.webgpu_preferred_adapter = gpu_adapters:pick_best()
 
 -- Keys
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 3000 }
