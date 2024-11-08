@@ -20,6 +20,47 @@ local theme = lush(function(injected_functions)
 	-- An empty definition `{}` will clear all styling, leaving elements looking like 'Normal' group
 	-- To be able to link to a group, it must already be defined, so you may have to reorder items as you go
 	return {
+		-- Custom group for theme file
+		c_variable { fg = p.mono17 },
+		c_variable_builtin { fg = p.acc07, gui = "italic" },
+		c_variable_member { fg = p.mono20 },
+		c_parameter { fg = p.mono17, gui = "bold underline" },
+		c_constant { fg = p.acc_dim05 },
+		c_namespace { fg = p.mono25, gui = "underline" },
+
+		c_string { fg = p.mono15 },
+		c_regexp { fg = p.mono15 },
+		c_boolean { fg = p.mono17 },
+		c_number { fg = p.mono17 },
+
+		c_type { fg = p.mono25 },
+		c_property { fg = p.acc_dim02, gui = "italic" },
+		c_attribute { fg = p.mono14 },
+
+		c_function { fg = p.mono22 },
+		c_method { fg = p.mono22, gui = "italic" },
+		c_coroutine { fg = p.acc07 },
+		c_operator { fg = p.mono19 },
+
+		c_interface { fg = p.mono25 },
+		c_class { fg = p.mono17 },
+		c_event { fg = p.acc_dim02, gui = "underline" },
+
+		c_keyword { fg = p.mono25 },
+		c_block { fg = p.mono19, gui = "bold" },
+		c_error { fg = p.red00, gui = "bold" },
+		c_none { fg = p.mono11 },
+
+		c_tag { fg = p.mono25 },
+		c_comment { fg = p.mono12, gui = "italic" },
+
+		c_md_h1 { fg = p.mono25, gui = "bold underline" },
+		c_md_h2 { fg = p.mono24, gui = "bold underline" },
+		c_md_h3 { fg = p.mono23, gui = "bold" },
+		c_md_h4 { fg = p.mono22 },
+		c_md_h5 { fg = p.mono21 },
+		c_md_h6 { fg = p.mono21, gui = "italic" },
+
 		-- The following are the Neovim (as of 0.8.0-dev+100-g371dfb174) highlight groups. See :h highlight-groups
 		ColorColumn { bg = p.mono05 }, -- Columns set with 'colorcolumn'
 		Conceal { fg = p.mono22, bg = p.mono02 }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
@@ -106,39 +147,6 @@ local theme = lush(function(injected_functions)
 
 		-- Common vim syntax groups used for all kinds of code and markup.
 		-- See :h group-name
-		c_variable { fg = p.mono17 },
-		c_variable_builtin { fg = p.acc07, gui = "italic" },
-		c_variable_member { fg = p.mono20 },
-		c_parameter { fg = p.mono17, gui = "bold underline" },
-		c_constant { fg = p.acc_dim05 },
-		c_namespace { fg = p.mono25, gui = "underline" },
-
-		c_string { fg = p.mono15 },
-		c_regexp { fg = p.mono15 },
-		c_boolean { fg = p.mono17 },
-		c_number { fg = p.mono17 },
-
-		c_type { fg = p.mono25 },
-		c_property { fg = p.acc_dim02, gui = "italic" },
-		c_attribute { fg = p.mono14 },
-
-		c_function { fg = p.mono22 },
-		c_method { fg = p.mono22, gui = "italic" },
-		c_coroutine { fg = p.acc07 },
-		c_operator { fg = p.mono19 },
-
-		c_interface { fg = p.mono25 },
-		c_class { fg = p.mono17 },
-		c_event { fg = p.acc_dim02, gui = "underline" },
-
-		c_keyword { fg = p.mono25 },
-		c_block { fg = p.mono19, gui = "bold" },
-		c_error { fg = p.red00, gui = "bold" },
-		c_none { fg = p.mono11 },
-
-		c_tag { fg = p.mono25 },
-		c_comment { fg = p.mono12, gui = "italic" },
-
 		Comment { c_comment }, -- Any comment
 
 		Identifier { c_variable }, -- (*) Any variable name
@@ -368,6 +376,14 @@ local theme = lush(function(injected_functions)
 		-- Misc
 		sym("@error") { c_error },
 		sym("@none") { c_none },
+
+		-- Markdown
+		sym("@markup.heading.1.markdown") { c_md_h1 },
+		sym("@markup.heading.2.markdown") { c_md_h2 },
+		sym("@markup.heading.3.markdown") { c_md_h3 },
+		sym("@markup.heading.4.markdown") { c_md_h4 },
+		sym("@markup.heading.5.markdown") { c_md_h5 },
+		sym("@markup.heading.6.markdown") { c_md_h6 },
 
 		-- -- css
 		-- sym("@property.css") { fg = C.lavender },
@@ -648,34 +664,50 @@ local theme = lush(function(injected_functions)
 		TelescopeResultsNormal { fg = p.mono15 },
 
 		-- flash
-		FlashBackdrop = { fg = p.mono10 },
-		FlashCurrent = { fg = p.mono01, bg = p.mono17, gui = "bold" },
-		FlashLabel = { fg = p.acc07, gui = "bold" },
-		FlashMatch = { fg = p.acc_dim02, bg = p.mono05, gui = "underline" },
-		FlashCursor = { gui = "reverse" },
+		FlashBackdrop { fg = p.mono10 },
+		FlashCurrent { fg = p.mono01, bg = p.mono17, gui = "bold" },
+		FlashLabel { fg = p.acc07, gui = "bold" },
+		FlashMatch { fg = p.acc_dim02, bg = p.mono05, gui = "underline" },
+		FlashCursor { gui = "reverse" },
 
 		-- yanky
-		YankyYanked = { fg = p.acc07, bg = p.mono10 },
-		YankyPut = { fg = p.acc07, bg = p.mono10 },
+		YankyYanked { fg = p.acc07, bg = p.mono10 },
+		YankyPut { fg = p.acc07, bg = p.mono10 },
 
-		-- markdown render - heading
-		RenderMarkdownH1Bg = { fg = p.mono25 },
-		RenderMarkdownH1 = { RenderMarkdownH1Bg, gui = "bold underline" },
-		RenderMarkdownH2Bg = { fg = p.mono24 },
-		RenderMarkdownH2 = { RenderMarkdownH2Bg, gui = "bold underline" },
-		RenderMarkdownH3Bg = { fg = p.mono23 },
-		RenderMarkdownH3 = { RenderMarkdownH3Bg, gui = "bold" },
-		RenderMarkdownH4Bg = { fg = p.mono22 },
-		RenderMarkdownH4 = { RenderMarkdownH4Bg },
-		RenderMarkdownH5Bg = { fg = p.mono21 },
-		RenderMarkdownH5 = { RenderMarkdownH5Bg },
-		RenderMarkdownH6Bg = { fg = p.mono21 },
-		RenderMarkdownH6 = { RenderMarkdownH6Bg, gui = "italic" },
-		-- markdown render - other element
-		RenderMarkdownCode = { bg = p.mono03 },
-		RenderMarkdownBullet = { fg = p.mono13 },
-		RenderMarkdownDash = { fg = p.mono06 },
-		RenderMarkdownLink = { fg = p.mono19 },
+		-- markdown render
+		--- icons
+		RenderMarkdownH1 { c_md_h1 },
+		RenderMarkdownH2 { c_md_h2 },
+		RenderMarkdownH3 { c_md_h3 },
+		RenderMarkdownH4 { c_md_h4 },
+		RenderMarkdownH5 { c_md_h5 },
+		RenderMarkdownH6 { c_md_h6 },
+		--- background line
+		RenderMarkdownH1Bg { c_md_h1 },
+		RenderMarkdownH2Bg { c_md_h2 },
+		RenderMarkdownH3Bg { c_md_h3 },
+		RenderMarkdownH4Bg { c_md_h4 },
+		RenderMarkdownH5Bg { c_md_h5 },
+		RenderMarkdownH6Bg { c_md_h6 },
+		-- code block
+		RenderMarkdownCode { bg = p.mono03 }, -- code block background
+		RenderMarkdownCodeInline { bg = p.mono03 }, -- inline code background
+		RenderMarkdownMath { bg = p.mono03 }, -- LaTeX lines
+		--- symbol
+		RenderMarkdownBullet { fg = p.mono13 }, -- list item bullet points
+		RenderMarkdownQuote { fg = p.mono13 }, -- block quote marker
+		RenderMarkdownDash { fg = p.mono06 }, -- thematic break line
+		--- link
+		RenderMarkdownWikiLink { fg = p.mono19 }, -- wiki link icon & text
+		RenderMarkdownLink { fg = p.acc_dim02 }, -- image & hyperlink icons
+		--- table
+		-- RenderMarkdownTableHead {  },
+		-- RenderMarkdownTableRow {  },
+		-- RenderMarkdownTableFill {  },
+		--- checkbox
+		-- RenderMarkdownChecked {  },
+		-- RenderMarkdownUnchecked {  },
+		-- RenderMarkdownTodo {  },
 
 		-- dashboard
 		DashboardHeader { FloatTitle },

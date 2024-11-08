@@ -1,6 +1,4 @@
 return {
-	-- { "tpope/vim-repeat" },
-
 	{
 		"hrsh7th/nvim-cmp",
 		opts = function(_, opts)
