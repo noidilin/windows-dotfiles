@@ -3,22 +3,22 @@
 # url = "git@github.com:KevinNitroG/Alexis12119-nvim.git"
 # refreshPeriod = "168h"
 
-# ["AppData/Roaming/Mozilla/Firefox/Profiles/d0rco9tk.default-release/chrome"]
-# type = "git-repo"
-# url = "https://github.com/KiKaraage/ArcWTF.git"
-# refreshPeriod = "168h"
+["AppData/Roaming/Mozilla/Firefox/Profiles/k7m5zv0t.dev-edition-default/chrome"]
+type = "git-repo"
+url = "https://github.com/KiKaraage/ArcWTF.git"
+refreshPeriod = "168h"
 
 ["AppData/Roaming/yazi/config/flavors/color-fatigue.yazi"]
 type = "git-repo"
 url = "https://github.com/noidilin/color-fatigue.yazi.git"
 refreshPeriod = "168h"
 
-# [".config/wezterm"]
-# type = "git-repo"
-# url = "https://github.com/KevinSilvester/wezterm-config.git"
-# refreshPeriod = "168h"
+[".config/wezterm"]
+type = "git-repo"
+url = "https://github.com/noidilin/wezterm.git"
+refreshPeriod = "168h"
 
-[".config/cursor/Windows-11-Cursor-by-rosea92"]
+[".config/cursor"]
 type = "git-repo"
 url = "https://github.com/YT-Advanced/Windows-11-Cursor-by-rosea92.git"
 refreshPeriod = "168h"
