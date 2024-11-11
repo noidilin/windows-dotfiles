@@ -36,6 +36,7 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "language": "en-US",
     "newTabMenu": 
     [
         {
@@ -46,12 +47,16 @@
     {
         "defaults": 
         {
-            "colorScheme": "scutum",
+            "colorScheme": "color-fatigue",
+            "cursorShape": "filledBox",
             "font": 
             {
-                "face": "MesloLGS NF"
+                "cellHeight": "1.4",
+                "face": "CommitMono Nerd Font Mono",
+                "size": 12,
+                "weight": "normal"
             },
-            "padding": "0",
+            "padding": "12",
             "scrollbarState": "hidden"
         },
         "list": 
@@ -63,12 +68,10 @@
                 "name": "Windows PowerShell"
             },
             {
-                "colorScheme": "scutum",
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Command Prompt",
-                "padding": "10"
+                "name": "Command Prompt"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -77,44 +80,26 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "adjustIndistinguishableColors": "indexed",
-                "colorScheme": "color-fatigue",
-                "cursorShape": "filledBox",
-                "elevate": false,
-                "experimental.retroTerminalEffect": false,
-                "font": 
-                {
-                    "cellHeight": "1.4",
-                    "face": "MesloLGM Nerd Font Mono",
-                    "size": 12,
-                    "weight": "normal"
-                },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "opacity": 100,
-                "padding": "15",
-                "scrollbarState": "hidden",
-                "source": "Windows.Terminal.PowershellCore",
-                "useAcrylic": false
+                "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "colorScheme": "scutum",
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
-                "padding": "10",
                 "source": "Git"
             },
             {
-                "guid": "{35d67fbd-96f1-5cc1-8da0-45c2bdf047cf}",
-                "hidden": false,
+                "guid": "{9ba0c329-1b7d-50a7-b51c-a19ede60f51d}",
+                "hidden": true,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{874b8feb-ec16-5622-ae69-12180b8eeb5a}",
-                "hidden": false,
+                "guid": "{1d9cdfcb-417f-5841-ab18-ce06f98eba36}",
+                "hidden": true,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             }
@@ -123,96 +108,27 @@
     "schemes": 
     [
         {
-            "background": "#191A19",
-            "black": "#191A19",
-            "blue": "#55585B",
-            "brightBlack": "#323332",
-            "brightBlue": "#6D7175",
-            "brightCyan": "#9BA8AA",
-            "brightGreen": "#D5DD9D",
-            "brightPurple": "#D8E09F",
-            "brightRed": "#E58F5E",
-            "brightWhite": "#FEFDDC",
-            "brightYellow": "#E8CD8F",
-            "cursorColor": "#FFFEFE",
-            "cyan": "#899496",
-            "foreground": "#FEFDDC",
-            "green": "#BCC48C",
-            "name": "Tango Dark (modified)",
-            "purple": "#C0C88E",
-            "red": "#CD8155",
-            "selectionBackground": "#3F403F",
-            "white": "#E8E7C9",
-            "yellow": "#CDB67F"
-        },
-        {
             "background": "#191919",
             "black": "#474747",
-            "blue": "#5F87AF",
+            "blue": "#7D96AD",
             "brightBlack": "#5D5D5D",
-            "brightBlue": "#8FAFD7",
-            "brightCyan": "#79B8B8",
-            "brightGreen": "#87AF87",
-            "brightPurple": "#8C8CBD",
-            "brightRed": "#DE7878",
-            "brightWhite": "#FAF5EB",
-            "brightYellow": "#F5DCAB",
-            "cursorColor": "#878787",
-            "cyan": "#5F8787",
-            "foreground": "#B3B3B3",
-            "green": "#5F875F",
-            "name": "color-fatigue",
-            "purple": "#5F5F87",
-            "red": "#AF5F5F",
-            "selectionBackground": "#303030",
-            "white": "#DAD5C8",
-            "yellow": "#E0CA9D"
-        },
-        {
-            "background": "#191919",
-            "black": "#474747",
-            "blue": "#7B96B0",
-            "brightBlack": "#5D5D5D",
-            "brightBlue": "#9FB4CF",
-            "brightCyan": "#8FB3B3",
+            "brightBlue": "#9DB2CF",
+            "brightCyan": "#92B3B3",
             "brightGreen": "#9BB09B",
-            "brightPurple": "#9B9BBD",
-            "brightRed": "#CC8F8F",
+            "brightPurple": "#9F9FBD",
+            "brightRed": "#CC9393",
             "brightWhite": "#FAF5EB",
-            "brightYellow": "#E6D1AC",
+            "brightYellow": "#EBD6B7",
             "cursorColor": "#878787",
-            "cyan": "#6C8787",
+            "cyan": "#769494",
             "foreground": "#B3B3B3",
-            "green": "#738773",
-            "name": "color-fatigue-08",
-            "purple": "#6C6C87",
-            "red": "#B07171",
+            "green": "#778777",
+            "name": "color-fatigue",
+            "purple": "#797994",
+            "red": "#B07878",
             "selectionBackground": "#303030",
             "white": "#DAD5C8",
             "yellow": "#D6CAAB"
-        },
-        {
-            "background": "#181616",
-            "black": "#474747",
-            "blue": "#899496",
-            "brightBlack": "#5D5D5D",
-            "brightBlue": "#9DABAE",
-            "brightCyan": "#8EB9B7",
-            "brightGreen": "#B9C758",
-            "brightPurple": "#D8E09F",
-            "brightRed": "#D28E91",
-            "brightWhite": "#FAFAED",
-            "brightYellow": "#E8CD8F",
-            "cursorColor": "#EAEAEA",
-            "cyan": "#769997",
-            "foreground": "#B3B3B3",
-            "green": "#A2AE4F",
-            "name": "scutum",
-            "purple": "#C0C88E",
-            "red": "#CD8185",
-            "selectionBackground": "#3F403F",
-            "white": "#DADAC8",
-            "yellow": "#CDB67F"
         }
     ],
     "themes": [],
