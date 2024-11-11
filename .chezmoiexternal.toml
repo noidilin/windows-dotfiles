@@ -3,16 +3,6 @@
 # url = "git@github.com:KevinNitroG/Alexis12119-nvim.git"
 # refreshPeriod = "168h"
 
-# ["AppData/Local/LazyVim"]
-# type = "git-repo"
-# url = "git@github.com:KevinNitroG/LazyVim-Starter.git"
-# refreshPeriod = "168h"
-
-# ["AppData/Local/NvChad"]
-# type = "git-repo"
-# url = "git@github.com:KevinNitroG/NvChad-Starter.git"
-# refreshPeriod = "168h"
-
 # ["AppData/Roaming/Mozilla/Firefox/Profiles/d0rco9tk.default-release/chrome"]
 # type = "git-repo"
 # url = "https://github.com/KiKaraage/ArcWTF.git"
@@ -36,16 +26,6 @@ refreshPeriod = "168h"
 # [".config/windows-terminal/windows-terminal-shaders"]
 # type = "git-repo"
 # url = "https://github.com/Hammster/windows-terminal-shaders.git"
-# refreshPeriod = "168h"
-
-# [".config/komorebi/applications.yaml"]
-# type = "file"
-# url = "https://raw.githubusercontent.com/LGUG2Z/komorebi-application-#specific-configuration/master/applications.yaml"
-# refreshPeriod = "168h"
-
-# [".config/komorebi/komorebic.lib.ahk"]
-# type = "file"
-# url = "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/komorebic.lib.ahk"
 # refreshPeriod = "168h"
 
 # [".githelpers"]
