@@ -1,4 +1,6 @@
+# doc
 README.md
+doc/
 
 # Python
 */__pycache__/
@@ -12,11 +14,11 @@ README.md
 .config/configstore/*
 
 # thefuck
-.config/thefuck/__pycache__
+# .config/thefuck/__pycache__
 
 # Powershell
 Documents/PowerShell/Scripts/InstalledScriptInfos/*
 Documents/PowerShell/Scripts/Modules/*
 
 # Komorebi
-.config/komorebi/applications.yaml
+# .config/komorebi/applications.yaml
