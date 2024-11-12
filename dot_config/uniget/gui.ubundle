@@ -134,31 +134,9 @@
       }
     },
     {
-      "Id": "Microsoft.WindowsTerminal",
-      "Name": "Windows Terminal",
-      "Version": "1.21.2911.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Microsoft.PowerToys",
-      "Name": "PowerToys",
-      "Version": "0.86.0",
+      "Id": "CrystalDewWorld.CrystalDiskInfo",
+      "Name": "CrystalDiskInfo",
+      "Version": "9.4.4",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -181,6 +159,28 @@
       "Id": "SteelSeries.GG",
       "Name": "SteelSeries GG",
       "Version": "74.0.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.PowerToys",
+      "Name": "PowerToys",
+      "Version": "0.86.0",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -354,53 +354,9 @@
       }
     },
     {
-      "Id": "Nvidia.GeForceExperience",
-      "Name": "NVIDIA GeForce Experience",
-      "Version": "3.28.0.417",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
       "Id": "Crucial.StorageExecutive",
       "Name": "Crucial Storage Executive",
       "Version": "10.07.072024.01",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Wacom.WacomTabletDriver",
-      "Name": "Wacom Tablet",
-      "Version": "6.4.6-2",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -442,9 +398,9 @@
       }
     },
     {
-      "Id": "dechamps.FlexASIO",
-      "Name": "FlexASIO",
-      "Version": "1.10b",
+      "Id": "Wacom.WacomTabletDriver",
+      "Name": "Wacom Tablet",
+      "Version": "6.4.6-2",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -464,9 +420,9 @@
       }
     },
     {
-      "Id": "wez.wezterm",
-      "Name": "WezTerm",
-      "Version": "20240203-110809-5046fc22",
+      "Id": "dechamps.FlexASIO",
+      "Name": "FlexASIO",
+      "Version": "1.10b",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -508,9 +464,9 @@
       }
     },
     {
-      "Id": "lukehaas.RunJS",
-      "Name": "RunJS",
-      "Version": "3.0.3",
+      "Id": "wez.wezterm",
+      "Name": "WezTerm",
+      "Version": "20240203-110809-5046fc22",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -550,21 +506,30 @@
         "UpdatesIgnored": false,
         "IgnoredVersion": ""
       }
+    },
+    {
+      "Id": "lukehaas.RunJS",
+      "Name": "RunJS",
+      "Version": "3.0.3",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
     }
   ],
   "incompatible_packages_info": "Incompatible packages cannot be installed from WingetUI, but they have been listed here for logging purposes.",
-  "incompatible_packages": [
-    {
-      "Id": "Microsoft.HEVCVideoExtensions_2.2.10.0_x64__8wekyb3d8bbwe",
-      "Name": "HEVC Video Extensions",
-      "Version": "2.2.10.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "Microsoft.HEIFImageExtension_1.2.3.0_x64__8wekyb3d8bbwe",
-      "Name": "HEIF Image Extensions",
-      "Version": "1.2.3.0",
-      "Source": "Microsoft Store"
-    }
-  ]
+  "incompatible_packages": []
 }
