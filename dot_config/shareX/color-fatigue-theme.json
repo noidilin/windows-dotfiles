@@ -1,5 +1,5 @@
 ﻿{
-  "Name": "Color-Fatigue",
+  "Name": "color-fatigue",
   "BackgroundColor": "25, 25, 25",
   "LightBackgroundColor": "53, 53, 53",
   "DarkBackgroundColor": "30, 30, 30",
@@ -13,8 +13,8 @@
   "MenuHighlightBorderColor": "53, 53, 53",
   "MenuBorderColor": "25, 25, 25",
   "MenuCheckBackgroundColor": "36, 36, 36",
-  "MenuFont": "Lucida Sans, 12pt",
-  "ContextMenuFont": "Lucida Sans, 12pt",
+  "MenuFont": "Segoe UI Semibold, 11pt, style=Bold",
+  "ContextMenuFont": "Segoe UI Semibold, 11pt, style=Bold",
   "ContextMenuOpacity": 100,
   "SeparatorLightColor": "53, 53, 53",
   "SeparatorDarkColor": "30, 30, 30"

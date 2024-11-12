@@ -153,7 +153,7 @@ window_rules:
         window_class: { regex: "HwndWrapper" }
       - window_process:
           { regex: "Flow.Launcher|PowerPoint Slide Show|PotPlayerMini64" }
-      - window_process: { regex: "Resolve|DaVinci Resolve|blender" }
+      - window_process: { regex: "Resolve|DaVinci Resolve|blender|ShareX" }
 
   # move application to workspace
   - commands: ["move --workspace 3", "focus --workspace 3"]
