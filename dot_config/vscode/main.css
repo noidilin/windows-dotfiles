@@ -9,21 +9,7 @@
   font-size: 11px !important;
 }
 
-#command-blur {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  top: 0;
-  left: 0;
-  backdrop-filter: blur(1px);
-}
-
-/* activity bar height */
-/* .composite-bar-container > * {
-  height: 26px !important;
-} */
-
+/* global font */
 .shadow-root-host,
 .monaco-editor,
 .mac,
@@ -41,45 +27,76 @@
 .linux:lang(zh-Hant),
 .linux:lang(ja),
 .linux:lang(ko) {
-  font-family: 'CommitMono Nerd Font Mono' !important;
-}
-
-.monaco-list-row {
-  font-size: 12px !important;
-  line-height: 26px !important;
-}
-
-.monaco-list-row .explorer-item {
-  height: 100% !important;
-  align-items: center !important;
-}
-
-.open-editors .monaco-list-row .monaco-icon-label,
-.open-editors .monaco-list-row .monaco-icon-label:before,
-.open-editors .monaco-list-row .monaco-icon-label .monaco-icon-label-container {
-  height: 100% !important;
-  line-height: 26px !important;
-}
-
-.results .monaco-list-row a {
-  line-height: 26px !important;
-}
-
-.results .monaco-list-row .badge {
-  line-height: 26px !important;
-}
-
-.results .monaco-list-row .monaco-icon-label:before {
-  height: 100% !important;
+  font-family: "CommitMono Nerd Font Mono" !important;
 }
 
 /*
-.tree .monaco-list-row .contents {
-  height: 100% !important;
+* strategy:
+* 1. deliberately choose a small font-size to create additional padding 
+* 2. scale whole list item back to readable size while still maintaining the padding
+*
+* panes in explorer view:
+* - open editors: 'open-editors'
+* - explorer: 'explorer-folders-view'
+* - outline: 'outline-tree'
+* - timeline: 'customview-tree'
+*
+* other panes:
+* - search results: 'results'
+* - search results in extensions view: 'extensions-list'
+* - breakpoints in debug view: 'debug-breakpoints'
+*
+* other widgets:
+* - command: 'quick-input-widget' or 'quick-input-list'
+* - suggest: 'suggest-widget' or 'tree'
+* - breadcrumbs: 'monaco-breadcrumbs-picker'
+* - settings: 'settings-toc-wrapper'
+* : 'scm-view'
+* : 'debug-view-content'
+* */
+
+.open-editors,
+.explorer-folders-view,
+.outline-tree,
+.customview-tree,
+.results,
+.extensions-list,
+.debug-breakpoints,
+.quick-input-widget,
+.suggest-widget,
+.monaco-breadcrumbs-picker,
+.settings-toc-wrapper,
+.scm-view,
+.debug-view-content {
+  & .monaco-list-row {
+    font-size: 10px !important;
+  }
+  & .monaco-list-rows {
+    zoom: 1.2 !important;
+  }
 }
 
-.tree .monaco-list-row .contents .main {
-  line-height: 26px !important;
-  height: 100% !important;
-}
+/* fix zoom related styles
+* - key-binding in command palette
+* - install button in extension list
+* - counts badge of search result
+* - all kind of codicon
+* - title of editor group in open editor
+* - icons in explorer
 */
+
+.monaco-list-row {
+  & .quick-input-list-entry-keybinding,
+  & .monaco-action-bar,
+  & .monaco-count-badge,
+  & .codicon[class*="codicon-"],
+  & .editor-group,
+  & .monaco-icon-label:before {
+    zoom: 0.8 !important;
+  }
+}
+
+/* activity bar height */
+/* .composite-bar-container > * {
+  height: 26px !important;
+} */
