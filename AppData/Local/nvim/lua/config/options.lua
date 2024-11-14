@@ -6,4 +6,5 @@
 -- This sets `vim.o.shell` and does some additional configuration for:
 -- * pwsh
 -- * powershell
-LazyVim.terminal.setup("pwsh")
+
+-- LazyVim.terminal.setup("powershell")

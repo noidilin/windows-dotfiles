@@ -65,6 +65,6 @@ return {
 					["[R"] = "@property.outer",
 				},
 			},
-		}
+		},
 	},
 }

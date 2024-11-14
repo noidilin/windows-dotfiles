@@ -1,6 +1,5 @@
 return {
 	-- { "rebelot/kanagawa.nvim" }, { "sho-87/kanagawa-paper.nvim" },
-	{ "folke/tokyonight.nvim", lazy = true, opts = {} },
 	{ "aktersnurra/no-clown-fiesta.nvim" },
 	{
 		"slugbyte/lackluster.nvim",

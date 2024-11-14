@@ -9,6 +9,7 @@
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.git",
     "lazyvim.plugins.extras.lang.json",
+    "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.toml",
@@ -21,5 +22,5 @@
   "news": {
     "NEWS.md": "7107"
   },
-  "version": 6
+  "version": 7
 }
