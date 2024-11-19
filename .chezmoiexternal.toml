@@ -1,14 +1,14 @@
-# ["AppData/Local/nvim"]
-# type = "git-repo"
-# url = "git@github.com:KevinNitroG/Alexis12119-nvim.git"
-# refreshPeriod = "168h"
-
-["AppData/Roaming/Mozilla/Firefox/Profiles/k7m5zv0t.dev-edition-default/chrome"]
+["scoop/persist/firefox-developer/profile/chrome"]
 type = "git-repo"
 url = "https://github.com/KiKaraage/ArcWTF.git"
 refreshPeriod = "168h"
 
-["AppData/Roaming/yazi/config/flavors/color-fatigue.yazi"]
+[".config/nvim"]
+type = "git-repo"
+url = "git@github.com:noidilin/nvim.git"
+refreshPeriod = "168h"
+
+[".config/yazi/flavors/color-fatigue.yazi"]
 type = "git-repo"
 url = "https://github.com/noidilin/color-fatigue.yazi.git"
 refreshPeriod = "168h"

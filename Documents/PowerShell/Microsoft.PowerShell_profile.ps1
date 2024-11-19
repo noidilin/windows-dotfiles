@@ -1,12 +1,16 @@
-# ref: https://github.com/KevinNitroG/windows-dotfiles/tree/main/Documents/PowerShell
-
-# VARIABLES
 $env:EDITOR = "nvim"
-# $env:VISUAL = "code"
+$env:VISUAL = "code"
 $env:PAGER = "delta"
-$env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
 
-# support plugin suggestion: switch between Inline/List views, by pressing F2
+# $env:USERPROFILE = $HOME
+$env:XDG_CONFIG_HOME = "$env:USERPROFILE\.config" # config files (write)
+$env:XDG_DATA_HOME = "$env:USERPROFILE\.local\share" # user data (write)
+$env:XDG_CACHE_HOME = "$env:USERPROFILE\.cache" # non-essential data (read/write)
+$env:YAZI_FILE_ONE = "$env:USERPROFILE\scoop\apps\git\current\usr\bin\file.exe" # preview feature
+$env:YAZI_CONFIG_HOME = "$env:USERPROFILE\.config\yazi" # preview feature
+$env:EZA_CONFIG_DIR = "$env:USERPROFILE\.config\eza" # eza theme
+$env:BAT_CONFIG_DIR = "$env:USERPROFILE\.config\bat" # bat config
+
 Import-Module CompletionPredictor
 Import-Module PSReadLine # Better auto-completion
 Import-Module posh-git 

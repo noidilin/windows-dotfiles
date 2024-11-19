@@ -123,12 +123,12 @@
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": false,
   "WindowLeft": 778,
-  "WindowTop": 348.66666666666663,
+  "WindowTop": 349.3333333333333,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "KeepMaxResults": false,
   "MaxResultsToShow": 9,
-  "ActivateTimes": 194,
+  "ActivateTimes": 246,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -266,6 +266,46 @@
         "Version": "2.3.2",
         "ActionKeywords": [
           "d"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "0ECADE17459B49F587BF81DC3A125110": {
+        "ID": "0ECADE17459B49F587BF81DC3A125110",
+        "Name": "Browser Bookmarks",
+        "Version": "3.3.3",
+        "ActionKeywords": [
+          "b"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "565B73353DBF4806919830B9202EE3BF": {
+        "ID": "565B73353DBF4806919830B9202EE3BF",
+        "Name": "Web Searches",
+        "Version": "3.1.3",
+        "ActionKeywords": [
+          "*",
+          "sc",
+          "wiki",
+          "findicon",
+          "facebook",
+          "twitter",
+          "maps",
+          "translate",
+          "duckduckgo",
+          "github",
+          "gist",
+          "gmail",
+          "drive",
+          "wolframalpha",
+          "stackoverflow",
+          "lucky",
+          "image",
+          "youtube",
+          "bing",
+          "yahoo",
+          "bd"
         ],
         "Priority": 0,
         "Disabled": false
