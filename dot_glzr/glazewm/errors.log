@@ -1,2 +1,3 @@
 [2m2024-09-05T18:46:06.245271Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2024-09-05T20:17:02.902319Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-11-18T20:10:57.145048Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute '%ProgramFiles%/WezTerm/wezterm-gui.exe'.\n\nError: Program path is not valid for command '%ProgramFiles%/WezTerm/wezterm-gui.exe'."

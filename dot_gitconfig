@@ -45,5 +45,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [safe]
-	directory = C:/Users/noidilin/.local/share/chezmoi
+	directory = C:/Users/noid/.local/share/chezmoi
