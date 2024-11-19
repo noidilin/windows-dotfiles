@@ -1,0 +1,119 @@
+palettes:
+  light01: &light01 "#b3b3b3"
+  light00: &light00 "#878787"
+  dark01: &dark01 "#686868"
+  dark00: &dark00 "#4e4e4e"
+  acc01: &acc01 "#b3b0a7"
+  acc00: &acc00 "#8e8b85"
+  error: &error "#b07878"
+
+colourful: false
+
+filekinds:
+  normal: { foreground: *light00 }
+  directory: { foreground: *light01 }
+  symlink: { foreground: *acc00 }
+  pipe: { foreground: *dark01 }
+  block_device: { foreground: *acc00 }
+  char_device: { foreground: *acc00 }
+  socket: { foreground: *dark00 }
+  special: { foreground: *acc00 }
+  executable: { foreground: *acc01 }
+  mount_point: { foreground: *light00 }
+
+perms:
+  user_read: { foreground: *light01 }
+  user_write: { foreground: *acc00 }
+  user_execute_file: { foreground: *acc01 }
+  user_execute_other: { foreground: *acc01 }
+  group_read: { foreground: *light01 }
+  group_write: { foreground: *acc00 }
+  group_execute: { foreground: *acc01 }
+  other_read: { foreground: *light00 }
+  other_write: { foreground: *acc00 }
+  other_execute: { foreground: *acc01 }
+  special_user_file: { foreground: *acc00 }
+  special_other: { foreground: *dark00 }
+  attribute: { foreground: *light00 }
+
+size:
+  major: { foreground: *light00 }
+  minor: { foreground: *acc00 }
+  number_byte: { foreground: *light01 }
+  number_kilo: { foreground: *light00 }
+  number_mega: { foreground: *acc01 }
+  number_giga: { foreground: *acc00 }
+  number_huge: { foreground: *acc00 }
+  unit_byte: { foreground: *light00 }
+  unit_kilo: { foreground: *acc01 }
+  unit_mega: { foreground: *acc00 }
+  unit_giga: { foreground: *acc00 }
+  unit_huge: { foreground: *acc01 }
+
+users:
+  user_you: { foreground: *light01 }
+  user_root: { foreground: *dark00 }
+  user_other: { foreground: *acc00 }
+  group_yours: { foreground: *light00 }
+  group_other: { foreground: *dark01 }
+  group_root: { foreground: *dark00 }
+
+links:
+  normal: { foreground: *acc00 }
+  multi_link_file: { foreground: *acc01 }
+
+git:
+  new: { foreground: *light00 }
+  modified: { foreground: *acc00 }
+  deleted: { foreground: *dark01 }
+  renamed: { foreground: *acc01 }
+  typechange: { foreground: *acc00 }
+  ignored: { foreground: *dark00 }
+  conflicted: { foreground: *error }
+
+git_repo:
+  branch_main: { foreground: *light01 }
+  branch_other: { foreground: *acc00 }
+  git_clean: { foreground: *acc01 }
+  git_dirty: { foreground: *error }
+
+security_context:
+  colon: { foreground: *acc01 }
+  user: { foreground: *light00 }
+  role: { foreground: *acc00 }
+  typ: { foreground: *dark00 }
+  range: { foreground: *acc00 }
+
+file_type:
+  image: { foreground: *acc01 }
+  video: { foreground: *acc00 }
+  music: { foreground: *light00 }
+  lossless: { foreground: *acc00 }
+  crypto: { foreground: *dark01 }
+  document: { foreground: *light01 }
+  compressed: { foreground: *acc00 }
+  temp: { foreground: *error }
+  compiled: { foreground: *acc01 }
+  build: { foreground: *dark00 }
+  source: { foreground: *acc00 }
+
+punctuation: { foreground: *light01 }
+date: { foreground: *acc01 }
+inode: { foreground: *light00 }
+blocks: { foreground: *dark00 }
+header: { foreground: *light01 }
+octal: { foreground: *acc01 }
+flags: { foreground: *acc00 }
+
+symlink_path: { foreground: *acc00 }
+control_char: { foreground: *acc01 }
+broken_symlink: { foreground: *error }
+broken_path_overlay: { foreground: *dark00 }
+
+filenames:
+  # Custom filename-based overrides
+  # Cargo.toml: {icon: {glyph: 🦀}}
+
+extensions:
+  # Custom extension-based overrides
+  # rs: {filename: {foreground: Red}, icon: {glyph: 🦀}}
