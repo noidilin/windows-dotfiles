@@ -1,5 +1,8 @@
+# NOTE: currently disabled
 # Ref: https://github.com/KevinNitroG/windows-dotfiles/blob/main/dot_install/environmentVariables.ps1
 
+# NOTE: currently, there is no need for me to add these USER_PATHS to path.
+<#
 $USER_PATHS = @(
   "%LOCALAPPDATA%\nvim-data\mason\bin",
   "%USERPROFILE%\bin",
@@ -33,17 +36,18 @@ function add_paths_to_existed_paths
 }
 
 $IncludePaths = (add_paths_to_existed_paths $USER_PATHS) -join ";"
+#>
 
 # Hashtable of Variables keys, values
 $SetupEnv = @{
-  Path = $IncludePaths;
+  # Path = $IncludePaths;
   YAZI_CONFIG_HOME = "%USERPROFILE%\.config\yazi";
   YAZI_FILE_ONE = "%USERPROFILE%\scoop\apps\git\current\usr\bin\file.exe";
-  KOMOREBI_CONFIG_HOME = "%USERPROFILE%\.config\komorebi";
-  CARGO_HOME = "E:\packages\cargo";
-  npm_config_cache = "E:\cache\npm";
-  PIP_CACHE_DIR = "E:\cache\pip";
-  VCPKG_BINARY_CACHE = "E:\packages\vcpkg"
+  # KOMOREBI_CONFIG_HOME = "%USERPROFILE%\.config\komorebi";
+  CARGO_HOME = "D:\archive\packages\cargo";
+  npm_config_cache = "D:\archive\cache\npm";
+  PIP_CACHE_DIR = "D:\archive\cache\pip";
+  # VCPKG_BINARY_CACHE = "E:\packages\vcpkg"
   # ZF_DEFAULT_OPTS = "--height=~80% --layout=reverse --border --exit-0 --cycle --margin=2,40 --padding=1"
 }
 

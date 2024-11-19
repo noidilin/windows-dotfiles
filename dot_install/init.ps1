@@ -4,7 +4,6 @@ Write-Host "starting init.ps1 script..."
 
 $SCOOP_INIT = @(
   "versions/firefox-developer"
-  "main/git"
   "main/chezmoi"
   "main/pwsh"
 )
@@ -15,15 +14,20 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Write-Host "installing execution policy for scoop..."
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
+# NOTE: fix error. git need to be installed before adding bucket
+Write-Host "installing git..."
+scoop install git
+
 Write-Host "adding scoop bucket..."
-scoop bucket add main
 scoop bucket add extras
 scoop bucket add versions
 scoop bucket add nerd-fonts
 scoop bucket add neorocks-scoop https://github.com/nvim-neorocks/rocks-scoop.git
 
-# scoop bucket add nonportable
-# scoop bucket add sysinternals
-
 Write-Host "installing initial apps..."
 scoop install @SCOOP_INIT
+
+# NOTE: recently added, not tested yet!
+Write-Host "running post-install script for scoop..."
+reg import "$env:USERPROFILE\scoop\apps\pwsh\current\install-explorer-context.reg"
+reg import "$env:USERPROFILE\scoop\apps\pwsh\current\install-file-context.reg"

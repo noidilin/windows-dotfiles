@@ -9,13 +9,12 @@ $SCOOP_BASE = @(
   "main/wget"
   "main/openssh"
   "neorocks-scoop/luarocks" # For nvim lazy, rest.nvim
-  "nerd-fonts/CommitMono-NF"
+  "nerd-fonts/CommitMono-NF-Mono"
   # "extras/winrar"
 )
 
 $SCOOP_GUI = @(
-  # "extras/unigetui"
-  "extras/powertoys"
+  # "extras/powertoys"
   "extras/via"
   "extras/flow-launcher"
   "extras/everything"
@@ -35,7 +34,8 @@ $SCOOP_GUI = @(
 
 $SCOOP_CLI = @(
   # "extras/dockercompletion"
-  "extras/scoop-completion"
+  # "extras/scoop-completion"
+  "extras/vcredist2022"
   "extras/posh-git"
   "extras/psfzf"
   "extras/psreadline"
@@ -59,30 +59,28 @@ $SCOOP_CLI = @(
   "main/imagemagick"
   "main/jq"
   "main/yazi"
-  # "main/gh"
-  # "main/glow"
-  # "main/gnupg"
-  # "main/goodbyedpi"
-  # "extra/jqp"
-  # "main/adb"
-  # "main/poppler"
-  # "main/rclone"
   # "main/sd"
   # "main/sed"
-  # "main/sudo"
   # "main/touch"
+  # "main/sudo"
+  # "main/gsudo"
+  # "main/gh"
+  # "main/glow"
+  # "extra/jqp"
   # "main/unar"
-  # "main/vivetool"
-  # "main/wakatime-cli"
   # "main/xh"
   # "main/yq"
-  # "main/yt-dlp"
   # "main/actionlint"
-  # "main/lf"
   # "main/gpg" # Use default builtin gpg of git
-  # "sysinternals/whois"
+  # "main/gnupg"
+  # "main/yt-dlp"
+  # "main/rclone"
+  # "main/vivetool"
+  # "main/wakatime-cli"
+  # "main/goodbyedpi"
 )
 
+<#
 $SCOOP_OTHERS = @(
   # "extras/qbittorrent-enhanced"
   # "extras/v2rayn"
@@ -92,15 +90,26 @@ $SCOOP_OTHERS = @(
   # "nonportable/winfsp-np"
   # "extras/putty"
 )
+#>
 
-Write-Host "installing completion predictor through PSGallery..."
-Install-Module -Name CompletionPredictor -Repository PSGallery -Force
+# Write-Host "installing completion predictor through PSGallery..."
+# (ERROR: need admin)
+# Install-Module -Name CompletionPredictor -Repository PSGallery -Force
 
+# ERROR: scoop install command need to be separated
 Write-Host "installing scoop apps..."
-scoop install $SCOOP_BASE $SCOOP_GUI $SCOOP_CLI $SCOOP_OTHERS
+scoop install $SCOOP_BASE
+scoop install $SCOOP_GUI
+scoop install $SCOOP_CLI
+# FIX: can't add blank array to installation list
+# scoop install $SCOOP_OTHERS
 
-Write-Host "running post-install script for scoop..."
-# Post install script for scoop
-# reg import "$env:USERPROFILE\scoop\apps\windows-terminal\current\install-context.reg"
-reg import "$env:USERPROFILE\scoop\apps\pwsh\current\install-explorer-context.reg"
-reg import "$env:USERPROFILE\scoop\apps\pwsh\current\install-file-context.reg"
+# NOTE: recently added, not tested yet
+if (Get-Command -Name bat -ErrorAction SilentlyContinue)
+{
+  Write-Host "(script) build bat themes..."
+  bat cache --build
+} else
+{
+  Write-Host "(script) bat not installed, skip building Bat themes!"
+}
