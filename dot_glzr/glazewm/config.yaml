@@ -197,7 +197,7 @@ binding_modes:
       # Alternatively, use `shell-exec wt` or `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows Terminal and Git Bash respectively.
       - commands:
           [
-            "shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe",
+            "shell-exec %userprofile%/scoop/apps/wezterm/current/wezterm-gui.exe",
             "wm-disable-binding-mode --name extra",
           ]
         bindings: ["alt+enter"]
