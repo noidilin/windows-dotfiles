@@ -1,16 +1,8 @@
-# create fzf theme: https://vitormv.github.io/fzf-themes/
 # generated theme permalink: https://vitormv.github.io/fzf-themes#eyJib3JkZXJTdHlsZSI6InJvdW5kZWQiLCJib3JkZXJMYWJlbCI6ImZ6ZiIsImJvcmRlckxhYmVsUG9zaXRpb24iOjAsInByZXZpZXdCb3JkZXJTdHlsZSI6InJvdW5kZWQiLCJwYWRkaW5nIjoiMiIsIm1hcmdpbiI6IjIiLCJwcm9tcHQiOiI+ICIsIm1hcmtlciI6Ij4iLCJwb2ludGVyIjoi4peGIiwic2VwYXJhdG9yIjoi4pSAIiwic2Nyb2xsYmFyIjoi4pSCIiwibGF5b3V0IjoicmV2ZXJzZSIsImluZm8iOiJyaWdodCIsImNvbG9ycyI6ImZnOiM4ZThlOGUsZmcrOiNiM2IzYjMsYmc6IzE5MTkxOSxiZys6IzE5MTkxOSxobDojYTY5ZjkxLGhsKzojZGFkNWM4LGluZm86IzQ3NDc0NyxtYXJrZXI6I2IzYWQ5Zixwcm9tcHQ6I2VhZWFlYSxzcGlubmVyOiM3MDZjNjIscG9pbnRlcjojOGU4OTdkLGhlYWRlcjojYjNiM2IzLGJvcmRlcjojMmEyYTJhLGxhYmVsOiNiM2IzYjMscXVlcnk6I2RjZGNkYyJ9 
-
 # PSFzf Doc: https://github.com/kelleyma49/PSFzf
-
-# Ref: https://github.com/catppuccin/powershell#profile-usage 
-# https://github.com/catppuccin/fzf - not use background for transparent
-# Import-Module Catppuccin
-# $Flavor = $Catppuccin['Mocha']
 
 # bg set to -1 will use the terminal default bg color
 # --preview-window="border-rounded"
-
 $env:FZF_DEFAULT_OPTS=@"
 --color=fg:#8e8e8e,fg+:#b3b3b3,bg:-1,bg+:-1
 --color=hl:#a69f91,hl+:#dad5c8,info:#474747,marker:#b3ad9f
@@ -35,12 +27,10 @@ $env:FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 $env:FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 $env:FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
-
 # Add preview to ctrl+t and alt+c command
+# TODO: pipe in powershell doesn't seems to work
 $show_file_or_dir_preview = "if (Test-Path -PathType Container '{}') { eza --tree --level=3 --color=always --icons=always '{}' } else { bat -n --color=always --line-range :500 '{}' }"
 $env:FZF_CTRL_T_OPTS="--preview 'powershell -Command $show_file_or_dir_preview'"
-
-# TODO: pipe in powershell doesn't seems to work
 $env:FZF_ALT_C_OPTS="--preview 'eza --tree --level=3 --color=always --icons=always {}'"
 
 # Set-Location Based on Selected Directory 
@@ -49,29 +39,30 @@ Set-PsFzfOption -AltCCommand $commandOverride
 # Replace the standard tab completion
 Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
 
-# -EnableAliasFuzzyScoop: fs (start fzf on scoop app list)
-# -EnableAliasFuzzyFasd: ff (start fzf with input from the files saved in fasdr)
-# -EnableAliasFuzzyEdit: fe (start an editor for the selected files in the fuzzy finder)
-# -EnableAliasGitStatus: fgs (starts fzf with input from output of the git status function)
-# -EnableAliasFuzzyKillProcess: fkill (runs Stop-Process on processes selected by the user in fzf)
-
-Set-PsFzfOption -PSReadlineChordProvider "Ctrl+t" -PSReadlineChordReverseHistory "Ctrl+r" -GitKeyBindings -TabExpansion -EnableAliasFuzzyGitStatus -EnableAliasFuzzyEdit -EnableAliasFuzzyKillProcess 
+# fs (start fzf on scoop app list)
+# fgs (starts fzf with input from output of the git status function)
+# fe (start an editor for the selected files in the fuzzy finder)
+# fkill (runs Stop-Process on processes selected by the user in fzf)
+Set-PsFzfOption `
+  -PSReadlineChordProvider "Ctrl+t" `
+  -PSReadlineChordReverseHistory "Ctrl+r" `
+  -GitKeyBindings `
+  -TabExpansion `
+  -EnableAliasFuzzyScoop `
+  -EnableAliasFuzzyGitStatus `
+  -EnableAliasFuzzyEdit `
+  -EnableAliasFuzzyKillProcess
 
 <# 
-function _fzf_open_path
-{
+function _fzf_open_path {
   param (
     [Parameter(Mandatory=$true)]
     [string]$input_path
   )
-  if ($input_path -match "^.*:\d+:.*$")
-  {
-    $input_path = ($input_path -split ":")[0]
-  }
-  if (-not (Test-Path $input_path))
-  {
-    return
-  }
+
+  if ($input_path -match "^.*:\d+:.*$") { $input_path = ($input_path -split ":")[0] }
+  if (-not (Test-Path $input_path)) { return }
+
   $cmds = @{
     'bat' = { bat $input_path }
     'cat' = { Get-Content $input_path }
@@ -90,8 +81,7 @@ function _fzf_open_path
   & $cmds[$cmd]
 }
 
-function _fzf_get_path_using_fd
-{
+function _fzf_get_path_using_fd {
   $input_path = fd --type file --follow --hidden --exclude .git |
     fzf --prompt 'Files> ' `
       --header-first `
@@ -101,8 +91,7 @@ function _fzf_get_path_using_fd
   return $input_path
 }
 
-function _fzf_get_path_using_rg
-{
+function _fzf_get_path_using_rg {
   $INITIAL_QUERY = "${*:-}"
   $RG_PREFIX = "rg --column --line-number --no-heading --color=always --smart-case"
   $input_path = "" |
@@ -121,13 +110,11 @@ function _fzf_get_path_using_rg
   return $input_path
 }
 
-function fdg
-{
+function fdg {
   _fzf_open_path $(_fzf_get_path_using_fd)
 }
 
-function rgg
-{
+function rgg {
   _fzf_open_path $(_fzf_get_path_using_rg)
 }
 
