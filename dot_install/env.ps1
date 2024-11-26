@@ -1,57 +1,23 @@
-# NOTE: currently disabled
-# Ref: https://github.com/KevinNitroG/windows-dotfiles/blob/main/dot_install/environmentVariables.ps1
+Write-Host "starting env.ps1 script..." -ForegroundColor DarkGreen
 
-# NOTE: currently, there is no need for me to add these USER_PATHS to path.
-<#
-$USER_PATHS = @(
-  "%LOCALAPPDATA%\nvim-data\mason\bin",
-  "%USERPROFILE%\bin",
-  "%USERPROFILE%\scoop\apps\git\current\usr\bin"
-  # "$($env:USERPROFILE)\bin\vscode-cpptools\extension\debugAdapters\bin".
-)
-
-# Allow long path
-Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
-
-function add_paths_to_existed_paths
-{
-  param (
-    [string[]] $paths
-  )
-  $existedPaths = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::User) -split ";"
-  $pathToInclude = $existedPaths
-  $includePathSet = New-Object System.Collections.Generic.HashSet[[String]]
-  foreach ($path in $existedPaths)
-  {
-    $includePathSet.Add($path) >$null
-  }
-  foreach ($path in $paths)
-  {
-    if (!($includePathSet.Contains($path)))
-    {
-      $pathToInclude += $path
-    }
-  }
-  return $pathToInclude
-}
-
-$IncludePaths = (add_paths_to_existed_paths $USER_PATHS) -join ";"
-#>
-
-# Hashtable of Variables keys, values
 $SetupEnv = @{
-  # Path = $IncludePaths;
-  YAZI_CONFIG_HOME = "%USERPROFILE%\.config\yazi";
-  YAZI_FILE_ONE = "%USERPROFILE%\scoop\apps\git\current\usr\bin\file.exe";
-  # KOMOREBI_CONFIG_HOME = "%USERPROFILE%\.config\komorebi";
-  CARGO_HOME = "D:\archive\packages\cargo";
-  npm_config_cache = "D:\archive\cache\npm";
-  PIP_CACHE_DIR = "D:\archive\cache\pip";
-  # VCPKG_BINARY_CACHE = "E:\packages\vcpkg"
-  # ZF_DEFAULT_OPTS = "--height=~80% --layout=reverse --border --exit-0 --cycle --margin=2,40 --padding=1"
+  XDG_CONFIG_HOME = "$HOME\.config"; # config files (write)
+  XDG_DATA_HOME = "$HOME\.local\share"; # user data (write)
+  XDG_CACHE_HOME = "$HOME\.cache"; # non-essential data (read/write)
+  EZA_CONFIG_DIR = "$HOME\.config\eza"; # eza theme
+  BAT_CONFIG_DIR = "$HOME\.config\bat"; # bat config
+  YAZI_CONFIG_HOME = "$HOME\.config\yazi";
+  YAZI_FILE_ONE = "$HOME\scoop\apps\git\current\usr\bin\file.exe"; # preview feature 
+  # npm_config_cache = "D:\archive\cache\npm";
+  # CARGO_HOME = "D:\archive\packages\cargo";
+  # PIP_CACHE_DIR = "D:\archive\cache\pip";
 }
 
-foreach ($Key in $SetupEnv)
-{
-  [System.Environment]::SetEnvironmentVariable($Key, $SetupEnv[$Key], [System.EnvironmentVariableTarget]::User)
+Write-Host "setting up environment variables..." -ForegroundColor DarkGreen
+foreach ($Key in $SetupEnv.Keys) {
+  $tmpPath = $SetupEnv[$Key]
+  Write-Output "Setting environment variable $Key to $tmpPath"
+  [System.Environment]::SetEnvironmentVariable($Key, $tmpPath, [System.EnvironmentVariableTarget]::User)
 }
+
+Write-Host "env.ps1 script finished." -ForegroundColor DarkGreen

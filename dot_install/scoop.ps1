@@ -1,6 +1,4 @@
-# Ref: https://github.com/KevinNitroG/windows-dotfiles/blob/main/dot_install/softwares-nonadmin.ps1
-
-Write-Host "starting scoop.ps1 script..."
+Write-Host "starting scoop.ps1 script..." -ForegroundColor DarkGreen
 
 $SCOOP_BASE = @(
   "main/7zip"
@@ -14,7 +12,6 @@ $SCOOP_BASE = @(
 )
 
 $SCOOP_GUI = @(
-  # "extras/powertoys"
   "extras/via"
   "extras/flow-launcher"
   "extras/everything"
@@ -35,15 +32,17 @@ $SCOOP_GUI = @(
 $SCOOP_CLI = @(
   # "extras/dockercompletion"
   # "extras/scoop-completion"
+  "extras/carapace-bin"
   "extras/vcredist2022"
+  "extras/psreadline"
   "extras/posh-git"
   "extras/psfzf"
-  "extras/psreadline"
   # "main/lazydocker"
   "main/neovim"
   "main/starship"
   "main/fastfetch"
   "main/bottom"
+  "main/gsudo"
   "main/eza"
   "main/bat"
   "main/less"
@@ -92,12 +91,7 @@ $SCOOP_OTHERS = @(
 )
 #>
 
-# Write-Host "installing completion predictor through PSGallery..."
-# (ERROR: need admin)
-# Install-Module -Name CompletionPredictor -Repository PSGallery -Force
-
-# ERROR: scoop install command need to be separated
-Write-Host "installing scoop apps..."
+Write-Host "installing scoop apps..." -ForegroundColor DarkGreen
 scoop install $SCOOP_BASE
 scoop install $SCOOP_GUI
 scoop install $SCOOP_CLI
@@ -105,11 +99,11 @@ scoop install $SCOOP_CLI
 # scoop install $SCOOP_OTHERS
 
 # NOTE: recently added, not tested yet
-if (Get-Command -Name bat -ErrorAction SilentlyContinue)
-{
-  Write-Host "(script) build bat themes..."
+if (Get-Command -Name bat -ErrorAction SilentlyContinue) {
+  Write-Host "building bat themes..." -ForegroundColor DarkGreen
   bat cache --build
-} else
-{
-  Write-Host "(script) bat not installed, skip building Bat themes!"
+} else {
+  Write-Host "bat not installed, skip building Bat themes!" -ForegroundColor DarkRed
 }
+
+Write-Host "scoop.ps1 script finished." -ForegroundColor DarkGreen
