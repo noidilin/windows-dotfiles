@@ -1,22 +1,9 @@
-{{- $email := promptStringOnce . "email" "Email address" -}}
+encryption = "age"
+progress = true # display progress bar
 
-encryption = "gpg"
-mode = "file" # file, symlink
-progress = true
-
-[data]
-    email = {{ $email | quote }}
-
-[git]
-autoAdd = false # Add changes to the source state after any change
-autoCommit = false
-autoPush = false
-
-[gpg]
-recipient = "noidilin"
-
-[cd]
-command = "cmd" # Change to pwsh later
+[age]
+identity = "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
+recipient = "age1yxj3sgee99ke5wtpzh2syrawekmu7kygx69kfdyk03cghqmgf3qs7qjxam"
 
 [completion]
-custom = true
+custom = true # enable custom shell completion

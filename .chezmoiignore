@@ -2,23 +2,14 @@
 README.md
 doc/
 
-# Python
-*/__pycache__/
-
 # chezmoi
 .config/chezmoi/*
 .config/chezmoi/chezmoistate.boltdb
 .config/chezmoi/chezmoi.toml
 
-# 
-.config/configstore/*
-
-# thefuck
-# .config/thefuck/__pycache__
+# age passphrase key for chezmoi to decryp private key
+key.txt.age
 
 # Powershell
 Documents/PowerShell/Scripts/InstalledScriptInfos/*
 Documents/PowerShell/Scripts/Modules/*
-
-# Komorebi
-# .config/komorebi/applications.yaml
