@@ -1,6 +1,4 @@
-Set-Alias -Name c -Value cls
 Set-Alias -Name rl -Value Reload-Profile
-# if (Get-Command btm) { Set-Alias -Name btm -Value _btm }
 if (Get-Command lazygit) { Set-Alias -Name lg -Value lazygit }
 
 function Replace-MochaPalette {
@@ -70,8 +68,8 @@ function Update-Stylus {
         A function that update catppuccin stylus userstyles
     #>
     $url = "https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json"
-    $file = "$env:USERPROFILE\.config\stylus\color-fatigue.json"
-    Invoke-WebRequest -Uri $url -OutFile $file # download the file the config path
+    $file = "$env:USERPROFILE\.local\etc\stylus\color-fatigue.json"
+    Invoke-WebRequest -Uri $url -OutFile $file # download file from web, and save to config path
     Replace-MochaPalette -filePath $file -stylus # update file with stylus switch on
 }
 
@@ -141,10 +139,46 @@ function Clean-All {
   Run-DiskCleanUp
 }
 
-# function _btm {
-#   btm -C "$env:USERPROFILE\.config\bottom\bottom.toml" @args
-# }
-
 function Reload-Profile {
   . $PROFILE
 }
+
+# App manage
+<#
+function _List-ScoopApps {
+  $apps = $(scoop list | Select-Object -ExpandProperty "Name").Split("\n")
+  $apps = $apps[1..($apps.Length - 1)]
+  return $apps
+}
+
+function _Select-Apps {
+  param (
+    [string[]] $apps
+  )
+  $apps = $apps | fzf --prompt="Select Apps  " --height=~80% --layout=reverse --border --cycle --margin="2,20" --padding=1 --multi
+  return $apps
+}
+
+function Upgrade-ScoopApps {
+  $apps_set = New-Object System.Collections.Generic.HashSet[[String]]
+  $installed_apps = _List-ScoopApps
+  foreach ($app in _Select-Apps $installed_apps) {
+    $apps_set.Add($app) >$null
+  }
+  if ($apps_set.Length) {
+    $apps_string = ($apps_set -split ",")
+    scoop update $apps_string
+  } else {
+    Write-Host "No app was selected to update"
+  }
+}
+
+function Uninstall-ScoopApps {
+  $apps = _Select-Apps $(_List-ScoopApps)
+  if ($apps.Length -eq 0) {
+    Write-Host "No app was selected"!
+    return 
+  }
+  scoop uninstall $apps
+}
+#>

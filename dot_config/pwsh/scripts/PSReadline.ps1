@@ -1,13 +1,3 @@
-$ScriptBlock = {
-  Param([string]$line)
-  if ($line -like " *") { return $false }
-  $ignore_psreadline = @("user", "pass", "account")
-  foreach ($ignore in $ignore_psreadline) {
-    if ($line -match $ignore) { return $false }
-  }
-  return $true
-}
-
 $Colors = @{
   # Powershell colours
   ContinuationPrompt     = "#5d5d5d" # white
@@ -32,24 +22,33 @@ $Colors = @{
   Variable               = "#878787" # bright-green
 }
 
+$ScriptBlock = {
+  Param([string]$line)
+  if ($line -like " *") { return $false }
+  $ignore_psreadline = @("user", "pass", "account")
+  foreach ($ignore in $ignore_psreadline) {
+    if ($line -match $ignore) { return $false }
+  }
+  return $true
+}
+
 $PSReadLineOptions = @{
-  EditMode = "Windows"
-  AddToHistoryHandler = $ScriptBlock
+  BellStyle = "None" # no feedback to error
   Color = $Colors
-  ExtraPromptLineCount = $true
+  AddToHistoryHandler = $ScriptBlock
   HistoryNoDuplicates = $true
   HistorySearchCursorMovesToEnd = $true
   MaximumHistoryCount = 5000
-  # support by completion predictor (https://github.com/PowerShell/CompletionPredictor)
-  PredictionSource = "HistoryAndPlugin" 
+  ExtraPromptLineCount = $true
+  # EditMode = "Windows" # default: windows
+  # ShowToolTips = $true # default: true
   # PredictionViewStyle = "ListView"
-  ShowToolTips = $true
-  BellStyle = "None"
 }
 Set-PSReadLineOption @PSReadLineOptions
 
 Set-PSReadLineKeyHandler -Key "Ctrl+p" -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key "Ctrl+n" -Function HistorySearchForward
+Set-PSReadLineKeyHandler -Key "Ctrl+y" -Function MenuComplete
 
 <# function Clear-PSReadLineHistory {
   Get-PSReadlineOption | Select-Object -expand HistorySavePath | Remove-Item
