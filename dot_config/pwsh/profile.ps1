@@ -3,9 +3,9 @@ $env:VISUAL = "code"
 $env:PAGER = "delta"
 
 $env:CARAPACE_BRIDGES = "zsh,fish,bash,inshellisense" # optional
-$env:ANTHROPIC_API_KEY = "$HOME\.config\api\ANTHROPIC_API_KEY"
+$env:ANTHROPIC_API_KEY = Get-Content -Path "$HOME\.config\api\ANTHROPIC_API_KEY"
 
-Import-Module posh-git 
+Import-Module posh-git
 Import-Module PSReadLine
 
 . "$HOME\.config\pwsh\scripts\PSReadLine.ps1"
