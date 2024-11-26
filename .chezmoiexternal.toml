@@ -10,12 +10,12 @@ refreshPeriod = "168h"
 
 [".config/yazi/flavors/color-fatigue.yazi"]
 type = "git-repo"
-url = "https://github.com/noidilin/color-fatigue.yazi.git"
+url = "git@github.com:noidilin/color-fatigue.yazi.git"
 refreshPeriod = "168h"
 
 [".config/wezterm"]
 type = "git-repo"
-url = "https://github.com/noidilin/wezterm.git"
+url = "git@github.com:noidilin/wezterm.git"
 refreshPeriod = "168h"
 
 [".config/cursor"]
@@ -31,31 +31,6 @@ refreshPeriod = "168h"
 # [".githelpers"]
 # type = "file"
 # url = "https://raw.githubusercontent.com/stevearc/dotfiles/master/.githelpers"
-# refreshPeriod = "168h"
-
-# [".config/yazi/theme.toml"]
-# type = "file"
-# url = "https://raw.githubusercontent.com/catppuccin/yazi/main/themes/mocha.toml"
-# refreshPeriod = "168h"
-
-# [".config/yazi/Catppuccin-mocha.tmTheme"]
-# type = "file"
-# url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
-# refreshPeriod = "168h"
-
-# ["AppData/Roaming/bat/themes/Catppuccin Mocha.tmTheme"]
-# type = "file"
-# url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
-# refreshPeriod = "168h"
-
-# ["Documents/PowerShell/Modules/Catppuccin"]
-# type = "git-repo"
-# url = "https://github.com/catppuccin/powershell.git"
-# refreshPeriod = "168h"
-#
-# [".config/delta/themes/catppuccin"]
-# type = "git-repo"
-# url = "https://github.com/catppuccin/delta.git"
 # refreshPeriod = "168h"
 
 # ["AppData/Local/glow/Config/themes/catppuccin-mocha.json"]

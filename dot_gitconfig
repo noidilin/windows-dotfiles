@@ -48,3 +48,5 @@
 
 [safe]
 	directory = C:/Users/noid/.local/share/chezmoi
+[credential "helperselector"]
+	selected = manager
