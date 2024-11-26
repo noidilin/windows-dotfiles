@@ -1,24 +1,10 @@
-/**
- * Base CSS styles for better consistency across platforms.
- * Yoinked from: https://github.com/sindresorhus/modern-normalize
- */
-
-/*
-Document
-========
-*/
-
-/**
-Use a better box model (opinionated).
-*/
-
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
-html {
+:root {
   --rosewater: #dcb5a5;
   --flamingo: #c8a492;
   --pink: #9f9fbd;
@@ -66,13 +52,20 @@ html {
   --accent-dim2: #8e8b85;
   --accent-dim1: #7b7974;
   --accent-dim0: #6c6a65;
+}
 
+html {
   /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji';
-  line-height: 1.15; /* 1. Correct the line height in all browsers. */
-  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
-  tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+
+  /* 1. Correct the line height in all browsers. */
+  line-height: 1.15;
+  /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -webkit-text-size-adjust: 100%;
+  /* 3. Use a more readable tab size (opinionated). */
+  tab-size: 4;
+
   /* add gap to match window manager */
   width: calc(100% - 20px);
   position: absolute;
@@ -80,11 +73,6 @@ html {
   /* match wallpaper */
   background: var(--crust);
 }
-
-/*
-Sections
-========
-*/
 
 body {
   margin: 0; /* Remove the margin in all browsers. */
@@ -95,10 +83,7 @@ Text-level semantics
 ====================
 */
 
-/**
-Add the correct font weight in Chrome and Safari.
-*/
-
+/* Add the correct font weight in Chrome and Safari. */
 b,
 strong {
   font-weight: bolder;
@@ -108,28 +93,21 @@ strong {
 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 2. Correct the odd 'em' font sizing in all browsers.
 */
-
 code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
     monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
-/**
-Add the correct font size in all browsers.
-*/
-
+/* Add the correct font size in all browsers. */
 small {
   font-size: 80%;
 }
 
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-
+/* Prevent 'sub' and 'sup' elements from affecting the line height in all browsers. */
 sub,
 sup {
   font-size: 75%;
@@ -152,9 +130,9 @@ Tabular data
 */
 
 /**
-Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+1. Correct table border color inheritance in Chrome and Safari. 
+(https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
-
 table {
   border-color: currentcolor;
 }
@@ -168,7 +146,6 @@ Forms
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 */
-
 button,
 input,
 optgroup,
@@ -180,37 +157,28 @@ textarea {
   margin: 0; /* 2 */
 }
 
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-
+/* Correct the inability to style clickable types in iOS and Safari. */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+/** 
+1. Remove the padding. 
+2. Developers are not caught out when they zero out 'fieldset' elements in browsers.
 */
-
 legend {
   padding: 0;
 }
 
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
+/* Add the correct vertical alignment in Chrome and Firefox. */
 progress {
   vertical-align: baseline;
 }
 
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
+/* Correct the cursor style of increment and decrement buttons in Safari. */
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
@@ -220,16 +188,12 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
+/* Remove the inner padding in Chrome and Safari on macOS. */
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -238,7 +202,6 @@ Remove the inner padding in Chrome and Safari on macOS.
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to 'inherit' in Safari.
 */
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
@@ -249,10 +212,7 @@ Interactive
 ===========
 */
 
-/*
-Add the correct display in Chrome and Safari.
-*/
-
+/* Add the correct display in Chrome and Safari. */
 summary {
   display: list-item;
 }

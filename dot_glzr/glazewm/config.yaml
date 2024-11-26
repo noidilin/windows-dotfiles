@@ -1,15 +1,14 @@
 general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
-  # startup_commands: ["shell-exec %userprofile%/.glzr/zebar/start.bat"]
   startup_commands: ["shell-exec zebar"]
 
-  # Commands to run just before the WM is shutdown.
-  # Example: The below command kills Zebar.
+  # Commands to run just before the WM is shutdown. (The below command kills Zebar.)
   shutdown_commands: ["shell-exec taskkill /IM zebar.exe /F"]
 
   # Commands to run after the WM config is reloaded.
-  reload_commands: ["shell-exec taskkill /IM zebar.exe /F", "shell-exec zebar"]
+  # BUG: reload zebar currently not working (2024-11-19)
+  config_reload_commands: []
 
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
@@ -188,13 +187,11 @@ binding_modes:
       - commands: ["wm-exit"]
         bindings: ["alt+shift+q"]
       # Reload glazeWM config
-      - commands: ["wm-disable-binding-mode --name extra", "wm-reload-config"]
+      - commands: ["wm-reload-config", "wm-disable-binding-mode --name extra"]
         bindings: ["alt+shift+r"]
       # Redraw all windows.
-      - commands: ["wm-disable-binding-mode --name extra", "wm-redraw"]
+      - commands: ["wm-redraw", "wm-disable-binding-mode --name extra"]
         bindings: ["alt+shift+w"]
-      # Launch terminal.
-      # Alternatively, use `shell-exec wt` or `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows Terminal and Git Bash respectively.
       - commands:
           [
             "shell-exec %userprofile%/scoop/apps/wezterm/current/wezterm-gui.exe",

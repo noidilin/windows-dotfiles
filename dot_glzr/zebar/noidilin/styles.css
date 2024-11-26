@@ -1,8 +1,5 @@
-/**
- * Import the Nerdfonts icon font.
- * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
- */
-@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+/** Import the Nerdfonts icon font. */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 i {
   /* color: rgb(115 130 175 / 95%); */
@@ -12,8 +9,7 @@ i {
 
 body {
   /* color: rgb(255 255 255 / 90%); */
-  /* font-family: ui-monospace, monospace; */
-  font-family: 'CommitMono Nerd Font Mono', ui-monospace, monospace;
+  font-family: "CommitMono Nerd Font Mono", ui-monospace, monospace;
   color: var(--overlay0);
   font-size: 12px;
   font-weight: 500;
@@ -110,7 +106,7 @@ body,
 }
 
 .cpu .high-usage {
-  color: #900029;
+  color: #b07878;
 }
 
 .battery .charging-icon {
