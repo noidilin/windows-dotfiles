@@ -3,7 +3,7 @@ local shell = { "pwsh" }
 local platform = require("utils.platform")
 
 if platform.is_win then
-	shell = { "pwsh" }
+	shell = { "nu" }
 elseif platform.is_mac then
 	shell = { "zsh" }
 end
@@ -19,7 +19,7 @@ require("events.left-status").setup()
 require("events.tab-title").setup()
 require("events.new-tab-button").setup()
 -- Load GPU adapters
--- local gpu_adapters = require("utils.gpu_adapter")
+local gpu_adapters = require("utils.gpu_adapter")
 
 -- [[ Neovim: smart-splits ]]
 ---- if you are *NOT* lazy-loading smart-splits.nvim (recommended)
@@ -110,7 +110,6 @@ config.colors = {
 	},
 }
 
--- config.font = wezterm.font("CommitMono Nerd Font Mono")
 -- config.freetype_load_flags = "NO_HINTING"
 config.font = wezterm.font_with_fallback({
 	"CommitMono Nerd Font Mono",
@@ -138,7 +137,7 @@ config.cursor_blink_rate = 700
 -- Dim inactive panes
 config.inactive_pane_hsb = {
 	saturation = 0.1,
-	brightness = is_dark and 0.7 or 0.95,
+	brightness = is_dark and 0.8 or 0.95,
 }
 
 -- Wezterm
@@ -157,7 +156,7 @@ config.visual_bell = {
 config.enable_tab_bar = true
 -- config.hide_tab_bar_if_only_one_tab = false
 config.use_fancy_tab_bar = false
-config.tab_max_width = 15
+config.tab_max_width = 20
 config.show_tab_index_in_tab_bar = false
 config.switch_to_last_active_tab_when_closing_tab = true
 config.tab_bar_at_bottom = false
@@ -178,7 +177,7 @@ config.animation_fps = 60
 config.max_fps = 60
 config.front_end = "WebGpu" -- OpenGL, WebGpu, Software
 config.webgpu_power_preference = "HighPerformance"
--- config.webgpu_preferred_adapter = gpu_adapters:pick_best()
+config.webgpu_preferred_adapter = gpu_adapters:pick_best()
 
 -- Keys
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 3000 }
