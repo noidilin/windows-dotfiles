@@ -48,7 +48,7 @@
         "defaults": 
         {
             "colorScheme": "color-fatigue",
-            "cursorShape": "filledBox",
+            "cursorShape": "bar",
             "font": 
             {
                 "cellHeight": "1.4",
@@ -84,6 +84,14 @@
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "commandline": "%USERPROFILE%\\scoop\\apps\\nu\\current\\nu.exe",
+                "guid": "{f2341cbb-c639-4909-afdc-6344507d46ae}",
+                "hidden": false,
+                "name": "Nushell",
+                "startingDirectory": "%USERPROFILE%",
+                "tabTitle": "Nushell"
             }
         ]
     },

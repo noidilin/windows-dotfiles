@@ -123,12 +123,12 @@
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": false,
   "WindowLeft": 778,
-  "WindowTop": 349.3333333333333,
+  "WindowTop": 348.66666666666663,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "KeepMaxResults": false,
   "MaxResultsToShow": 9,
-  "ActivateTimes": 246,
+  "ActivateTimes": 276,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -198,7 +198,7 @@
           "pm"
         ],
         "Priority": 0,
-        "Disabled": false
+        "Disabled": true
       },
       "b64d0a79-329a-48b0-b53f-d658318a1bf6": {
         "ID": "b64d0a79-329a-48b0-b53f-d658318a1bf6",
@@ -228,7 +228,7 @@
           "\u003E"
         ],
         "Priority": 0,
-        "Disabled": false
+        "Disabled": true
       },
       "CEA08895D2544B019B2E9C5009600DF4": {
         "ID": "CEA08895D2544B019B2E9C5009600DF4",
@@ -278,7 +278,7 @@
           "b"
         ],
         "Priority": 0,
-        "Disabled": false
+        "Disabled": true
       },
       "565B73353DBF4806919830B9202EE3BF": {
         "ID": "565B73353DBF4806919830B9202EE3BF",
@@ -308,7 +308,7 @@
           "bd"
         ],
         "Priority": 0,
-        "Disabled": false
+        "Disabled": true
       }
     }
   }
