@@ -1,14 +1,5 @@
 # PC Setup
 
-- [ ] blender config workflow can be optimized
-  - [ ] blender config: `~\AppData\Roaming\Blender Foundation\Blender\`
-  - [ ] blender preset: `~\blender\`
-  - [ ] addon-zip: `D:\resource\blender\addon`
-  - [ ] asset: `D:\resource\blender`
-- [ ] resolve config workflow can be optimized
-  - [ ] user preference is located in `~/.config/resolve/`
-  - [ ] database is located in `~/resolve/`
-
 ## Install Win11
 
 Use **_Rufus_** to make iso USB drive to avoid microsoft online account validation which could ruin your user name (user folder name). Changing user name afterward is hard and has the possibility to break some essential features.
@@ -29,163 +20,47 @@ Use **_Rufus_** to make iso USB drive to avoid microsoft online account validati
 
 - motherboard (X570 Meg Ace):
   - it will automatically prompt to install necessary motherboard driver.
-  - remember to uncheck some unnecessary application
+  - remember to uncheck some unnecessary applications in default selection.
 - cpu: amd razen master
 - gpu: studio version
 - hard drive: acronis true image WD
-- wacom tablet
-
-### Other system setting
-
-- [[Correcting HDMI and DP Color on Nvidia GPUs]]
-- [ ] install cursor icon in the `.config/cursor/`
-  - this step require chezmoi
-
-### D drive backup
-
-Files in D drive is backed up into two places:
-
-`My Book` drive with acronis true image WD:
-
-- project: current project
-- area: download folder, obsidian vault, render folder
-- resource: texture, FX asset, blender (asset, addon)
-- archive: application cache
-
-`oneDrive`:
-
-- project: temp synced files
-- area: obsidian asset back up
-- resource: learn resource, installation preset, reference library
-- archive: occasionally used files, one drive default system backup
 
 ---
 
-## UniGet for installation
+## Manually setup
 
-### `winget` Install uniget
+- Correcting HDMI and DP Color on Nvidia GPUs
+- install cursor icon in the `.config/cursor/`
 
-```sh
-winget install --id marticliment.unigetui
-```
+### `~/.local/etc/`
 
-- gui
-- dev-winget
-- dev-npm (manually)
-  - `npm i -g vsce yo generator-code`
-  - `npm i -g tldr`
-  - `npm i -g rimraf`
-- dev-pwsh (manually install)
-
-```sh
-Install-Module -Name Microsoft.WinGet.Client
-Install-Module -Name PSReadLine -AllowPrerelease
-Install-Module -Name CompletionPredictor
-Install-Module -Name PSFzf -RequiredVersion 2.6.1
-```
-
----
-
-## Chezmoi for configuration
-
-> [!hint] setup browser and git first  
-> chezmoi is powered by git. Therefore, you need to setup ssh connection with github account.
-
-```sh
-chezmoi init --apply git@github.com:noidilin/windows-dotfiles.git
-```
-
-> [!caution] manually setup  
-> config that need to setup manually will be represented with checkbox.
-
-### `~`
-
-- [ ] `.wezterm.lua`: config
-  - needs to setup `.config/wezterm/` from chezmoi external
-- `.glzr/`: theme, config
-- `resolve/`: manually link 'Resolve Project' as database
-- `.gitconfig`: info, config, delta
-- `FlexASIO.toml`: config
-
-### `~/.config`
-
-- [ ] `firefox/`: global speed, sidebery, tampermonkey, tweaks for youtube, youtube subscription manager
-  - manually import settings in the application
-- [ ] `stylus/`: color-fatigue.json
-  - manually import settings in the application
-- [ ] `pureref/`: theme
-  - manually import theme in the application
-- [ ] `shareX/`: theme, config
-  - manually assign config path in the application
-- `delta/`: theme
-- `vscode/`: css
-- `formatter/`: prettier, markdownlint
-- `starship.toml`: theme, config
-- (backup) `uniget/`: uniget bundle
-- (backup) `resolve/`: preference
-- (backup) `keyboard/`: bioi g60, cidoo abm066, dz60, lot60
-
-### `~/Documents/PowerShell/`
-
-- powershell: profile, cli tool config
-
-### `AppData/`
-
-#### `Local/`
-
-- windows terminal: theme
-- lazygit: theme, config
-- superfile: theme, config
-- [ ] nvim: config (nvim and vscode)
-  - install `msy32` for treesitter ([Get Started with C++ and MinGW-w64 in Visual Studio Code](https://code.visualstudio.com/docs/cpp/config-mingw))
-
-#### `Roaming/`
-
-- [ ] bat: theme
-  - theme config needs to be built with command: `bat cache --build`
-- [ ] flow launcher: theme
-  - needs to be setup in the UI
-- [ ] rime weasel: theme, config
-  - needs to be built through context menu
-- blender: config, preset theme
-- bottom: theme, config
-- yazi: theme, config, plugin
-
----
-
-## Other application
+- `resolve`: manually link 'Resolve Project' as database and import preference
+- `firefox`: global speed, sidebery, tampermonkey, tweaks for yt, yt subscription manager
+- `stylus`: color-fatigue.json
+- `shareX`: theme, config (manually assign config path in the app)
+- `pureref`: theme (manually import theme to app)
+- `keyboard`: bioi g60, cidoo abm066, dz60, lot60
+- `blender`: config, preset theme
 
 ### Resolve plugin
 
 - mInstaller
 - Dehancer Pro
-- VST3
-  - CLA-76
-  - Voice centric
-  - Playlist Rider
-  - NS1
-  - MV2
-  - WLM Meter
-  - WLM Plus
-  - Vocal Doubler
-  - MSED
-  - Ozone Imager 2
-  - Vinyl
+- VST3:
+  - Wave central: CLA-76, Playlist Rider, NS1, WLM Meter, WLM Plus, MV2, Voice centric
+  - iZotope: Vocal Doubler, Ozone Imager 2, Vinyl
   - T-De-Esser
   - Cymatics origin
 
-### Blender
+---
 
-application
+## D drive
 
-- Batch Render Creator
-- UV pack master core
-- zen UV core
+Files in D drive is backed up into two places:
 
-addon-zip: `D:\resource\blender\addon`
-asset: `D:\resource\blender`  
-texture: `D:\resource\tex`
-
-### Reference library
-
-eagle and pureref library is synced with oneDrive.
+|          | D drive           | oneDrive                  |
+| -------- | ----------------- | ------------------------- |
+| project  | current project   | temp synced files         |
+| area     | downloads, render | obsidian asset archive    |
+| resource | tex, FX, blender  | course, preset, reference |
+| archive  | cache             | legecy files              |
