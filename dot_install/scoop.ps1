@@ -62,7 +62,6 @@ $SCOOP_CLI = @(
   # "main/sed"
   # "main/touch"
   # "main/sudo"
-  # "main/gsudo"
   # "main/gh"
   # "main/glow"
   # "extra/jqp"

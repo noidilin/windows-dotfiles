@@ -15,6 +15,10 @@ Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/m
 Write-Host "(batch) apply chezmoi dotfiles..." -ForegroundColor DarkYellow
 chezmoi init --apply --verbose git@github.com:noidilin/windows-dotfiles.git
 
+Write-Host "(batch) setting up symbolic link..." -ForegroundColor DarkYellow
+# . "$HOME/.install/symlinks.ps1"
+Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/symlinks.ps1" | Invoke-Expression
+
 Write-Host "(batch) install programming languages with scoop..." -ForegroundColor DarkYellow
 # . "$HOME/.install/languages.ps1"
 Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/languages.ps1" | Invoke-Expression
