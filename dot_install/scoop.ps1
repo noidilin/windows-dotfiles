@@ -8,7 +8,12 @@ $SCOOP_BASE = @(
   "main/openssh"
   "neorocks-scoop/luarocks" # For nvim lazy, rest.nvim
   "nerd-fonts/CommitMono-NF-Mono"
-  # "extras/winrar"
+  "nerd-fonts/jf-open-huninn"
+  "nerd-fonts/GlowSansTC-Compressed"
+  "nerd-fonts/GlowSansTC-Condensed"
+  "nerd-fonts/GlowSansTC-Extended"
+  "nerd-fonts/GlowSansTC-Normal"
+  "nerd-fonts/GlowSansTC-Wide"
 )
 
 $SCOOP_GUI = @(
@@ -50,26 +55,23 @@ $SCOOP_CLI = @(
   "extras/lazygit"
   "main/fzf"
   "main/fd"
+  "main/sd"
   "main/grep"
   "main/ripgrep"
   "main/ast-grep"
   "main/zoxide"
   "main/ffmpeg"
   "main/imagemagick"
-  "main/jq"
   "main/yazi"
-  # "main/sd"
+  # "main/jq"
+  # "extra/jqp"
   # "main/sed"
-  # "main/touch"
-  # "main/sudo"
   # "main/gh"
   # "main/glow"
-  # "extra/jqp"
   # "main/unar"
   # "main/xh"
   # "main/yq"
   # "main/actionlint"
-  # "main/gpg" # Use default builtin gpg of git
   # "main/gnupg"
   # "main/yt-dlp"
   # "main/rclone"
@@ -104,5 +106,8 @@ if (Get-Command -Name bat -ErrorAction SilentlyContinue) {
 } else {
   Write-Host "bat not installed, skip building Bat themes!" -ForegroundColor DarkRed
 }
+
+# allow long path: fix potential problem (suggestion from `scoop checkup`)
+gsudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
 Write-Host "scoop.ps1 script finished." -ForegroundColor DarkGreen

@@ -7,7 +7,7 @@ $NPM_PACKAGES = @(
   "tldr"
   "rimraf"
   "prettier"
-  "markdownlint"
+  "markdownlint-cli2"
   # "eslint"
   # "commitizen"
 )
