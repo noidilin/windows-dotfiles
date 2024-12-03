@@ -14,6 +14,15 @@ key.txt.age
 Documents/PowerShell/Scripts/InstalledScriptInfos/*
 Documents/PowerShell/Scripts/Modules/*
 
+{{- if ne .chezmoi.os "windows" }}
+.install/*
+.glzr/*
+scoop/*
+FlexASIO.toml
+.config/pwsh/*
+.config/winterm/*
+{{- end }}
+
 {{- if ne .chezmoi.os "darwin" }}
 .zshrc
 .config/zsh/*
