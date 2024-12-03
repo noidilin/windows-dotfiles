@@ -6,6 +6,7 @@ doc/
 .config/chezmoi/*
 .config/chezmoi/chezmoistate.boltdb
 .config/chezmoi/chezmoi.toml
+.sh.tmpl
 
 # age passphrase key for chezmoi to decryp private key
 key.txt.age

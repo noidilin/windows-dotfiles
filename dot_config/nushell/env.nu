@@ -1,5 +1,5 @@
+# $env.VISUAL = 'code'
 $env.EDITOR = 'nvim'
-$env.VISUAL = 'code'
 $env.PAGER = 'delta'
 $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 $env.LS_COLORS = (vivid generate color-fatigue | str trim)
