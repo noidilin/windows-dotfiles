@@ -13,3 +13,13 @@ key.txt.age
 # Powershell
 Documents/PowerShell/Scripts/InstalledScriptInfos/*
 Documents/PowerShell/Scripts/Modules/*
+
+{{- if ne .chezmoi.os "darwin" }}
+.zshrc
+.config/zsh/*
+.config/raycast/*
+.config/fzf-git.sh/*
+.config/fzfrc
+.config/skhdrc
+.config/yabairc
+{{- end }}
