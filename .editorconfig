@@ -1,0 +1,7 @@
+[*.sh]
+end_of_line = lf
+insert_final_newline = true
+
+[*.sh.tmpl]
+end_of_line = lf
+insert_final_newline = true
