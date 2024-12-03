@@ -1,3 +1,5 @@
+{{ if eq .chezmoi.os "windows" }}
+
 $KeyPath = Join-Path -Path $HOME -ChildPath ".config/chezmoi/key.txt"
 $SourceFile = Join-Path -Path "{{ .chezmoi.sourceDir }}" -ChildPath "key.txt.age"
 
@@ -26,3 +28,5 @@ if (-Not (Test-Path -Path $KeyPath)) {
 # - the :r flag ensures that only this user has permissions, replacing any existing ones.
 # | Out-Null
 # - suppress command output to keep the script clean.
+
+{{ end }}
