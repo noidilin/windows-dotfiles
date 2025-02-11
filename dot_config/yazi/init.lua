@@ -15,17 +15,17 @@ end
 
 -- https://yazi-rs.github.io/docs/tips/#username-hostname-in-header
 -- show username and hostname in header
-Header:children_add(function()
-	if ya.target_family() ~= "unix" then
-		return ui.Line({})
-	end
-	return ui.Span(ya.user_name() .. "@" .. ya.host_name() .. ":"):fg("blue")
-end, 500, Header.LEFT)
+-- Header:children_add(function()
+-- 	if ya.target_family() ~= "unix" then
+-- 		return ui.Line({})
+-- 	end
+-- 	return ui.Span(ya.user_name() .. "@" .. ya.host_name() .. ":"):fg("blue")
+-- end, 500, Header.LEFT)
 
 -- linemode: size_and_mtime
 -- ~/.config/yazi/init.lua
 function Linemode:size_and_mtime()
-	local time = math.floor(self._file.cha.modified or 0)
+	local time = math.floor(self._file.cha.mtime or 0)
 	if time == 0 then
 		time = ""
 	elseif os.date("%Y", time) == os.date("%Y") then
