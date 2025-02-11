@@ -50,3 +50,7 @@
 	directory = C:/Users/noid/.local/share/chezmoi
 [credential "helperselector"]
 	selected = manager
+
+[rebase]
+  # stacked branches with lazygit (https://www.youtube.com/watch?v=M6S-9Y8peDY)
+	updateRefs = true
