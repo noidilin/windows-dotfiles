@@ -1,5 +1,65 @@
 /** Import the Nerdfonts icon font. */
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+/* normalize */
+:root {
+  --rosewater: #dcb5a5;
+  --flamingo: #c8a492;
+  --pink: #9f9fbd;
+  --mauve: #797994;
+  --red: #b07878;
+  --maroon: #cc9393;
+  --peach: #d6caab;
+  --yellow: #ebd6b7;
+  --green: #778777;
+  --teal: #9bb09b;
+  --sky: #92b3b3;
+  --sapphire: #769494;
+  --blue: #7d96ad;
+  --lavender: #9db2cf;
+
+  --text: #b3b3b3;
+  --subtext1: #9d9d9d;
+  --subtext0: #878787;
+  --overlay2: #707070;
+  --overlay1: #5d5d5d;
+  --overlay0: #4e4e4e;
+  --surface2: #414141;
+  --surface1: #353535;
+  --surface0: #2a2a2a;
+  --base: #1e1e1e;
+  --mantle: #191919;
+  --crust: #151515;
+
+  --accent8: #faf5eb;
+  --accent7: #dad5c8;
+  --accent6: #c0baad;
+  --accent5: #b3ad9f;
+  --accent4: #a69f91;
+  --accent3: #9a9487;
+  --accent2: #8e897d;
+  --accent1: #7f7b70;
+  --accent0: #706c62;
+
+  --accent-dim8: #f7f4ed;
+  --accent-dim7: #d6d3cc;
+  --accent-dim6: #bdbab2;
+  --accent-dim5: #b4b0a7;
+  --accent-dim4: #a19d97;
+  --accent-dim3: #97948c;
+  --accent-dim2: #8e8b85;
+  --accent-dim1: #7b7974;
+  --accent-dim0: #6c6a65;
+}
+
+html {
+  /* add gap to match window manager */
+  width: calc(100% - 20px);
+  position: absolute;
+  right: 10px;
+  /* match wallpaper */
+  background: var(--crust);
+}
 
 i {
   /* color: rgb(115 130 175 / 95%); */
@@ -9,7 +69,7 @@ i {
 
 body {
   /* color: rgb(255 255 255 / 90%); */
-  font-family: "CommitMono Nerd Font Mono", ui-monospace, monospace;
+  font-family: 'CommitMono Nerd Font Mono', ui-monospace, monospace;
   color: var(--overlay0);
   font-size: 12px;
   font-weight: 500;

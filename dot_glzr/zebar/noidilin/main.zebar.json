@@ -1,11 +1,18 @@
 {
-  "$schema": "https://github.com/glzr-io/zebar/raw/v2.1.0/resources/widget-schema.json",
+  "$schema": "https://github.com/glzr-io/zebar/raw/v2.7.0/resources/widget-schema.json",
   "htmlPath": "./main.html",
   "zOrder": "normal",
   "shownInTaskbar": false,
   "focused": false,
   "resizable": false,
   "transparent": false,
+  "caching": {
+    "defaultDuration": 604800,
+    "rules": []
+  },
+  "privileges": {
+    "shellCommands": []
+  },
   "presets": [
     {
       "name": "default",
@@ -19,7 +26,7 @@
       },
       "dockToEdge": {
         "enabled": false,
-        "edge": "top",
+        "edge": null,
         "windowMargin": "0px"
       }
     }
