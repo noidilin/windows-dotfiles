@@ -5,7 +5,7 @@
 
 /* statusbar */
 .monaco-workbench .part.statusbar {
-  height: 26px !important;
+  /* height: 22px !important; */
   font-size: 11px !important;
 }
 
@@ -27,7 +27,7 @@
 .linux:lang(zh-Hant),
 .linux:lang(ja),
 .linux:lang(ko) {
-  font-family: "CommitMono Nerd Font Mono" !important;
+  font-family: 'CommitMono Nerd Font Mono' !important;
 }
 
 /*
@@ -55,6 +55,7 @@
 * : 'debug-view-content'
 * */
 
+/* .suggest-widget, */
 .open-editors,
 .explorer-folders-view,
 .outline-tree,
@@ -63,13 +64,12 @@
 .extensions-list,
 .debug-breakpoints,
 .quick-input-widget,
-/* .suggest-widget, */
 .monaco-breadcrumbs-picker,
 .settings-toc-wrapper,
 .scm-view,
 .debug-view-content {
   & .monaco-list-row {
-    font-size: 10px !important;
+    font-size: 11px !important;
   }
   & .monaco-list-rows {
     zoom: 1.2 !important;
@@ -89,7 +89,7 @@
   & .quick-input-list-entry-keybinding,
   & .monaco-action-bar,
   & .monaco-count-badge,
-  & .codicon[class*="codicon-"],
+  & .codicon[class*='codicon-'],
   & .editor-group,
   & .monaco-icon-label:before {
     zoom: 0.8 !important;
