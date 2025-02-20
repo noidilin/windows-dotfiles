@@ -5,6 +5,7 @@ $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 $env.LS_COLORS = (vivid generate color-fatigue | str trim)
 
 $env.ANTHROPIC_API_KEY = ( open ($env.USERPROFILE | path join '.config' 'api' 'ANTHROPIC_API_KEY') | str trim )
+$env.TAVILY_API_KEY = ( open ($env.USERPROFILE | path join '.config' 'api' 'TAVILY_API_KEY') | str trim )
 
 export const ENV_DIR = ($nu.default-config-dir | path join 'env')
 
