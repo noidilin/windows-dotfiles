@@ -2,11 +2,12 @@ def replace_mocha_palette [
     file_path: string, 
     --stylus (-s)
 ] {
-    # Read file content
-    let original = (open $file_path | collect)
+    # since nu will convert json into 'record' data type, which can't be piped into `str` command
+    # add '--raw' tag to read the file as raw text.
+    let original = (open --raw $file_path | collect)
 
     # Apply mandatory replacements
-    let updated = $original 
+    let temp = $original 
         | str replace --all '#f5c2e7' '#9f9fbd'
         | str replace --all '#cba6f7' '#797994'
         | str replace --all '#f38ba8' '#b07878'
@@ -33,24 +34,24 @@ def replace_mocha_palette [
         | str replace --all '#11111b' '#151515'
 
     # Additional replacements if --stylus is used
-    if $stylus {
-        $updated = $updated
+    let result = if $stylus {
+        $temp
             | str replace --all '"updateInterval":24,"updateOnlyEnabled":true' '"updateInterval":0,"updateOnlyEnabled":true'
             | str replace --all '"name":"accentColor","value":null' '"name":"accentColor","value":"rosewater"'
             | str replace --all '#f5e0dc' '#c0baad'
             | str replace --all '#f2cdcd' '#a69f91'
     } else {
-        $updated = $updated
+        $temp
             | str replace --all '#f5e0dc' '#dcb5a5'
             | str replace --all '#f2cdcd' '#c8a492'
     }
 
-    $updated | save $file_path # Write the updated content back to the file
+    $result | save --force $file_path
 }
 
 def update_stylus [] {
     let url = 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json'
     let file = ( $env.USERPROFILE | path join '.local/etc/stylus/color-fatigue.json' )
-    http get $url | save $file # download the file
+    http get $url | save --force $file
     replace_mocha_palette $file --stylus # update the file with stylus modifications
 }

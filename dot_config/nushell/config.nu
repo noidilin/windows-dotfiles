@@ -37,7 +37,7 @@ $env.PROMPT_INDICATOR_VI_INSERT = ''
 # scripts in $NU_LIB_DIRS
 source alias.nu
 source commands.nu
-# source mocha-update.nu # WIP
+source mocha-update.nu
 
 # use $ENV_DIR atuin ATUIN_INIT_PATH
 # source $ATUIN_INIT_PATH
