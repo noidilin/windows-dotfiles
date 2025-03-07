@@ -25,11 +25,18 @@
   dark = true
   line-numbers = true
 
-[merge]
-    conflictstyle = zdiff3
-
 [diff]
-    colorMoved = default
+  colorMoved = default
+
+[merge]
+  conflictstyle = zdiff3 # automatically resolving identical lines
+  tool = nvimdiff
+  guitool = nvimdiff
+
+[mergetool]
+  prompt = false
+  guiDefault = false
+  keepBackup = false
 
 [log]
   data = iso
