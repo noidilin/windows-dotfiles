@@ -23,7 +23,7 @@ Write-Host "(batch) install programming languages with scoop..." -ForegroundColo
 # . "$HOME/.install/languages.ps1"
 Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/languages.ps1" | Invoke-Expression
 
-# FIX: luarocks will popup UAC prompt
+# ISSUE: luarocks will popup UAC prompt
 Write-Host "(batch) install apps with scoop..." -ForegroundColor DarkYellow
 # . "$HOME/.install/scoop.ps1"
 Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/scoop.ps1" | Invoke-Expression
@@ -32,7 +32,7 @@ Write-Host "(batch) install npm packages..." -ForegroundColor DarkYellow
 # . "$HOME/.install/npm.ps1"
 Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/npm.ps1" | Invoke-Expression
 
-# FIX: can't skip UAC prompt
+# ISSUE: can't skip UAC prompt
 Write-Host "(batch) install apps with winget..." -ForegroundColor DarkYellow
 # . "$HOME/.install/winget.ps1"
 Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/winget.ps1" | Invoke-Expression

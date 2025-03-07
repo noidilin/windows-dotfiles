@@ -32,10 +32,4 @@ foreach ($Key in $SetupEnv.Keys) {
   }
 }
 
-# foreach ($Key in $SetupEnv.Keys) {
-#   $tmpPath = $SetupEnv[$Key]
-#   Write-Output "Setting environment variable $Key to $tmpPath"
-#   [System.Environment]::SetEnvironmentVariable($Key, $tmpPath, [System.EnvironmentVariableTarget]::User)
-# }
-
 Write-Host "env.ps1 script finished." -ForegroundColor DarkGreen
