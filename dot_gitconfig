@@ -6,11 +6,8 @@
 	email = linganinja.0120@gmail.com
 
 [core]
-	# Config git to ensure line endings in files you checkout are correct for Windows.
-	# For compatibility, line endings are converted to Unix style when you commit files.
-	autocrlf = true
-	# editor = "code --wait"
-	eidtor = nvim -f
+	autocrlf = input
+	eidtor = nvim -f # 'code --wait'
   pager = delta
 
 [interactive]
