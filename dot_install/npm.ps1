@@ -6,13 +6,9 @@ $NPM_PACKAGES = @(
   "generator-code"
   "tldr"
   "rimraf"
-  "prettier"
-  "markdownlint-cli2"
-  # "eslint"
-  # "commitizen"
 )
 
-Write-Host "installing global npm packages..."
+# Write-Host "installing global npm packages..."
 npm install @NPM_PACKAGES -g
 
 Write-Host "npm.ps1 script finished." -ForegroundColor DarkGreen

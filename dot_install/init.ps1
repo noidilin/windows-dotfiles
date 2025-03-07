@@ -1,7 +1,6 @@
 Write-Host "starting init.ps1 script..." -ForegroundColor DarkGreen
 
 $SCOOP_INIT = @(
-  "versions/firefox-developer"
   "main/chezmoi"
   "main/pwsh"
   "main/nu"
