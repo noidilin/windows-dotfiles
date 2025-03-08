@@ -7,3 +7,7 @@ def --env yz [...args] {
 	}
 	rm -fp $tmp
 }
+
+def clean-shada [] {
+  ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+}
