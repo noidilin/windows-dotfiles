@@ -5,7 +5,7 @@ $SCOOP_LANGUAGES = @(
   "main/nodejs"
   "main/python"
   "main/pnpm"
-  # "main/rust"
+  "main/rustup-gnu"
   # "main/docker"
   # "main/docker-compose"
 )
