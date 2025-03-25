@@ -29,6 +29,11 @@ body {
 @-moz-document domain("linux.vbird.org") {
   /* dark theme for vbird blog */
 
+  ::-moz-selection,
+  ::selection {
+    background: #404040;
+  }
+
   footer,
   .block1.history,
   img[alt*='鳥哥'] {

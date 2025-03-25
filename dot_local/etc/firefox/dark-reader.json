@@ -5,8 +5,8 @@
     "theme": {
         "mode": 1,
         "brightness": 100,
-        "contrast": 100,
-        "grayscale": 0,
+        "contrast": 95,
+        "grayscale": 60,
         "sepia": 0,
         "useFont": false,
         "fontFamily": "Segoe UI",
@@ -146,7 +146,25 @@
         "docs.npmjs.com",
         "answers.microsoft.com",
         "www.powershellgallery.com",
-        "powershellexplained.com"
+        "powershellexplained.com",
+        "www.bilibili.com",
+        "space.bilibili.com",
+        "live.bilibili.com",
+        "search.bilibili.com",
+        "dev.to",
+        "medium.com",
+        "www.deepl.com",
+        "www.rosipov.com",
+        "graphite.dev",
+        "zhuanlan.zhihu.com",
+        "www.perforce.com",
+        "www.freecodecamp.org",
+        "users.rust-lang.org",
+        "blog.isquaredsoftware.com",
+        "www.learnenough.com",
+        "noghartt.dev",
+        "davi.sh",
+        "app.reclaim.ai"
     ],
     "disabledFor": [],
     "changeBrowserTheme": false,
@@ -171,6 +189,11 @@
     "enableForProtectedPages": false,
     "enableContextMenus": false,
     "detectDarkTheme": true,
+    "installation": {
+        "date": 1731146045038,
+        "reason": "install",
+        "version": "4.9.96"
+    },
     "displayedNews": [
         "thanks-2023",
         "g-search-crash"
@@ -201,11 +224,7 @@
         "product-hunt",
         "custom-site-settings",
         "thanks-for-contribution",
-        "dynamic-theme"
-    ],
-    "installation": {
-        "date": 1731146045038,
-        "reason": "install",
-        "version": "4.9.96"
-    }
+        "dynamic-theme",
+        "firefox-bugs"
+    ]
 }
