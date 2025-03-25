@@ -17,6 +17,7 @@ $SCOOP_BASE = @(
 )
 
 $SCOOP_GUI = @(
+  "versions/firefox-developer"
   "extras/via"
   "extras/flow-launcher"
   "extras/everything"
