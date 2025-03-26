@@ -1,4 +1,4 @@
-Write-Host "starting scoop.ps1 script..." -ForegroundColor DarkGreen
+Write-Host "starting scoop.ps1 script..." -ForegroundColor White
 
 $SCOOP_BASE = @(
   "main/7zip"
@@ -93,7 +93,7 @@ $SCOOP_OTHERS = @(
 )
 #>
 
-Write-Host "installing scoop apps..." -ForegroundColor DarkGreen
+Write-Host "installing scoop apps..." -ForegroundColor Gray
 scoop install $SCOOP_BASE
 scoop install $SCOOP_GUI
 scoop install $SCOOP_CLI
@@ -105,10 +105,10 @@ if (Get-Command -Name bat -ErrorAction SilentlyContinue) {
   Write-Host "building bat themes..." -ForegroundColor DarkGreen
   bat cache --build
 } else {
-  Write-Host "bat not installed, skip building Bat themes!" -ForegroundColor DarkRed
+  Write-Host "bat not installed, skip building Bat themes!" -ForegroundColor DarkGray
 }
 
 # allow long path: fix potential problem (suggestion from `scoop checkup`)
 gsudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
-Write-Host "scoop.ps1 script finished." -ForegroundColor DarkGreen
+Write-Host "scoop.ps1 script finished." -ForegroundColor Green

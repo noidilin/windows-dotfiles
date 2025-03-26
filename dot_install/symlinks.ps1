@@ -1,4 +1,4 @@
-Write-Host "starting symlinks.ps1 script..." -ForegroundColor DarkGreen
+Write-Host "starting symlinks.ps1 script..." -ForegroundColor White
 
 # linked files (destination => source)
 $symlinks = @{
@@ -14,10 +14,10 @@ $symlinks = @{
     # "$HOME\AppData\Local\fastfetch"                                                                 = ".\fastfetch"
 }
 
-Write-Host "creating symbolic links..." -ForegroundColor DarkGreen
+Write-Host "creating symbolic links..." -ForegroundColor Gray
 foreach ($symlink in $symlinks.GetEnumerator()) {
     Get-Item -Path $symlink.Key -ErrorAction SilentlyContinue | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue
     New-Item -ItemType SymbolicLink -Path $symlink.Key -Target (Resolve-Path $symlink.Value) -Force | Out-Null
 }
 
-Write-Host "symlinks.ps1 script finished." -ForegroundColor DarkGreen
+Write-Host "symlinks.ps1 script finished." -ForegroundColor Green

@@ -1,4 +1,4 @@
-Write-Host "starting languages.ps1 script..."
+Write-Host "starting languages.ps1 script..." -ForegroundColor White
 
 $SCOOP_LANGUAGES = @(
   "main/mingw"
@@ -10,7 +10,7 @@ $SCOOP_LANGUAGES = @(
   # "main/docker-compose"
 )
 
-Write-Host "installing programming languages with scoop..."
+Write-Host "installing programming languages with scoop..." -ForegroundColor Gray
 scoop install $SCOOP_LANGUAGES
 
-Write-Host "languages.ps1 script finished." -ForegroundColor DarkGreen
+Write-Host "languages.ps1 script finished." -ForegroundColor Green

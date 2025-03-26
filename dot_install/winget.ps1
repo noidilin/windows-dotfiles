@@ -1,4 +1,4 @@
-Write-Host "starting winget.ps1 script..." -ForegroundColor DarkGreen
+Write-Host "starting winget.ps1 script..." -ForegroundColor White
 
 $WINGET_GUI = @(
   # @{name = "Flow-Launcher.Flow-Launcher"}
@@ -17,12 +17,12 @@ $WINGET_GUI = @(
   @{name = "Zen-Team.Zen-Browser.Optimized"}
 )
 
-Write-Host "installing winget apps..." -ForegroundColor DarkGreen
+Write-Host "installing winget apps..." -ForegroundColor Gray
 Foreach ($app in $WINGET_GUI) {
   winget install --exact --silent --disable-interactivity --accept-source-agreements --accept-package-agreements --id $app.name
 }
 
-Write-Host "winget.ps1 script finished." -ForegroundColor DarkGreen
+Write-Host "winget.ps1 script finished." -ForegroundColor Green
 
 # BUG: this part didn't respond
 <#
