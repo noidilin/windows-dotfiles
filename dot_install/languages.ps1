@@ -2,10 +2,10 @@ Write-Host "starting languages.ps1 script..."
 
 $SCOOP_LANGUAGES = @(
   "main/mingw"
-  "main/nodejs"
-  "main/python"
-  "main/pnpm"
   "main/rustup-gnu"
+  "main/nodejs-lts"
+  "main/bun"
+  "main/python"
   # "main/docker"
   # "main/docker-compose"
 )
