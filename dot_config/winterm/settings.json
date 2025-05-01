@@ -67,7 +67,7 @@
             "font": 
             {
                 "cellHeight": "1.4",
-                "face": "CommitMono Nerd Font Mono",
+                "face": "Cascadia Mono",
                 "size": 12,
                 "weight": "normal"
             },
@@ -78,6 +78,10 @@
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "font": 
+                {
+                    "face": "Cascadia Mono"
+                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
