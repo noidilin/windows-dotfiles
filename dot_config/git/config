@@ -14,7 +14,7 @@
   diffFilter = delta --color-only
 
 [include]
-  path = .config/delta/color-fatigue.gitconfig
+  path = ~/.config/delta/color-fatigue.gitconfig
 
 [delta]
   features = color-fatigue
@@ -39,7 +39,19 @@
   keepBackup = false
 
 [log]
-  data = iso
+  date=format:%Y-%m-%d %H:%M
+  abbrevCommit = true  # short commits
+  graphColors = normal
+
+[status]
+  branch = true
+  showStash = true
+
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort = -taggerdate
 
 [rerere]
   enabled = true
@@ -52,9 +64,26 @@
 
 [safe]
 	directory = C:/Users/noid/.local/share/chezmoi
+
 [credential "helperselector"]
 	selected = manager
 
 [rebase]
   # stacked branches with lazygit (https://www.youtube.com/watch?v=M6S-9Y8peDY)
 	updateRefs = true
+
+[color "decorate"]
+  HEAD = white bold
+  branch = normal
+  tag = white bold ul
+  remoteBranch = green
+
+[color "branch"]
+  current  = bold
+  local    = default
+  remote   = white
+  upstream = yellow
+  plain    = blue
+
+[alias]
+  log-graph = "log --graph --all --pretty=format:'%C(normal reverse)%h%C(reset black) (%ad) %Creset%an %C(auto)%d%n%C(dim)%s%n'"

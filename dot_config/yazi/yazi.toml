@@ -6,6 +6,10 @@ linemode = "size_and_mtime"
 
 [opener]
 edit = [
-	{ run = 'nvim "$@"', block = true, for = "unix" },
-	{ run = "nvim %*",   block = true, for = "windows" },
+  { run = '$EDITOR "$@"', block = true, for = "unix" },
+  { run = "%EDITOR% %*", block = true, for = "windows" },
 ]
+
+# 'spot' on a file to check it's mime-type with the default <Tab> key.
+[open]
+prepend_rules = [{ mime = "application/wine-extension-ini", use = "edit" }]
