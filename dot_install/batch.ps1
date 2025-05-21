@@ -28,14 +28,13 @@ Write-Host "(batch) install apps with scoop..." -ForegroundColor Yellow
 # . "$HOME/.install/scoop.ps1"
 Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/scoop.ps1" | Invoke-Expression
 
-# Write-Host "(batch) install npm packages..." -ForegroundColor Yellow
+Write-Host "(batch) install npm packages..." -ForegroundColor Yellow
 # . "$HOME/.install/npm.ps1"
-# Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/npm.ps1" | Invoke-Expression
+Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/npm.ps1" | Invoke-Expression
 
-# ISSUE: needed to sign out and sign back into windows to reload PNPM_HOME
-# Write-Host "(batch) install pnpm packages..." -ForegroundColor Yellow
-# . "$HOME/.install/pnpm.ps1"
-# Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/pnpm.ps1" | Invoke-Expression
+Write-Host "(batch) install bun packages..." -ForegroundColor Yellow
+# . "$HOME/.install/bun.ps1"
+Invoke-WebRequest "https://raw.githubusercontent.com/noidilin/windows-dotfiles/main/dot_install/bun.ps1" | Invoke-Expression
 
 # ISSUE: can't skip UAC prompt
 Write-Host "(batch) install apps with winget..." -ForegroundColor Yellow
