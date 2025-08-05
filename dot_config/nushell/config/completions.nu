@@ -17,7 +17,7 @@ export def main [] {
 
 # alias expansion and different completers
   let external_completer = {|spans|
-    let expanded_alias = (scope aliases | where name == $spans.0 | get -i 0 | get -i expansion)
+    let expanded_alias = (scope aliases | where name == $spans.0 | get --optional 0 | get --optional expansion)
 
     let spans = if $expanded_alias != null {
       $spans

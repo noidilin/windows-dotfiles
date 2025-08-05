@@ -1,0 +1,3810 @@
+z obsidian
+fzf
+$env.FZF_DEFAULT_COMMAND
+$env.FZF_CTRL_T_OPTS
+z obsidian
+lt
+ls
+z obsidian
+ls
+z obsidian
+ls
+z obsidian
+ls
+z obsidian
+ls
+which eza | get path
+which eza | get path | is-empty
+not (which eza | get path | is-empty)
+theme
+config nu --default | nu-highlight | lines
+z config
+yz
+z config
+yz
+pwsh
+z nvim
+ls
+yz
+scoop -h
+scoop update -h
+scoop status
+scoop update
+scoop status
+scoop update -all
+config nu --default | nu-highlight | lines
+clear
+config nu --default | nu-highlight | lines
+z
+yz
+wezterm -h
+z learning
+git show
+config nu --default | nu-highlight | lines | pager
+config nu --default | nu-highlight | lines | less
+config nu --default | nu-highlight | lines | delta
+config nu --default | nu-highlight | lines | bat
+keybindings listen 
+keybindings list 
+config nu --default | nu-highlight | lines | less
+nvim
+sys
+sys cpu
+sys host
+sys temp
+clear
+ps -h
+ps | sort-by mem | last 5
+ps | sort-by mem | last 10
+z nushell
+ls
+yz
+eza
+ls
+ls -h
+ls -a
+nvim
+ez
+e
+ez
+nvim
+tutor
+tutor list
+z obsidian
+ls | where type == "file" | where size > 20mb | sort-by size | reverse
+ls | where type == "file" | where size > 1mb | sort-by size | reverse
+ls | where type == "file" | where size > 1024kb | sort-by size | reverse
+ls | where type == "file" | where size > 1kb | sort-by size | reverse
+ls 
+ls :::
+config nu --default | nu-highlight | lines | where name = "insert_newline"
+config nu --default | nu-highlight | lines | where "name" = "insert_newline"
+z nushell
+config nu --default | nu-highlight | lines 
+config nu --default | less
+config nu --default | where env.config.keybindings
+config nu --default | env.config.keybindings
+keybindings
+keybindings default
+config nu --default | keybindings
+save -h
+ls
+config nu --default | save config/keybindings-default.nu
+print "hello world"
+ls 
+keybindings list
+config nu --default | nu-highlight | lines | less
+z nushell
+config nu --default | save config/default.nu
+git show
+git status
+ls <\n>| where type == "file"
+ls<\n>| where type == "file"<\n>| size > 1kb
+ls<\n>| where type == "file"
+config env --default | nu-highlight | lines
+ls<\n>| where type == "file"<\n>| where size > 1kb
+config env --default | save ./env/default.nu
+$nu.default-config-dir
+$nu.default-config-dir | path join env
+yz
+$nu.env-path
+$nu.env-path | path dirname 
+$nu.default-config-dir
+z powershell
+yz
+scope -h
+scope commands
+scope -h
+scope commands<\n>| where commands =~ chezmoi<\n>| each { |it| {value: $it.command description: $it.usage} }
+scope variables
+scope variables | table
+scope commands | table
+scope variables | table
+scope commands -h
+scope commands | table
+nvim
+scope variables | table
+scope commands | table
+who
+wra
+whi
+gi
+whoami
+btm
+scope commands | where name == 'chezmoi'
+scope commands | where name == 'btm'
+scope commands | where name == 'git'
+scope commands | where name == 'nu'
+scope commands | where name == 'config'
+winget search vivid
+cargo -h
+ls
+z obsidian
+yz
+ls
+cd extra
+ls
+cd asset
+ls
+ls -a
+z config
+ls
+z
+z config
+ls
+ls -a
+z
+scoop bucket add custom ~/scoop/buckets/custom
+scoop bucket rm custom
+yz
+scoop bucket add custom ~/scoop/buckets/custom
+z downloads
+yazi
+open vivid-v0.10.1-x86_64-pc-windows-gnu.zip | hash sha256
+scoop update vivid
+z scoop
+yz
+yz
+git init
+lg
+scoop update vivid
+scoop install custom/vivid
+yazi
+scoop install custom/vivid
+scoop uninstall vivid
+scoop cache rm vivid
+scoop install custom/vivid
+scoop uninstall vivid
+scoop cache rm vivid
+scoop install custom/vivid
+vivid -h
+yazi
+lg
+yazi
+scoop uninstall vivid
+scoop cache rm vivid
+scoop install custom/vivid
+scoop uninstall vivid
+scoop cache rm vivid
+scoop install custom/vivid
+scoop uninstall vivid
+scoop cache rm vivid
+scoop install custom/vivid
+scoop uninstall vivid
+scoop cache rm vivid
+scoop install custom/vivid
+scoop update vivid
+scoop update vivid -f
+lg
+yazi
+z appdata
+yz
+z config
+ls
+z appdata
+cd roaming
+pwd
+cd $HOME/.config/vivid
+cd $env.HOME/.config
+cd $APPDATA
+cd $env.APPDATA
+cd
+cd $env.HOME
+cd $env.USERPROFILE
+cd $env.APPDATA
+cd $env.USERPROFILE
+cd $env.USERPROFILE/.config
+cd '$env.USERPROFILE/.config'
+cd $env.HOME
+cd $env.USERPROFILE/blender
+cd ($env.USERPROFILE | path join '.config')
+symlink -h
+ansi link -h
+gsudo yazi
+ls
+carapace --style
+carapace --help
+carapace --list
+ln -h
+z powershell
+ls
+nvim
+z config
+cd vivid
+ls
+z
+z config
+cd vivid
+clear
+ls
+cd themes
+ls
+z nvim
+ls
+config env --default | save ./env/default.nu
+config env --default | nu-highlight | lines
+clear
+ls
+nvim
+ls
+z nvim
+nvim
+z yazi
+yazi
+vivid -h
+vivid preview
+vivid generate color-fatigue
+vivid preview
+vivid preview -h
+vivid preview color-fatigue
+vivid preview color-fatigue | less
+vivid preview color-fatigue | table
+vivid preview color-fatigue | nu-highlight 
+vivid preview color-fatigue | nu-highlight | less
+vivid preview color-fatigue | nu-highlight | delta
+yz
+cd ..
+carapace --style "carapace.Description='bg-#191919','fg-#5d5d5d',italic"
+carapace --style "carapace.Description=bg-#191919,fg-#5d5d5d,italic"
+carapace --style "carapace.Description=bg-#191919,fg-#4e4e4e,italic"
+carapace --style "carapace.Error=bg-#191919,fg-#b07878,bold,underlined"
+carapace --style "carapace.Error=bg-#191919,fg-#b07878,bold"
+nvim color-fatigue.yml
+carapace --style "carapace.Description=fg-#4e4e4e,italic"
+carapace --style "carapace.Error=fg-#b07878,bold"
+carapace --style "carapace.Usage=fg-#9d9d9d"
+carapace --style "carapace.Value=fg-#878787"
+carapace --style "carapace.FlagArg=fg-#707070"
+carapace --style "carapace.FlagMultiArg=fg-#707070"
+carapace --style "carapace.FlagNoArg=fg-#5d5d5d"
+carapace --style "carapace.FlagOptArg=fg-#5d5d5d"
+carapace --style "carapace.Highlight1=fg-#dcdcdc"
+carapace --style "carapace.Highlight2=fg-#c0c0c0"
+carapace --style "carapace.Highlight3=fg-#aaaaaa"
+carapace --style "carapace.Highlight4=fg-#8e8e8e"
+carapace --style "carapace.Highlight5=fg-#7f7f7f"
+carapace --style "carapace.Highlight6=fg-#686868"
+carapace --style "carapace.Highlight7=fg-#7b7974"
+carapace --style "carapace.Highlight8=fg-#8e8b85"
+carapace --style "carapace.Highlight9=fg-#97948c"
+carapace --style "carapace.Highlight10=fg-#a19d97"
+carapace --style "carapace.Highlight11=fg-#b4b0a7"
+carapace --style "carapace.Highlight12=fg-#bdbab2"
+carapace --style "carapace.KeywordAmbiguous=fg-#5d5d5d"
+carapace --style "carapace.KeywordNegative=fg-#c8a492"
+carapace --style "carapace.KeywordPositive=fg-#778777"
+carapace --style "carapace.KeywordUnknown=fg-#4e4e4e"
+carapace --style "carapace.LogLevelCritical=fg-#b07878,bold"
+carapace --style "carapace.LogLevelDebug=fg-#707070"
+carapace --style "carapace.LogLevelError=fg-#b07878"
+carapace --style "carapace.LogLevelFatal=fg-#b07878,bold"
+carapace --style "carapace.LogLevelInfo=fg-#4e4e4e"
+carapace --style "carapace.LogLevelTrace=fg-#5d5d5d"
+carapace --style "carapace.LogLevelWarning=fg-#c8a492"
+z
+yz
+yazi
+z obsidian
+nvim
+nvim
+ps
+btm
+z powershell
+btm -C "C:\Users\noid\.config\bottom\bottom.toml"
+nvim
+btm -C "C:/Users/noid/.config/bottom/bottom.toml"
+yz
+yazi
+gsudo yazi
+btm
+btm --theme gruvbox
+btm --theme nord
+btm
+yazi
+yz
+yazi
+btm
+yazi
+z chezmoi
+z 
+chezmoi forget -h
+chezmoi status
+chezmoi forget ~/AppData/Local/superfile/
+yazi
+yazi
+lg
+yz
+chezmoi add ~/.config/carapace/
+yz
+chezmoi add ~/.config/superfile/
+yz
+chezmoi add ~/.config/vivid/
+chezmoi status
+chezmoi re-add
+chezmoi status
+chezmoi age decrypt --output "C:\Users\noid\.local\share\chezmoi\readonly_documents\powershell\scripts\encrypted_keys.ps1.age" "~/test.txt"
+chezmoi age decrypt --output "C:/Users/noid/.local/share/chezmoi/readonly_documents/powershell/scripts/encrypted_keys.ps1.age" "~/test.txt"
+chezmoi age decrypt --output "C:/Users/noid/.local/share/chezmoi/readonly_documents/powershell/scripts/encrypted_keys.ps1.age" --passphrase "~/test.txt"
+age -h
+age --decrypt -h
+age --decrypt -i C:\Users\noid\.config\chezmoi\key.txt -o "~/test.txt" C:\Users\noid\.local\share\chezmoi\readonly_documents\powershell\scripts\encrypted_keys.ps1.age
+age --decrypt -i C:\Users\noid\.config\chezmoi\key.txt -o C:Users\noid\test.txt C:\Users\noid\.local\share\chezmoi\readonly_documents\powershell\scripts\encrypted_keys.ps1.age
+age --decrypt -i C:\Users\noid\.config\chezmoi\key.txt -o C:\Users\noid\test.txt C:\Users\noid\.local\share\chezmoi\readonly_documents\powershell\scripts\encrypted_keys.ps1.age
+yazi
+chezmoi status
+lg
+yz
+chezmoi forget ~/.config/carapace/overlays/.keep
+chezmoi forget ~\.config\carapace\overlays\.keep
+chezmoi forget C:\Users\noid\.config\carapace\overlays\.keep
+chezmoi status
+yazi
+lg
+yazi
+lg
+ls
+yazi
+yazi
+lg
+chezmoi forget ~/documents/powershell/scripts/keys.ps1
+yazi
+ln -h
+symlink -h
+pwsh -Command "New-Item -ItemType SymbolicLink -Path 'link_to_original.txt' -Target 'original_file.txt'"
+z
+yz
+start .
+gsudo pwsh -Command "New-Item -ItemType SymbolicLink -Path '$env:APPDATA/Rime' -Target '$HOME/.config/rime'"
+yz
+gsudo pwsh -Command "New-Item -ItemType SymbolicLink -Path '$env:APPDATA/Rime' -Target '$HOME/.config/rime'"
+yazi
+chezmoi forget ~/AppData/Roaming/Rime/
+chezmoi forget ~/AppData/Local/
+chezmoi forget ~/AppData/
+yazi
+chezmoi forget ~/AppData/
+chezmoi forget ~/blender/
+chezmoi forget ~/.config/pureref
+chezmoi forget ~/.config/shareX
+chezmoi forget ~/resolve
+chezmoi add ~/.local/etc/
+z chezmoi
+chezmoi status
+z
+z install
+z 
+z install
+z powershell
+nvim
+z config
+cd pwsh
+nvim
+nvim
+z
+yazi
+z powershell
+start .
+cd ..
+z chezmoi
+chezmoi status
+chezmoi add ~/.install/
+chezmoi add ~/.config/pwsh/
+chezmoi add ~/.config/rime/
+chezmoi add ~/.config/winterm/
+chezmoi forget ~/.config/rime/user.yaml
+chezmoi forget ~/.config/rime/installation.yaml
+chezmoi forget ~/.config/firefox/
+chezmoi forget ~/.config/keyboard/
+chezmoi forget ~/.config/stylus/
+chezmoi add ~/.local/etc/
+chezmoi add ~/.local/etc/firefox/
+z
+chezmoi add ~/.local/etc/stylus/
+chezmoi status
+yazi
+chezmoi status
+z chezmoi
+chezmoi add ~/.local/etc/keyboard/
+yazi
+z config
+z pwsh
+z config
+z nushell
+nvim
+nvim
+z install
+nvim
+clear
+z chezmoi
+ls
+yazi
+z config
+cd api
+ls
+chezmoi add --encrypt ./ANTHROPIC_API_KEY
+lg
+yazi
+chezmoi init --apply
+chezmoi status
+cd ..
+cd chezmoi
+ls
+rm key.txt
+ls
+chezmoi init --apply
+lg
+yazi
+chezmoi status
+chezmoi init --apply
+ls
+chezmoi status
+lg
+z nvim
+pwd
+lg
+z area
+ls
+yazi
+cd obsidian
+ls
+ls --du 
+cd ..
+ls --du
+cd obsidian\extra\asset\
+ls
+cd ..
+ls --du
+cd asset
+ls | sort-by size
+z obsidian
+cd ../..
+ls --du
+nvim
+yazi
+ls --du
+yazi
+cd .obsidian\
+ls --du
+cd plugins\
+ls --du
+yz
+ls --du
+cd ..
+ls --du
+z nushell
+z obsidian
+ls --du
+yazi
+z local
+ls
+z
+z .local
+z share
+ls
+ls --du
+nvim
+z area
+cd obsidian
+yazi
+cd ..
+yazi
+yazi
+start .
+z obsidian
+ls --du
+cd .obsidian\
+cd plugins\
+ls --du
+cd ..
+ls --du
+rm jieba_rs_wasm_bg.wasm
+ls --du
+cd ..
+git rm --cached .obsidian/plugins/**/main.js
+git rm --cached .obsidian/plugins/**/style.css
+git rm --cached .obsidian/plugins/
+git status
+git rm --cached .obsidian/plugins/
+git rm --cached .obsidian/plugins/ -r
+git add .obsidian/plugins/
+git status
+lg
+git rm --cached .obsidian/plugins/ -r
+git add .obsidian/plugins/
+git status
+lg
+git status
+yazi
+git push
+z nvim
+nvim
+z install
+ls
+z appdata
+cd local
+yazi
+nvim
+yazi
+yz
+ls --du
+z
+z nvim
+pwd
+z share
+ls
+nvim
+z obsidian
+nvim
+z appdata
+z local
+cd nvim-data\
+ls --du
+yazi
+nvim -h
+z config
+cd vscode\
+ls
+nvim main.css
+z scoop
+yazi
+nu -h
+z install
+ls
+z appdata
+yz
+gsudo yazi
+python ./themes/bat/convert-syntax-highlight.py
+z dev
+ls
+z 
+z area
+z dev
+z project
+z dev
+z color-fatigue\
+yazi
+bat package.json
+z yazi
+cd ..
+ls
+nvim
+z color-fatigue\
+z color-fatigue
+python ./themes/bat/convert-syntax-highlight.py
+yazi
+yazi
+bat package.json
+yazi
+bat package.json
+yz
+lg
+git push
+git status
+git push
+z
+ls
+yazi
+lg
+git remote -r
+git remote -v
+yazi
+z chezmoi
+git remote remove origin
+git remote -v
+git remote add origin git@github.com:noidilin/color-fatigue.yazi.git
+git remote -v
+git push
+git push -u origin main
+z wezterm
+ls
+git remote -v
+git remote remove origin
+git remote add origin git@github.com:noidilin/wezterm.git
+git remote -v
+git branch -r
+git fetch
+git branch -r
+lg
+yazi
+git branch
+lg
+z nvim
+git remote -v
+z chezmoi
+yazi
+z
+ls
+cd .cache\
+ls
+ls --du
+chezmoi status
+chezmoi diff
+z install
+nvim
+chezmoi add ~/.config/nushell
+yazi
+chezmoi status
+chezmoi re-add
+chezmoi status
+chezmoi forget ~/.config/nushell/history.txt
+chezmoi forget ~/.config/nushell/config/default.nu
+chezmoi forget ~/.config/nushell/env/default.nu
+chezmoi status
+yazi
+lg
+git remote -v
+git push -u origin main
+z nushell
+z config
+ls
+cd api
+ls
+z pwsh
+ls
+$env.HOME
+$env.USERPROFILE
+open ($env.USERPROFILE | path join '.config' 'api' 'ANTHROPIC_API_KEY')
+open (path join $env.USERPROFILE '.config' 'api' 'ANTHROPIC_API_KEY')
+open ($env.USERPROFILE | path join '.config' 'api' 'ANTHROPIC_API_KEY')
+(open ($env.USERPROFILE | path join '.config' 'api' 'ANTHROPIC_API_KEY')) | str trim
+$env.ANTHROPIC_API_KEY
+nvim
+z chezmoi
+chezmoi status
+chezmoi forget ~/.config/nushell/env/key.nu
+chezmoi status
+chezmoi re-add
+lg
+git push
+lg
+git status
+git push
+nvim
+exit
+z chezmoi
+nvim
+chezmoi status
+yz
+chezmoi re-add
+lg
+ls
+pwd
+lg
+chezmoi status
+lg
+yz
+cd ..
+chezmoi status
+chezmoi re-add
+lg
+nvim
+z obsidian
+pwd
+nvim
+z obsidian
+ls
+cd .obsidian\
+ls
+yazi
+cd ..
+lg
+git push
+lg
+nvim
+z install
+ls
+z obsidian
+lg
+ls *.md
+z source
+yazi
+cd node
+ls
+ls *.md
+ls *.md | each { |file| print $file }
+scoop install main/sd
+open ./n-object-info_1.md | sd '\[\[(.*?)\]\]' { |cap| "[[$cap.0.replace(' ', '-')]]" } | save $file
+save -h
+open ./n-object-info_1.md | sd '\[\[(.*?)\]\]' { |cap| "[[$cap.0.replace(' ', '-')]]" } | save ./n-object-info_1.md
+open ./n-object-info_1.md | sd '\[\[(.*?)\]\]' { |cap| "[[$cap.0.replace(' ', '-')]]" } | save ./n-object-info_1.md -f
+yazi
+scoop uninstall main/jq
+scoop list main/jq
+scoop search main/jq
+scoop search jq
+scoop install main/jq
+scoop update jq
+scoop uninstall jq
+scoop install main/jq
+scoop -h
+scoop info jq
+scoop status
+scoop checkup
+npm -h
+npm -l
+npm -h
+npm doctor
+scoop update
+scoop update -h
+npm ls
+scoop update --all
+scoop update
+npm ls
+scoop update --all
+npm ls -h
+npm ls -g
+npm uninstall -h
+npm uninstall -g markdownlint
+npm install markdownlint-cli2 -g
+scoop info neovim
+scoop search neovim
+npm update -h
+winget update -h
+winget -h
+npm update -g
+winget upgrade -h
+winget upgrade --help
+winget upgrade -h
+winget -h
+winget upgrade --help
+winget status
+winget list
+winget -h
+winget update
+winget update --id SteelSeries.GG
+winget update --id Zen-Team.Zen-Browser.Optimized
+winget update
+nvim
+chezmoi status
+z config
+yz
+yazi
+chezmoi forget ~/.config/rime/luna_pinyin.userdb/
+chezmoi status
+chezmoi re-add
+z install
+clear
+scoop install nerd-fonts/jf-open-huninn
+scoop install nerd-fonts/GlowSansTC-Compressed
+scoop install nerd-fonts/GlowSansTC-Condensed
+scoop install nerd-fonts/GlowSansTC-Extended
+scoop install nerd-fonts/GlowSansTC-Normal
+scoop install nerd-fonts/GlowSansTC-Wide
+scoop uninstall jq
+scoop -h
+scoop cleanup
+scoop depends -h
+scoop status
+scoop checkup
+pwsh
+scoop checkup
+nvim
+chezmoi status
+chezmoi re-add
+z config
+fastfetch
+fastfetch -h shell-format
+fastfetch
+fastfetch -h terminal-format
+fastfetch
+fastfetch logo -h
+fastfetch logo-type -h
+fastfetch -h logo-type
+fastfetch
+fastfetch --logo
+fastfetch --list-logos
+fastfetch --print-logos
+fastfetch --pipe false
+fastfetch
+fastfetch -h display-color
+fastfetch -h display
+fastfetch -h 
+fastfetch 
+fastfetch -h 
+fastfetch
+fastfetch -h
+fastfetch --list-module
+fastfetch --list-modules
+yazi
+fastfetch
+fastfetch -h editor-format
+fastfetch
+fastfetch -h editor-format
+fastfetch
+fastfetch --list-modules
+fastfetch --help
+fastfetch -h editor-key
+fastfetch --list-modules
+fastfetch 
+fastfetch -h editor-format
+fastfetch 
+yz
+nvim
+yazi
+cd nushell
+nvim
+yazi
+z config
+z nushell
+nvim
+clear
+yazi
+z nushell
+nvim
+z
+nvim
+z nushell
+nvim
+yazi
+nvim
+z nushell
+nvim
+yazi
+nvim
+z
+z config
+z fastfetch
+fastfetch
+yazi
+z nushell
+ls
+nvim --clean env.nu
+fastfetch
+z fastfetch
+fastfetch
+fastfetch -h gpu-format
+fastfetch
+fastfetch -h gpu-format
+fastfetch
+fastfetch -h gpu-format
+fastfetch
+fastfetch -h os-format
+fastfetch
+z nushell
+yazi
+z nvim
+lg
+nvim --clean config.nu
+yazi
+nvim
+z 
+yazi
+nvim
+z nushell
+nvim
+z nvim
+lg
+git push
+z chezmoi
+lg
+git push
+z obsidian
+nvim
+z nushell
+nvim
+z config
+yazi
+chezmoi status
+z chezmoi
+lg
+chezmoi re-add
+chezmoi status
+chezmoi init --apply
+chezmoi status
+git push
+yz
+z config
+z chezmoi
+z
+z chezmoi
+yazi
+chezmoi status
+chezmoi init --apply
+z wezterm
+lg
+git fetch
+git branch -u feat/color-theme
+git branch -v
+git branch -r
+git branch --set-upstream-to=origin/feat/color-theme feat/color-theme
+git branch -r
+git branch -v
+chezmoi status
+z 
+yazi
+z chezmoi
+lg
+git push
+yazi
+lg
+yazi
+lg
+git push --force
+yazi
+lg
+chezmoi update
+chezmoi status
+chezmoi diff
+yazi
+yazi
+lg
+git push
+chezmoi update
+z nushell
+nvim
+z
+ls
+nvim .wezterm.lua 
+z wezterm
+ls
+nvim
+z
+nvim .wezterm.lua 
+yazi
+nvim wezterm.lua
+ls
+z wezterm
+ls
+lg
+nvim
+ls
+z wezterm
+git fetch upstream
+git remote -v
+git remote add upstream https://github.com/KevinSilvester/wezterm-config.git
+git fetch upstream
+git merge upstream/master master
+git branch
+git switch master
+git switch -
+lazygit
+git switch -
+git fetch upstream
+git status
+git merge upstream/master master
+git switch -
+clear
+git merge -h
+lg
+git status
+lg
+git status
+git push
+z chezmoi
+nvim .chezmoiignore 
+chezmoi status
+chezmoi forget ~/.wezterm.lua
+yazi
+lg
+git push
+yazi
+lg
+yazi
+lg
+git push --force
+yazi
+lg
+git push --force
+lg
+git push --force
+z chezmoi
+git push --force
+z chezmoi
+git status
+lg
+git push --force
+scoop update
+winget update
+scoop update --all
+z obsidian
+pwd
+lg
+nvim
+z chezmoi
+scoop update --all
+yazi
+z dev
+z
+z learning
+pwd
+yazi
+z yazi
+cd ..
+ls
+nvim keymap.toml
+nvim
+yazi
+yaiz
+yazi
+yz
+lg
+git status
+lg
+git push
+scoop list --help
+scoop list
+scoop update
+scoop update --all
+winget update
+z
+ls
+yazi
+nvim .gitconfig 
+git config --global rebase.updateRefs true
+nvim .gitconfig 
+z scoop
+yazi
+z chezmoi
+pwd
+yz
+z install
+z local
+yazi
+yz
+nvim blender.md 
+z .local
+yz
+z appdata
+yazi
+start .
+yazi
+scoop update --all
+btm
+scoop update --all
+scoop install versions/steam
+scoop uninstall versions/steam
+scoop bucket add games
+scoop install games/steam
+scoop uninstall versions/steam
+z scoop
+yazi
+scoop uninstall versions/steam
+scoop install games/steam
+chezmoi apply --help
+chezmoi apply --dry-run --verbose
+scoop update --all
+scoop update --help
+scoop update pwsh --force
+scoop update --all
+z scoop
+yazi
+z chezmoi
+z scoop
+yazi
+yz
+git status
+ls
+yazi
+yz
+ls
+git status
+lazygit
+z scoop
+yazi
+scoop uninstall steam
+yazi
+scoop list --help
+scoop list steam
+fastfetch
+clear
+fastfetch
+scoop update
+winget update
+scoop update --all
+winget update --all
+z zebar
+z .glzr
+z zebar
+nvim
+chezmoi status
+z chezmoi
+pwd
+ls
+yz
+z .local
+chezmoi add ~/.local/etc/resolve/
+chezmoi re-add
+chezmoi status
+yazi
+cd ..
+git status
+lg
+git push
+yazi
+z
+z dev
+z project
+z dev
+ls
+cd ..
+ls
+z learning
+ls
+yazi
+z leet
+z wezterm
+pwd
+nvim
+z obsidian
+pwd
+ls
+nvim leetcode.nvim
+z nvim
+pwd
+ls
+nvim
+nvim
+yazi
+nvim leetcode.nvim
+z downloads
+yazi
+z nvim
+nvim
+z obsidian
+nvim
+nvim
+z obsidian
+z nvim
+nvim
+nvim
+clear
+nvim
+clear
+nvim
+clear
+cd ..
+ls
+lazygit
+yz
+z learning
+nvim
+clear
+yazi
+z obsidian
+lazygit
+z nvim
+pwd
+nvim
+nvim
+clear
+nvim
+nvim
+clear
+nvim
+nvim
+lazygit
+nvim
+nvim
+clear
+nu -h
+nushell
+nvim
+clear
+nvim
+clear
+nvim
+clear
+z nvim
+clear
+z learning
+yz
+clear
+nvim
+clear
+npm run dev
+npm update --help
+npm update -g
+npm list
+npm list --global
+npm install @vscode/vsce -g
+npm uninstall -g vsce
+npm install @vscode/vsce -g
+scoop update
+scoop list npm
+scoop update --all
+scoop list node
+npm install -g npm@latest
+npm update
+npm --version
+nvim
+nvim
+z learning
+yz
+z nvim
+z obsidian
+npm dev
+z learning
+yz
+npm install
+yazi
+yazi
+z nushell
+pwd
+nvim
+yazi
+$env.ANTHROPIC_API_KEY
+z nushell
+nvim
+$env.ANTHROPIC_API_KEY
+z nushell
+nvim
+nvim
+$env.user
+$env
+$env.USERPROFILE
+npm run start
+nvim
+npm run dev
+nvim
+z
+$env.USERPROFILE
+$env.APPDATA
+$env.LOCALAPPDATA
+z .local
+z nvim
+pwd
+( $env.LOCALAPPDATA | path join '\nvim-data\shada\*' )
+( $env.LOCALAPPDATA | path join 'nvim-data\shada\*' )
+cd ( $env.LOCALAPPDATA | path join 'nvim-data\shada\*' )
+cd ( $env.LOCALAPPDATA | path join 'nvim-data\shada\' )
+cd
+rm -f ( $env.LOCALAPPDATA | path join 'nvim-data\shada\*' )
+rm -h
+rm -rfiv ( $env.LOCALAPPDATA | path join 'nvim-data\shada\*' )
+cd ( $env.LOCALAPPDATA | path join 'nvim-data\shada\' )
+ls
+$env.LOCALAPPDATA | path join 'nvim-data' 'shada' | ls
+$env.LOCALAPPDATA | path join 'nvim-data' 'shada' | ls | get name
+rm -fiv ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' | ls | get name )
+rm -fiv ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' | ls | get path )
+$env.LOCALAPPDATA | path join 'nvim-data' 'shada' | ls
+rm -fiv ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*' )
+$env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*'
+ls
+ls ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*' )
+ls ( glob ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*' ))
+glob ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*' ))
+glob ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*' )
+ls ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' | get name )
+( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' | ls | get name )
+path expand ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*' )
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*')
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' )
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' | each {|file| echo $file})
+$env.LOCALAPPDATA | path join 'nvim-data' 'shada' | each {|file| echo $file}
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada') | each {|file| echo $file}
+$env.LOCALAPPDATA | path join 'nvim-data' 'shada' | ls
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada')
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada') | each {|file| rm -fiv $file}
+rm -fiv (ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada'))
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada')
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' | get name)
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| echo $file}
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fiv $file}
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+yazi
+z obsidian
+yazi
+lg
+nvim
+nvim
+z learning
+z nvim
+z obsidian
+yz
+yazi
+yz
+npm create vite@latest .
+yazi
+lg
+npm create vite@latest .
+pwd
+npm create vite@latest .
+npm install tailwindcss @tailwindcss/vite
+yazi
+nvim
+npm init @eslint/config@latest
+npm install -D prettier eslint-config-prettier
+npm run dev
+npm init @eslint/config@latest
+cd react\project-tictac\
+npm install -D prettier eslint-config-prettier prettier-plugin-tailwindcss
+npm init stylint
+npm init stylelint
+npm run dev
+cd backend
+cd react\router-01\backend\
+npm run start
+z .config
+cd vscode\
+ls
+nvim main.css
+z learning
+cd react\project-tictac\
+nvim
+nvim
+z nvim-data
+z .local
+ls
+nvim
+yz
+nvim
+nvim --version
+nvim
+cd ..\..
+cd react\router-01\
+clear
+lg
+git push
+lg
+yazi
+lg
+git push origin project/tictac
+nvim
+yz
+nvim
+lg
+git rebase project-tictac main
+git rebase --help
+git rebase main
+lg
+git push --force
+git push origin project/tictac --force
+lg
+git pull origin main
+git branch -d project/tictac
+lg
+cd ..\..
+yazi
+lg
+scoop update
+scoop update --all
+scoop update --help
+scoop update --all
+scoop update vscode
+winget update --all
+winget update
+winget update --id glzr-io.glazewm
+winget uninstall --id glzr-io.glazewm
+winget install --id glzr-io.glazewm
+winget update
+z nvim
+lg
+z
+chezmoi status
+z .config/yazi
+ls
+yazi
+chezmoi status
+chezmoi re-add
+chezmoi status
+chezmoi forget ~/.config/yazi/plugins/
+chezmoi status
+z chezmoi
+pwd
+ls
+z yazi
+pwd
+yazi
+chezmoi status
+chezmoi forget ~/.config/yazi/keymap.toml
+lg
+z nushell
+yazi
+chezmoi re-add
+clear
+clear
+z nvim
+z learning
+z obsidian
+clear
+z nvim
+clear
+clear
+z obsidian
+nvim
+lg
+nvim
+clear
+clear
+lg
+nvim
+clear
+nvim
+nvim
+yazi
+nvim
+yazi
+nvim
+clear
+lg
+cleawr
+clear
+cd react\router-01\
+nvim
+nvim
+nvim
+clear
+yazi
+nvim
+cl
+cleawr
+clear
+z nvim
+z obsidian
+fastfetch
+nvim --version
+cl
+nvim
+powershell.exe -NoProfile -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Clipboard]::GetImage()"
+clear
+powershell.exe -NoProfile -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Clipboard]::GetImage()"
+clear
+powershell.exe -NoProfile -Command "powershell -command 'Get-Clipboard'"
+powershell.exe -NoProfile -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Clipboard]::GetImage()"
+powershell.exe -NoProfile -Command "powershell -command 'Get-Clipboard'"
+clear
+powershell.exe -NoProfile -Command "powershell -command 'Get-Clipboard'"
+nvim
+cleawr
+clear
+z learning
+cd react\router-01\
+cd backend
+z wezterm
+ls
+nvim
+lg
+git fetch upstream
+git status
+lg
+nvim
+nvim
+clear
+nvim
+z obsidian
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+yazi
+nvim
+lg
+z learning
+cd react\router-01\
+npm --help
+cd backend
+npm run start
+z learning
+cd react\router-01\
+cd backend
+npm run start
+btm
+nvim
+cd backend
+nvim
+btm
+cd backend
+npm run start
+nvim
+btm
+cd backend
+npm run dev
+npm run start
+nvim
+clear
+yazi
+btm
+start .
+lg
+z nushell
+yazi
+nvim
+lg
+z learning
+lg
+git fetch
+btm
+git fetch
+scoop update
+winget update
+npm update
+scoop update --all
+z learning
+lg
+git fetch
+git fetch --prune
+ssh -T git@github.com
+git fetch --prune
+z obsidian
+nvim
+lg
+z chezmoi
+z .config
+ls
+yazi
+z chezmoi
+yazi
+z
+z chezmoi
+pwd
+yazi
+chezmoi age decrypt --output 'test.txt' --passphrase 'key.txt.age'
+age-keygen | age --armor --passphrase > key.txt.age
+age-keygen | age --armor --passphrase | save key.txt.age
+chezmoi age decrypt --output '~/.config/chezmoi/key.txt' --passphrase 'key.txt.age'
+chezmoi apply .chezmoi.toml.tmpl
+chezmoi init --apply
+chezmoi forget ~/.config/api/ANTHROPIC_API_KEY
+chezmoi init --apply
+chezmoi add --encrypt ~/.config/api/ANTHROPIC_API_KEY
+chezmoi add --encrypt ~/.config/api/TAVILY_API_KEY
+chezmoi status
+chezmoi re-add
+lg
+yazi
+git status
+z learning
+lg
+yazi
+cd react\project-usepopcorn\
+z nushell
+cd ..
+yazi
+nvim
+nvim
+chezmoi status
+z nvim
+nvim
+z learning
+nvim
+z nushell
+z .local
+nvim
+source scripts\mocha-update.nu
+update_stylus
+z nushell
+z obsidian
+yazi
+open '~\.local\etc\stylus\color-fatigue.json' | into string
+open ~\.local\etc\stylus\color-fatigue.json | into string
+open ~\.local\etc\stylus\color-fatigue.json
+open --raw ~\.local\etc\stylus\color-fatigue.json
+open --raw ~\.local\etc\stylus\color-fatigue.json | collect
+source scripts\mocha-update.nu
+update_stylus
+save -h
+source scripts\mocha-update.nu
+update_stylus
+source scripts\mocha-update.nu
+update_stylus
+z .local
+cd etc\stylus\
+yazi
+start .
+yazi
+z .local
+cd etc\stylus\
+yazi
+source scripts\mocha-update.nu
+update_stylus
+z .local
+cd etc\stylus\
+yazi
+chezmoi status
+chezmoi re-add
+chezmoi status
+chezmoi forget ~/.local/etc/firefox/stylus.json
+chezmoi add ~/.local/etc/stylus/noidilin-style.css
+chezmoi status
+chezmoi cd
+z chezmoi
+clear
+git status
+lg
+nvim
+yazi
+lg
+z nvim
+nvim
+yazi
+nvim
+nvim
+z .local
+ls
+cd share
+ls
+cd nvim-data\
+ls
+yazi
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+z .config
+ls
+yazi
+cd ..
+nvim .gitconfig 
+delta --help
+delta -h
+delta --show-themes
+nvim
+clear
+nvim
+scoop update
+winget update
+scoop update --all
+npm update
+winget update --all
+npm list --global
+npm update -g
+ls
+lg
+yazi
+lg
+nvim
+clear
+nvim
+clear
+nvim
+clear
+z
+nvim
+nvim
+yazi
+clear
+nvim
+clear
+nvim
+nvim .gitconfig 
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+clear
+z wezterm
+ls
+pwd
+z nushell
+pwd
+nvim
+nvim
+clear
+nvim
+clear
+nvim
+clear
+lg
+nvim
+nvim
+lg
+nvim
+lg
+clear
+nvim
+nvm
+nvim
+z .local
+yz
+z wezterm
+nvim
+lg
+keybindings default
+z nushell
+keybindings default 
+keybindings list --keycodes
+keybindings list --modifiers
+keybindings listen 
+z wezterm
+nvim
+keybindings default 
+yazi
+cd ..
+cd  pwsh\
+ls
+cd scripts\
+ls
+cd ..
+$env.__keybindings_loaded
+history<\n>  | get command<\n>  | str replace --all (char newline) ' '<\n>  | to text<\n>  | fzf --preview 'print \'{}\'' | nufmt --stdin 2>&1 | rg -v ERROR'
+history<\n>  | get command<\n>  | str replace --all (char newline) ' '<\n>  | to text<\n>  | fzf --preview 'print \'{}\' | nufmt --stdin 2>&1 | rg -v ERROR'
+nufmt --stdin 2>&1 | rg -v ERROR
+history<\n>  | get command<\n>  | str replace --all (char newline) ' '<\n>  | to text<\n>  | fzf --preview 'print \'{}\' | nufmt --stdin out+err> | rg -v ERROR'
+history<\n>  | get command<\n>  | reverse<\n>  | str replace --all (char newline) ' '<\n>  | to text<\n>  | fzf --preview 'print \'{}\' | nufmt --stdin out+err> | rg -v ERROR'
+history<\n>  | get command<\n>  | reverse<\n>  | str replace --all (char newline) ' '<\n>  | to text<\n>  | fzf --preview 'print \'{}\' | nufmt --stdin out+err> rg -v ERROR'
+nufmt 
+z wezterm
+nvim
+z nushell
+z nushell
+eza --tree --level=3 --color=always {} | first 200
+eza --tree --level=3 --color=always | first 200
+eza --tree --level=3 --color=always
+eza --tree --level=3 --color=always | first 200
+$nu.default-config-dir
+source $nu.default-config-dir
+bat config.nu
+bat cache --build
+bat config.nu
+z wezterm
+ls
+bat wezterm.lua
+yz
+$env.BAT_CONFIG_DIR
+ls
+$env.EZA_CONFIG_DIR
+$env.YAZI_CONFIG_HOME
+$env.YAZI_FILE_ONE
+$env.BLENDER_USER_RESOURCES
+$env.BAT_CONFIG_DIR
+z wezterm
+bat wezterm.lua
+bat cache --clear
+bat cache --build
+bat wezterm.lua
+scoop update
+scoop update --all
+z
+yz
+yazi
+start .
+z scoop
+yazi
+z
+z scoop
+yazi
+chezmoi add ~/.config/bat
+chezmoi status
+chezmoi add ~/.config/bat/syntaxes
+chezmoi add ~/.config/bat/syntaxes/
+chezmoi status
+scoop -h
+scoop update -h
+scoop bat -f
+scoop update bat -f
+$env.BAT_CONFIG_DIR
+yazi
+scoop install main/pnpm
+$env.PNPM_HOME
+pnpm setup
+yz
+cd ..
+ls
+bat config.nu
+yazi
+cd ..
+z wezterm
+z nushell
+config\ | path type
+.\config\ | path type
+'config\' | path type
+'env\os.nu' | path type
+"env\os.nu" | path type
+if (( 'env/os.nu' | path type) == dir) { eza --tree --level=3 --color=always --icons=always {} } else { bat -n --color=always --line-range :500 {} }
+if (( 'env/os.nu' | path type) == dir) { eza --tree --level=3 --color=always --icons=always {} } else { bat -n --color=always --line-range :500 env/os.nu }
+if (( "env/os.nu" | path type) == dir) { eza --tree --level=3 --color=always --icons=always {} } else { bat -n --color=always --line-range :500 env/os.nu }
+if (( "env/os.nu" | path type) == dir) { eza --tree --level=3 --color=always --icons=always env/os.nu } else { bat -n --color=always --line-range :500 env/os.nu }
+if (( "env/" | path type) == dir) { eza --tree --level=3 --color=always --icons=always env/ } else { bat -n --color=always --line-range :500 env/os.nu }
+$env.ANTHROPIC_API_KEY
+$env.TAVILY_API_KEY
+$env.ANTHROPIC_API_KEY
+$env.TAVILY_API_KEY
+nvim
+$env.TAVILY_API_KEY
+$env.ANTHROPIC_API_KEY
+chezmoi status
+chezmoi add ~/.config/nushell/env/
+chezmoi status
+chezmoi add ~/.config/nushell/env/key.nu
+chezmoi status
+chezmoi re-add
+z chezmoi
+pwd
+ls
+yazi
+yazi
+keybindings default 
+chezmoi re-add
+lg
+chezmoi add ~/.config/nushell/
+lg
+chezmoi forget ~/.config/nushell/env/default.nu
+chezmoi forget ~/.config/nushell/config/default.nu
+chezmoi forget ~/.config/nushell/history.txt
+lg
+pnpm add tldr -g
+$env.PNPM_HOME
+chezmoi add ~/.install/
+lg
+nvim
+pnpm add tldr -g
+z .install
+pnpm rm vsce -g
+clear
+npm rm -h
+npm rm @vscode/vsce -g
+npm rm yo -g
+pnpm rm generator-code -g
+npm rm tldr -g
+npm rm generator-code -g
+npm rm rimraf -g
+npm list --global
+npm rm markdownlint-cli -g
+npm rm prettier -g
+npm list --global
+npm rm markdownlint-cli2 -g
+npm list --global
+pnpm add generator-code -g
+pnpm list -g
+nvim
+clear
+chezmoi status
+chezmoi re-add
+z chezmoi
+lg
+scoop list firefox
+scoop uninstall firefox-developer
+z .install
+scoop list mingw
+gcc -v
+z obsidian
+pwd
+z
+yazi
+z .config
+cd bat
+cd themes\
+yz
+cd share\
+cd obsidian
+ls
+cd extra
+z chezmoi
+pwd
+z ~/.config/chezmoi/
+yz
+clear
+gcc --version
+scoop install main/rustup-gnu
+rustc --version
+rustup toolchain list
+rustup component list
+rustup component list --help
+rustup component list --installed
+rustup target list
+rustup target list --installed 
+cargo --version
+nvim
+nvim
+clear
+rustc --version
+z nvim
+nvim
+rm -fiv (ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada'))
+rm -fiv ( $env.LOCALAPPDATA | path join 'nvim-data' 'shada' '*' )
+cd $env.LOCALAPPDATA
+cd nvim-data\shada\
+ls
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+ls
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name 
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+z nvim
+clear
+nvim
+z nushell
+z obsidian
+nvim
+cd $env.LOCALAPPDATA
+cd nvim-data\shada\
+ls
+clean-shada
+nvim
+chezmoi status
+chezmoi re-add
+chezmoi status
+z chezmoi
+lg
+z obsidian
+lg
+z nvim
+lg
+z obsidian
+scoop update
+nvim
+scoop update --all
+z nushell
+nu -h
+z nushell
+yazi
+nvim
+z nushell
+$nu.startup-time
+nu --perf
+$nu.data-dir
+$nu.cache-dir
+yazi
+nvim
+winget update
+winget update --all
+pnpm list -g
+z obsidian
+starship print-config | grep timeout
+lg
+nvim
+z nvim
+nvim
+z obsidian
+nvim
+z nvim
+nvim
+nvim
+z nushell
+nvim
+z obsidian
+z nushell
+nvim
+z install
+nvim
+scoop update
+winget update
+winget update --id Zen-Team.Zen-Browser
+scoop update --all
+z nvim
+clear
+nvim
+winget search linear
+nvim
+scoop update
+winget update
+winget update --id SteelSeries.GG
+scoop update --all
+nvim
+z .local
+cd share\nvim-data\mason\packages\
+nvim
+yazi
+nvim
+clear
+scoop search routine
+winget search routine
+nvim
+lg
+lg
+yazi
+z learning
+pwd
+yazi
+yz
+lg
+z learning
+yazi
+yz
+ls
+yazi
+nvim
+z nvim
+pwd
+ls
+lg
+ls
+npx npkill
+yazi
+nvim
+yazi
+nvim
+pnpm import
+yazi
+pnpm install tailwindcss @tailwindcss/vite
+scoop update --all
+yazi
+pnpm add --save-dev @biomejs/biome
+nvim
+pnpm biome init
+pnpx biome check
+pnpx biome --help
+ls
+nvim
+clear
+z learning
+yazi
+nvim
+z local
+cd etc\stylus\
+ls
+nvim noidilin-style.css
+winget update
+z install
+ls
+lg
+nvim
+z chezmoi
+yazi
+cd ..
+cd redux-01
+ls
+yazi
+nvim
+lg
+yazi
+cd ..
+cd redux-03
+ls
+yaiz
+yazi
+nvim package.json 
+pnpm import
+yazi
+pnpm add --save-dev tailwindcss @tailwindcss/vite
+pnpm add --save-dev @biomejs/biome
+pnpm biome init
+scoop update
+winget update
+scoop update --all
+yazi
+nvim
+lg
+yazi
+start .
+lg
+cd ..
+ls
+yazi
+cd auth-01\
+ls
+cd backend
+ls
+pnpm --help
+pnpm install
+cd ..
+ls
+cd frontend\
+ls
+pnpm install
+yaiz
+yazi
+pnpm --help
+nvim
+pnpm add --save-dev @biomejs/biome
+pnpm biome init
+nvim
+pnpm run start
+cd ..
+yazi
+start .
+z learning
+cd react\
+ls
+yazi
+pnpm create vite
+pnpm add --save-dev tailwindcss @tailwindcss/vite
+pnpm add --save-dev @biomejs/biome
+yazi
+lg
+cd project-pizza\
+ls
+pnpm create vite
+ls
+yazi
+pnpm create vite
+yazi
+pnpm add --save-dev tailwindcss @tailwindcss/vite
+pnpm add --save-dev @biomejs/biome
+pnpm biome init
+nvim
+ls
+nvim index.html 
+lg
+pnpm run dev
+nvim index.html 
+yazi
+ls
+rm package.json
+start .
+pnpm create vite
+yazi
+pnpm create vite
+pnpm create react-router@latest remix-run/react-router-templates/javascript
+yazi
+pnpm create react-router@latest --template remix-run/react-router-templates/javascript
+yazi
+pnpm add --save-dev @biomejs/biome
+pnpm biome init
+yazi
+nvim index.html 
+yazi
+pnpm run dev
+nvim app/root.jsx 
+clear
+yazi
+nvim
+btm
+yazi
+pnpm create vite
+yazi
+pnpm add --save-dev tailwindcss @tailwindcss/vite
+pnpm add --save-dev @biomejs/biome
+pnpm biome init
+pnpm add react-router@latest
+yazi
+ls
+nvim index.html 
+lg
+scoop update
+scoop update --all
+winget update
+winget update --id Zen-Team.Zen-Browser
+pnpm run dev
+nvim
+clear
+winget update --id Microsoft.WindowsTerminal
+btm
+nu --version
+nu --help
+nvim
+z learning
+clear
+z local
+nvim
+pwd
+ls
+nvim
+cd ..
+cd learning
+ls
+yazi
+z obsidian
+ls
+scoop install --help
+scoop install versions/firefox-developer
+z chezmoi
+ls
+z scoop
+yazi
+z
+ls
+cd scoop\persist\firefox-developer\profile\chrome\
+pwd
+ls
+yazi
+lg
+yazi
+yazi
+ls
+pwd
+z 
+cd scoop\persist\firefox-developer\profile\chrome\
+yz
+z
+cd scoop\persist\firefox-developer\profile\chrome\
+yazi
+yz
+start .
+winget search firefox
+winget search 'firefox developer'
+winget search 'Mozilla.Firefox.DeveloperEdition'
+winget install --id Mozilla.Firefox.DeveloperEdition
+yazi
+start .
+cd ..
+yazi
+scoop uninstall firefox-developer
+winget uninstall --id Mozilla.Firefox.DeveloperEdition
+scoop uninstall firefox-developer
+winget install --id Mozilla.Firefox.DeveloperEdition
+z downloads
+nvim manifest.json
+z chezmoi
+chezmoi status
+chezmoi re-add
+chezmoi status
+chezmoi forget ~/.local/etc/firefox/theme.zip
+chezmoi forget ~/.local/etc/firefox/sidebery.json
+yazi
+z chezmoi
+lg
+nvim
+yazi
+nvim
+lg
+yazi
+btm
+yazi
+pnpm run dev
+btm
+yazi
+lg
+nvim
+nvim
+pnpm add @reduxjs/toolkit react-redux
+scoop update
+scoop update --all
+scoop status
+z
+z scoop
+yz
+ls
+lg
+z install
+ls
+nvim
+scoop bucket --help
+scoop bucket list
+scoop bucket rm games
+scoop bucket list
+yazi
+nvim
+scoop validate --help
+scoop help
+yazi
+ls
+scoop update vivid
+nvim README.md 
+yazi
+lg
+git remote add origin git@github.com:noidilin/scoop.git
+git branch
+git push -u origin main
+scoop bucket list
+scoop status
+scoop update
+scoop update vivid
+scoop update vivid -f
+clear
+pnpm add @reduxjs/toolkit react-redux
+pnpm add @reduxjs/toolkit
+pnpm add react-redux
+pnpm run dev
+pnpm --help
+pnpm prune
+pnpm list
+pnpm --version
+pnpm self-update
+scoop list pnpm
+pnpm --version
+scoop help
+scoop cleanup pnpm
+nvim
+pnpm --version
+pnpm self-update --help
+pnpm --version
+scoop list pnpm
+pnpm self-update
+scoop update pnpm -f
+pnpm --version
+z install
+ls
+z learning
+yz
+pnpm add @reduxjs/toolkit
+scoop list nodejs
+scoop uninstall nodejs
+btm
+scoop uninstall nodejs
+scoop install main/nodejs-lts
+scoop update pnpm -f
+nvim
+pnpm add @reduxjs/toolkit
+pnpm add @reduxjs/toolkit react-redux
+z obsidian
+pnpm list
+pnpm update
+pnpm list
+pnpm --version
+scoop uninstall pnpm
+pnpm --version
+npm list --global
+pnpm --version
+pnpm list
+scoop list pnpm
+nvim
+pnpm list
+pnpm --version
+pnpm list -g
+pnpm help
+pnpm root
+ls
+scoop list pnpm
+yazi
+pnpm help
+pnpm prune
+pnpm store path
+z install
+yazi
+yazi
+z .local\share\pnpm\
+start .
+btm
+scoop install main/pnpm
+ls
+pwsh --help
+pwsh pnpm.ps1
+pnpm root -g
+$env.PNPM_HOME
+pnpm setup --help
+scoop uninstall pnpm
+$env.PNPM_HOME
+nvim
+$env.PNPM_HOME
+z nushell
+ls
+nvim
+$env.PNPM_HOME
+scoop install main/pnpm
+$env.PNPM_HOME
+z install
+nvim
+pwsh pnpm.ps1
+pnpm doctor
+pnpm help
+pnpm config list
+pnpm root
+pnpm root -g
+z learning
+yz
+pnpm list
+nvim
+pwsh pnpm.ps1
+z install
+$env.XDG_DATA_HOME
+pwsh pnpm.ps1
+pnpm config list
+pnpm config
+yazi
+z $env.APPDATA
+z $env.LOCALAPPDATA
+ls
+pnpm i -g
+yazi
+z 
+z scoop
+scoop install main/bun
+bun --version
+bun --help
+yazi
+z learning
+yz
+clear
+pnpm npkill
+pnpx npkill
+pnpm doctor
+bun install --verbose
+bun run dev
+clear
+yazi
+clear
+bun install --help
+z
+clear
+bun install --global @vscode/vsce tldr rimraf
+bun tldr ls
+bun remove --global @vscode/vsce tldr rimraf
+bun install --global @vscode/vsce tldr rimraf
+$env.PATH
+pwsh env.ps1
+$env.PATH
+pwsh env.ps1
+pwsh env.ps1
+$env.PATH
+pwsh Write-Host 'Test text at here' -ForegroundColor Green
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Green"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor White"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Blue"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Cyan"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Magenta"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Green"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Cyan"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Red"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Yellow"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor White"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Grey"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor Gray"
+pwsh -Command "Write-Host 'Test text at here' -ForegroundColor DarkGray"
+nvim
+clear
+yazi
+yazi
+scoop uninstall pnpm
+$env.PATH
+scoop update
+scoop status
+winget update
+chezmoi status
+chezmoi re-add
+z chezmoi
+z
+clear
+chezmoi add ~/.config/fastfetch/
+yazi
+chezmoi status
+lg
+yazi
+z obsidian
+clear
+z learning
+yz
+pwd
+nvim
+z scoop
+yz
+cd scoop
+cd custom
+pwd
+lg
+git status
+git remote
+scoop status
+scoop bucket list
+git clone --help
+cd ..
+git clone -h
+git clone git@github.com:ScoopInstaller/BucketTemplate.git noidilin
+cd custom
+yazi
+cd noidilin
+lg
+git remote
+git remote -v
+git remote rename origin upstream
+git remote -v
+git remote add origin git@github.com:noidilin/scoop.git
+git remote -v
+git push -u origin main
+git branch
+git branch --set-upstream-to=origin/master master
+git fetch
+git status
+git branch --set-upstream-to=origin/master master
+lg
+cd ..
+yz
+git clone git@github.com:noidilin/scoop.git noidilin
+cd noidilin
+ls
+git remote -v
+yazi
+lg
+yazi
+lg
+yazi
+nvim README.md 
+scoop bucket remove custom
+scoop bucket rm custom
+cd ..
+scoop bucket rm custom
+cd ..
+yazi
+lg
+cd custom
+lg
+scoop bucket add custom ~/scoop/buckets/custom
+scoop bucket list
+scoop update vivid -f
+scoop update custom/vivid
+scoop update custom/vivid -f
+scoop status
+scoop update --all
+z
+z obsidian
+nvim
+clear
+luarocks --version
+z scoop
+yazi
+nvim
+z learning
+yazi
+yz
+pwd
+scoop update
+scoop status
+scoop update --all
+scoop update
+bun run dev
+nvim
+winget update
+scoop update --all
+winget update --all
+z local
+yazi
+nvim
+btm
+nvim
+bun run dev
+nvim
+lg
+scoop status
+scoop update
+scoop status
+scoop update --all
+lg
+chezmoi status
+z chezmoi
+lg
+scoop update 
+winget update --all
+winget update
+scoop update --all
+winget update --all
+scoop status
+scoop update --all
+cargo --version
+scoop update rustup-gnu 
+scoop update rustup-gnu -f
+rustc --version
+cargo --version
+rustc --version
+winget update --all
+scoop update
+scoop update --all
+winget update
+winget update --all
+z learning
+nvim
+z obsidian
+nvim
+lg
+yazi
+lg
+nvim
+lg
+yazi
+lg
+nvim
+yazi
+ls
+cd extra
+ls
+cd ..
+ls --du
+yazi
+lg
+yazi
+lg
+yazi
+lg
+git rm -r --cached .obsidian/community-plugins.json
+lg
+nvim .gitignore 
+yazi
+lg
+git rm -r --cached .obsidian/community-plugins.json
+git rm --cached .obsidian/community-plugins.json
+lg
+nvim
+scoop update
+scoop update --all
+winget update 
+winget update --id zen-team.zen-browser
+lg
+yazi
+lg
+scoop update
+scoop update --all
+winget update
+nvim
+winget list steelseries
+winget uninstall --id steelseries.gg
+winget search razer
+winget install Razer Synapse 4
+winget install 'Razer Synapse 4'
+nvim
+scoop update
+scoop update --all
+winget update
+z learning
+yazi
+ls
+cd react
+cd project-wild-oasis\
+pwd
+lg
+yazi
+lg
+cd ..
+cd project-pizza\
+nvim
+clear
+nvim
+lg
+yazi
+lg
+git status
+lg
+git pull
+yazi
+nvim
+btm
+yazi
+git pull
+lg
+nvim
+clear
+scoop update
+scoop update --all
+winget update
+nvim
+yz
+pwd
+bun create vite
+bun add --dev tailwindcss @tailwindcss/vite
+bun add --dev @biomejs/biome
+bun biome init
+yazi
+nvim index.html 
+yazi
+nvim
+yazi
+btm
+ls
+yazi
+lg
+yazi
+bun add react-router
+bun add styled-components
+bun add react-icons
+bun add @tanstack/react-query
+lg
+bun add @supabase/supabase-js
+yazi
+bun add @tanstack/react-query-devtools
+z nvim
+pwd
+nvim
+nvim
+yazi
+btm
+nvim
+yazi
+code 
+code .
+yazi
+code .
+yazi
+nvim
+lg
+scoop update
+winget update
+scoop update --all
+btm
+scoop update --all
+winget update --all
+z
+z obsidian
+pwd
+nvim
+z obsidian
+nvim
+z learning
+ls
+yz
+pwd
+btm
+yazi
+z learning
+yz
+btm
+yazi
+bun add react-hook-form react-hot-toast react-error-boundary recharts
+bun add date-fns
+z nvim
+pwd
+ls
+yazi
+nvim
+nvim
+yazi
+lg
+yazi
+lg
+cd ..
+yazi
+yz
+rimraf -h
+rimraf .\node_modules\
+ls
+yazi
+yz
+rimraf .\node_modules\
+cd ..
+rimraf .\**\node_modules\ --verbose
+yazi
+yz
+rimraf .\**\node_modules\ --verbose
+yz
+lg
+yazi
+lg
+git checkout 03e6e22
+yazi
+btm
+yazi
+git checkout 03e6e22
+yazi
+lg
+git branch --force main '03e6e22'
+lg
+yazi
+lg
+git fetch --prune
+lg
+yz
+pwd
+ls
+nvim
+bun add --dev @biomejs/biome
+bun update -h
+bun update
+bun update --latest
+bun -h
+yazi
+nvim
+yazi
+bun biome init
+yazi
+bun -h
+bun rm -h
+bun pm -h
+bum pm cache
+bun pm cache
+rimraf .\node_modules\
+ls
+bun install
+cd backend
+yazi
+bun install
+cd .. 
+bun run dev
+bun add @tanstack/react-query @tanstack/react-query-devtools
+nvim
+yazi
+bun run dev
+bun run start
+btm
+yazi
+nvim
+lg
+lg
+btm
+git clean -h
+git clean -n
+git clean
+git clean -f -n
+git clean -f
+yazi
+btm
+yazi
+lg
+yazi
+yz
+npx create-next-app@latest -h
+npx create-next-app@latest .
+bun x -h
+bun -h
+bunx create-next-app@latest .
+yazi
+cd ..
+cd app-router\
+bunx create-next-app@latest .
+yazi
+cd ..
+yazi
+cd app-router-01\
+nvim
+ls
+z nvim
+nvim
+nvim package.json 
+nvim
+yazi --version
+nvim
+nvim
+yazi
+nvim
+lg
+yazi
+lg
+yazi
+lg
+bun run dev
+bun add better-sqlite3
+bun run dev
+yazi
+btm
+clear
+scoop update
+scoop update --all
+scoop status
+scoop update CommitMono-NF-Mono -f
+scoop update eza fastfetch mingw neovim starship
+z learning
+pwd
+z obsidian
+z learning
+nvim
+nvim
+yz
+pwd
+bun initdb.js
+yazi
+node initdb.js
+clear
+yazi
+bun run dev
+yazi
+btm
+yazi
+lg
+yazi
+bun add slugify xss
+yazi
+lg
+nvim
+scoop list routine
+scoop search routine
+winget search routine
+yazi
+lg
+yazi
+yz
+z learning
+yz
+lg
+yazi
+bun add --dev @biomejs/biome
+bun biome init
+yazi
+bun update --latest
+z
+yazi
+delta --show-themes
+yazi
+delta -h
+delta --show-syntax-themes
+delta --show-themes
+yazi
+delta --show-themes
+delta --show-syntax-themes
+git config --global
+git config --global -h
+git config list --global
+chezmoi status
+nvim .gitconfig 
+yazi
+chezmoi re-add
+chezmoi status
+z chezmoi
+pwd
+chezmoi forget ~/.gitconfig
+chezmoi forget ~/.gitignore
+chezmoi add ~/.config/git/
+z learning
+git log
+git log --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(blue)  %D%n%s%n"
+git log --graph --all --pretty=format:"%C(yellow)%h %C(white) %an  %ar%C(blue)  %D%n%s%n"
+git log --graph --all --pretty=format:"%C(yellow)%h %C(white) %an  %ar%C(green)  %D%n%s%n"
+git log --graph --all --pretty=format:"%C(yellow)%h %C(gray) %an  %ar%C(white)  %D%n%s%n"
+git log --graph --all --pretty=format:"%C(yellow)%h %C(grey) %an  %ar%C(white)  %D%n%s%n"
+git log --graph --all --pretty=format:"%C(yellow)%h %C(black) %an  %ar%C(white)  %D%n%s%n"
+git log --graph --all --pretty=format:"%C(yellow)%h %C(normal) %an  %ar%C(white)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(reverse)%h %C(white) %an  %ar%C(yellow)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal)%h %C(white) %an  %ar%C(yellow)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal bold)%h %C(white) %an  %ar%C(yellow)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal bold)%h %C(white normal) %an  %ar%C(yellow)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal bold)%h %C(white) %an  %ar%C(yellow blink)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal bold)%h %Creset%C(white) %an  %ar%C(yellow blink)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal bold)%h %Creset%C(white) %an  %ar%C(yellow ul)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal bold)%h %Creset%C(white) %an  %ar%C(yellow dim)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse)%h %Creset%C(white) %an  %ar%C(yellow blink)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %Creset%C(white) %an  %ar%C(yellow blink)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %Creset%C(normal bold) %an  %ar%C(reset yellow blink)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset normal bold) %an  %ar%C(reset yellow blink)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset normal bold) %an  %ar%C(reset white blink)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset normal ul) %an  %ar%C(reset white blink)  %D%n%C(black)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset normal bold) %an %ar%C(reset white blink)  %D%n%C(ul)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset normal bold) %an %ar%C(reset white blink)  %D%n%C(dim)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %ar%C(reset white blink)  %D%n%C(dim)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %ar%C(reset white ul)  %D%n%C(dim)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %ar  %C(reset white ul)%D%n%C(dim)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(black)%ar  %C(reset white ul)%D%n%C(dim)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s%n%C(black)%ar"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(black)%ar"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(black)%ar%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%ar%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ar%n)"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%>(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%>|(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black) %>>(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black) %m(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black) %m (%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black) %<(2) (%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%<(2)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%<(ltrunc)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%<(..ft)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%<(4)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%>(4)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%>>(4)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)%>(20)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ar)%n"
+z learning
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ar)%n"
+git branch
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ar)%n"
+git log
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ar)%n"
+yazi
+z
+chezmoi status
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ar)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ai)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%aI)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ah)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ad)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%an)%n"
+git log --graph --all --pretty=format:"%C(normal reverse) %h %C(reset) %an %C(reset white ul)%D%n%C(dim)%s %C(reset black)(%ad)%n"
+git log --graph --all --pretty=format:"%C(normal reverse)%h%C(reset black) (%ad) %Creset%an %C(reset white ul)%D%n%C(dim)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse)%h%C(reset black) (%ad) %Creset%an %C(reset white ul)%d%n%C(dim)%s%n"
+git log --graph --all --pretty=format:"%C(normal reverse)%h%C(reset black) (%ad) %Creset%an %C(reset white bold)%d%n%C(dim)%s%n"
+git lg
+git log
+git lg
+git log-graph
+git branch
+git branch -v
+git branch -r
+git branch -h
+git log-graph
+git branch
+git branch -r
+yazi
+chezmoi status
+chezmoi re-add
+z chezmoi
+git status
+lg
+yazi
+pwd
+yazi
+lg
+yazi
+bun run dev
+bun add framer-motion
+yazi
+nvim
+yazi
+z chezmoi
+yaziz
+yazi
+chezmoi age decrypt --output 'test.txt' --passphrase 'key.txt.age'
+yazi
+chezmoi age decrypt --output 'test.txt' --passphrase 'key.txt.age'
+yazi
+z 
+z config
+pwd
+yazi
+lg
+yazi
+lg
+yazi
+lg
+bun run dev
+yazi
+lg
+nvim package.json 
+nvim
+z downloads
+yazi
+z learning
+yz
+cd code
+ls
+lg
+btm
+yazi
+lg
+yazi
+cd ..
+yazi
+cd route-01\
+ls
+bun install
+nvim
+yazi
+nvim package.json 
+yazi
+cd ..
+rimraf .\**\node_modules\ --verbose
+yazi
+cd react
+rimraf .\**\node_modules\ --verbose
+rimraf '.\**\node_modules\' --verbose
+rimraf -h
+rimraf -v .\**\node_modules\
+rimraf --verbose --glob -- .\**\node_modules\
+rimraf --verbose --glob -- '.\**\node_modules\'
+rimraf --verbose --glob '.\**\node_modules\'
+rimraf -h
+rimraf --verbose --glob -- .\**\node_modules\
+pwd
+rimraf --verbose --glob -- ./**/node_modules/
+cl
+clear
+rimraf --verbose --glob -- ./**/node_modules
+yazi
+cd ..
+yazi
+lg
+yazi
+cd project-next-wild-oasis\
+pwd
+yazi
+cd final-1-after-overview\
+code .
+z nvim
+yazi
+yazi
+cd final-1-after-overview\
+nvim
+nvim
+yazi
+nvim
+clear
+scoop update
+clear
+scoop update --all
+winget update
+winget update -h
+winget update --help
+winget update --all
+clear
+scoop update --all
+nvim
+lg
+cd ..
+ls
+z chezmoi
+yazi
+z nvim
+nvim
+clear
+scoop update
+scoop update --all
+winget update
+winget update --id zen-team.zen-browser
+bun update --global
+nvim
+yazi
+z nvim
+nvim
+clear
+scoop update
+winget update
+scoop update --all
+nvim
+z obsidian
+nvim
+z dev
+ls
+pwd
+z learning
+cd ..
+ls
+cd dev
+ls
+bun x -h
+bunx create-next-app@latest newsly
+z newsly
+ls
+cd ..
+bunx create-next-app@latest shadcn
+cd shadcn\
+ls
+bunx --bun shadcn@latest init
+bunx --bun shadcn@latest add button
+bunx --bun shadcn@latest add avatar
+scoop search pnpm
+bunx --bun shadcn@latest add avatar
+bun run dev
+nvim
+ls
+z install
+ls
+yazi
+ls
+pwsh npm
+pwsh npm.ps1
+yazi
+pwsh npm.ps1
+rimraf --verbose --glob -- ./**/node_modules
+yazi
+pnpm install
+cd ..
+cd newsly\
+rimraf --verbose --glob -- ./**/node_modules
+yazi
+pnpm install
+cd ..
+cd shadcn\
+ls
+yazi
+yazi
+pnpm dlx shadcn@latest add avatar
+pnpm dlx shadcn@latest add button
+nvim
+cd ..
+yazi
+cd newsly\
+rimraf --verbose --glob -- ./**/node_modules
+yazi
+cd ..
+rimraf --verbose newsly/
+ls
+npx create-next-app@latest newsly
+pnpx create-next-app@latest newsly
+rimraf --verbose newsly/
+pnpx create-next-app@latest newsly
+cd newsly\
+yazi
+nvim
+cd ..
+npm run dev
+rimraf --verbose shadcn/
+pnpx create-next-app@latest shadcn
+cd shadcn\
+ls
+yazi
+cd ..
+nvim
+cd ..
+rimraf --verbose shadcn/
+yazi
+bunx create-next-app@latest shadcn
+bun x --bun shadcn@latest init
+cd newsly\
+pnpx shadcn@latest init
+nvim
+cd ..
+cd shadcn\
+bun x --bun shadcn@latest init
+bun x --bun shadcn@latest add avatar
+bunx --bun shadcn@latest add button
+bunx --bun shadcn@latest add avatar
+cd ..
+cd newsly\
+nvim
+pnpx shadcn@latest init
+yazi
+nvim
+pnpm add @next/eslint-plugin-next eslint-plugin-react-hooks -D
+rimraf --verbose --glob -- ./**/node_modules
+rimraf --verbose node_modules\
+pnpm install
+nvim
+yazi
+bun add -D @shadcn/ui
+bun run shadcn-ui add button
+bun shadcn-ui add button
+bun exec shadcn-ui add button
+bun rm @shadcn/ui
+bun add -D shadcn
+bunx shadcn init
+yazi
+bunx shadcn init
+bunx shadcn add avatar
+bunx shadcn add button
+nvim
+cd ..
+rimraf --verbose newsly/
+clear
+cd shadcn\
+bunx shadcn add avatar
+bunx shadcn add dropdown-menu
+bun run dev
+bun add next-themes
+bunx shadcn add sidebar
+nvim
+z nvim
+nvim
+lg
+nvim
+z nvim
+z .local
+nvim
+nvim
+nvim
+yz
+bunx shadcn add collapsible
+bunx shadcn add chart
+z nvim
+nvim
+nvim
+yazi
+bunx shadcn add card
+bunx shadcn add badge
+bunx shadcn add calendar
+bunx shadcn add checkbox
+bunx shadcn add popover
+bunx shadcn add scroll-area
+bunx shadcn add breadcrumb
+bunx shadcn add form
+bunx shadcn add input
+bunx shadcn add progress
+bunx shadcn add sheet
+bunx shadcn add hover-card
+bunx shadcn add select
+nvim
+bunx shadcn add table
+bun add @tanstack/react-table
+bun run dev
+cd ..
+ls
+bunx create-next-app@latest newsly
+cd newsly\
+cd ..
+cd newsly\
+bun add shadcn -D
+bunx shadcn init
+bunx shadcn add navigation-menu
+bunx shadcn add card
+yazi
+nvim
+bunx shadcn diff
+bun add next-themes
+bunx shadcn add button
+bunx shadcn add navigation-menu
+bunx shadcn add separator
+bunx shadcn add scroll-area
+ls
+yazi
+bun run dev
+bun add dayjs
+bunx shadcn add aspect-ratio
+bunx shadcn add skeleton
+yazi
+bunx shadcn add sheet
+bun run dev
+cd ..
+cd ..
+bunx create-next-app@latest eventful
+cd eventful\
+ls
+yazi
+cd eventful\
+clear
+bun add bcrypt jsonwebtoken @faker-js/faker
+bun add shadcn -D
+bunx shadcn init
+bunx shadcn add button
+bun add next-themes
+bunx shadcn add navigation-menu
+yazi
+bun run dev
+bun add dayjs
+bun add swr
+bunx shadcn add card
+bunx shadcn add aspect-ratio
+bunx shadcn add skeleton
+bunx shadcn add sheet
+bunx shadcn add dialog
+nvim
+yazi
+bunx shadcn add form
+bunx shadcn add input
+bunx shadcn add tabs
+bunx shadcn add sonner
+bun rm swr
+bun add zod
+nvim
+yazi
+lg
+bun add react-hook-form
+bun add @hookform/resolvers
+nvim
+bun add @hookform/resolvers/zod
+bun add @hookform/resolvers
+bun install
+z nvim
+ls
+pwd
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+z local
+yazi
+z appdata
+yazi
+bunx shadcn add avatar
+bunx shadcn add dropdown-menu
+yazi
+z nvim
+nvim
+bun add uuid
+bunx shadcn add alert-dialog
+bunx shadcn add table
+bun add @tanstack/react-table
+bunx shadcn add popover
+bunx shadcn add calendar
+bunx shadcn add textarea
+bunx shadcn add pagination
+bunx shadcn add select
+nvim
+bunx shadcn add badge
+bunx shadcn add separator
+bunx shadcn add command
+nvim
+bun run dev
+winget update
+scoop update --all
+winget update --id microsoft.powertoys
+winget update --id rime.weasel
+z obsidian
+z dev
+bunx create-next-app@latest layers
+yazi
+z learning
+z dev
+bunx create-next-app@latest self
+yazi
+cd layers\
+bun add motion
+bun add class-variance-authority
+z nvim
+nvim
+nvim
+nvim
+nvimm
+nvim
+clear
+yazi
+bun add shadcn -D
+bunx shadcn init
+bun add next-themes
+bunx shadcn add bu
+bunx shadcn add button
+bunx shadcn add dropdown-menu
+bunx shadcn add aspect-ratio
+bun run dev
+nvim
+bun run dev
+bunx shadcn add input
+fastfetch
+lg
+yazi
+z chezmoi
+chezmoi status
+chezmoi re-add
+lg
+z install
+ls
+chezmoi add ~/.install/
+scoop update --all
+btm
+scoop update --all
+winget update
+winget update --id zen-team.zen-browser
+winget update --id rime.weasel
+winget update --id microsoft.powertoys
+winget search cavalry
+z obsidian
+nvim
+yazi
+z .glzr
+ls
+nvim
+z glazewm
+cd ..
+z zebar
+cd ..
+z glazewm
+nvim
+z nvim
+nvim
+z glazewm
+nvim
+z nvim
+z glazewm
+nvim
+nvim
+z glazewm
+nvim
+z glazewm
+nvim
+z glazewm
+nvim
+z obsidian
+nvim
+z obsidian
+nvim
+z obsidian
+z glazewm
+nvim
+nvim
+winget update
+winget update --all
+scoop update --all
+scoop install main/exiftool
+z project
+z
+z area
+cd ..
+z project
+z
+z project
+z D:\project
+z project
+z area
+cd ..
+cd project
+cd matsu
+cd footage
+yazi
+cd 0523
+yazi
+exiftool 20250523_FX0036.MP4
+exiftool -common 20250523_FX0036.MP4
+exiftool 20250523_FX0036.MP4 | grep white
+exiftool 20250523_FX0036.MP4 | rg white
+exiftool -H 20250523_FX0036.MP4
+yz
+exiftool DSC00058.HIF
+exiftool -common DSC00058.HIF
+scoop uninstall main/exiftool
+update_stylus
+z 
+yazi
+z nushell
+yz
+nvim
+z obsidian
+nvim
+winget update --all
+scoop update --all
+z nushell
+yazi
+nvim
+carapace --version
+scoop list carapace
+scoop update carapace
+scoop update carapace-bin
+winget search carapace
+z nushell
+yazi
+nvim
+z nvim
+nvim
+clear
+scoop status
+z nushell
+nvim
+z local
+ls
+yazi
+cd share
+ls
+cd nvim-data\
+ls
+yazi
+nvim
+z obsidian
+nvim
+scoop status
+scoop update
+scoop status
+scoop update --all
+winget update
+winget update --all
+z obsidian
+nvim
+z nushell
+nvim
+z obsidian
+nvim
+winget search affinity
+winget install --name 'Affinity Photo 2'
+z obsidian
+nvim
+clear
+update_stylus
+z nushell
+update_stylus 
+nvim
+nvim
+update_stylus
+http get 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json' | save --force ($env.USERPROFILE | path join '.local/etc/stylus/color-fatigue.json')
+http get 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json'
+replace_mocha_palette 'D:/area/downloads/import.json' --stylus
+nvim
+z obsidian
+nvim
+fastfetch
+scoop update
+scoop status
+scoop update --all
+scoop update vscode
+winget update --all
+z obsidian
+z nvim
+nvim
+nvim
+scoop update
+scoop update --all
+winget update
+winget update --id zen-team.zen-browser
+winget update --all
+z nvim
+nvim
+z .glzr
+cd glazewm\
+nvim
+fastfetch
+python -v
+python --version
+pip --version
+pip3 --version
+pip3 install opencv-python
+pip3 install --upgrade Pillow
+z obsidian
+nvim
+z glazewm
+nvim
+z D:\resource\blender\asset
+ls
+cd Objects\
+nvim blender_assets.cats.txt 
+z obsidian
+nvim
+scoop update --all
+z nvim
+nvim
+nvim
+winget update
+scoop update --all
+winget update
+winget update --id zen-team.zen-browser
+clear
+winget update -h
+winget update --help
+winget update --id zen-team.zen-browser --force
+winget list brotato
+winget update --all
+winget uninstall brotato
+clear
+winget update
+winget update --all
+z obsidian
+nvim
+lg
+z nushell
+z resource
+z area
+cd ..
+ls
+z resource
+z tex
+z pbr
+cd wood
+cd bark
+ls
+pbr_move_preview
+ls -D | where type == dir
+ls
+ls | where type == 'dir'
+ls | where type == 'dir' | each {|cat| print $cat.name}
+ls -D
+pbr_move_preview
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}Error: nu::shell::eval_block_with_input
+pbr_move_preview
+ls 01\data\previews\default
+ls 01\data\previews\default | where type == 'file'
+pbr_move_preview
+z pbr
+cd wood
+cd bark
+ls
+pbr_move_preview
+pbr_cleanup_folder
+cd ..
+ls
+cd dark
+pbr_move_preview
+pbr_cleanup_folder
+cd ..
+cd derived\
+pbr_move_preview
+pbr_cleanup_folder
+cd ..
+cd floor\
+pbr_move_preview
+cd ..
+cd light\
+pbr_move_preview 
+pbr_cleanup_folder 
+cd ..
+cd painted\
+pbr_move_preview 
+pbr_cleanup_folder 
+cd ..
+cd plain
+pbr_organize
+cd ..
+cd planks\
+pbr_organize
+cd ..
+cd raw\
+pbr_organize
+cd ..
+cd timber
+pbr_organize
+cd ..
+cd wall
+pbr_organize
+cd ..
+cd asphalt\
+ls
+ls | where type == 'dir' | each {|folder| pbr_move_preview}
+ls | where type == 'dir' | each {|folder| cd $folder.path | pbr_move_preview}
+ls | where type == 'dir' | each {|folder| cd $folder.path }
+ls | where type == 'dir' | each {|folder| cd $folder.name }
+ls | where type == 'dir'
+ls | where type == 'dir' | each {|folder| cd $folder.name }
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_move_preview }
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd bricks\
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd concrete
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd construction\
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd fabric\
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd floor\
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd ground
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd metal
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd misc
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd pavers\
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd plastic\
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+pbr_organize
+cd ..
+cd rock
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd tiles
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+cd ..
+cd transparent\
+ls | where type == 'dir' | each {|folder| cd $folder.name | pbr_organize }
+nvim
+clear
+nvim
+clear
+nvim
+winget update --all
+scoop update --all
+manage-bde --status
+manage-bde -?
+manage-bde -status
+scoop update
+winget update
+scoop update --all
+winget update --id microsoft.onedrive
+z obsidian
+nvim
+winget update
+scoop update
+scoop update --all
+winget update
+z obsidian
+nvim
+z obsidian
+nvim
+scoop update
+scoop status
+winget update
+nvim
+z glazewm
+ls
+nvim
+z glazewm
+nvim
+z obsidian
+nvim
+scoop update
+scoop update --all
+winget update
+winget update --id zen-team.zen-browser
+winget update --id mozilla.firefox.developeredition
+z nushell
+nvim
+z obsidian
+scoop update
+fastfetch
+yazi
+nvim
+yazi
+z config
+ls
+yazi
+cd yazi
+ls
+yazi
+nvim
+chezmoi status
+chezmoi re-add
+chezmoi status
+z zebar
+yazi
+clear
+chezmoi status
+yazi
+z chezmoi
+yazi
+chezmoi add ~/.install/
+yazi
+chezmoi add ~/.glzr/
+yazi
+chezmoi status
+chezmoi forget ~/.glzr/zebar/noidilin/main.zebar.json
+chezmoi forget ~/.install/pnpm.ps1
+chezmoi status
+clear
+git status
+lg
+chezmoi add ~/.glzr/zebar/noidilin/
+yazi
+lg
+z

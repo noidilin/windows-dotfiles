@@ -38,6 +38,7 @@ $env.PROMPT_INDICATOR_VI_INSERT = ''
 source alias.nu
 source commands.nu
 source mocha-update.nu
+source pbr-move-preview.nu
 
 # use $ENV_DIR atuin ATUIN_INIT_PATH
 # source $ATUIN_INIT_PATH
