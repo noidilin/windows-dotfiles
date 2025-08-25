@@ -1,18 +1,30 @@
-/* force enhanced text rendering */
+@-moz-document regexp("^(?!https:\\/\\/(regexExample\\.com|monkeytype\\.com|ccc\\.org)\\/).*$") {
+  /* force enhanced text rendering */
+  /* stylus regex reference: [Stylus Regex](https://stylus-regex.pabli.dev/) */
 
-:not([class*='icon']):not([class*='button']):not([class*='mjx']):not(
-    [class*='fa']
-  ):not(i):not(iframe) {
-  text-shadow: 0.015em 0.015em 0.035em #9d9d9d !important;
-  /* font-weight: 500 !important; */
-  /* font-family: "Roboto", "GenSenRounded TW", "Noto Sans CJK TC" !important; */
-  /* color: #87878700 !important */
-}
+  :not([class*='icon']):not([class*='button']):not([class*='mjx']):not(
+      [class*='fa']
+    ):not(i):not(iframe) {
+    text-shadow: 0.015em 0.015em 0.035em #9d9d9d !important;
+    /* font-weight: 500 !important; */
+    /* font-family: "Roboto", "GenSenRounded TW", "Noto Sans CJK TC" !important; */
+    /* color: #87878700 !important */
+  }
 
-body {
-  -webkit-text-stroke-width: 0.16px;
-  text-rendering: geometricPrecision;
-  /* text-shadow: 0 0 rgba(128, 128, 128, 0.2) */
+  body {
+    -webkit-text-stroke-width: 0.16px;
+    text-rendering: geometricPrecision;
+    /* text-shadow: 0 0 rgba(128, 128, 128, 0.2) */
+  }
+} /* leechblock extension */
+
+.leechblock-timer {
+  padding: 4px 8px !important;
+  background: #1e1e1e !important;
+  color: #b3b3b3 !important;
+  border: 0px solid #9d9d9d !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
 }
 
 @-moz-document domain("www.youtube.com") {
