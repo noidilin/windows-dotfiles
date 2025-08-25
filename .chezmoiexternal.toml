@@ -1,7 +1,7 @@
-["scoop/persist/firefox-developer/profile/chrome"]
-type = "git-repo"
-url = "https://github.com/KiKaraage/ArcWTF.git"
-refreshPeriod = "168h"
+# ["scoop/persist/firefox-developer/profile/chrome"]
+# type = "git-repo"
+# url = "https://github.com/KiKaraage/ArcWTF.git"
+# refreshPeriod = "168h"
 
 [".config/nvim"]
 type = "git-repo"
