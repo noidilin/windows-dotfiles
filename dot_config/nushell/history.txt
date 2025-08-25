@@ -3808,3 +3808,208 @@ chezmoi add ~/.glzr/zebar/noidilin/
 yazi
 lg
 z
+chezmoi add ~/.config/nushell/
+yazi
+lg
+z yazi
+chezmoi add ~/.install/
+yazi
+lg
+git status
+lg
+yazi
+lg
+z yazi
+cd flavors\color-fatigue.yazi\
+ls
+git status
+lg
+z obsidian
+nvim
+ls
+yazi
+z
+z obsidian
+ls
+nvim
+git clone git@github.com:noidilin/scoop.git .
+yazi
+git clone git@github.com:noidilin/scoop.git .
+nvim
+yazi
+git clone git@github.com:noidilin/obsidian.git .
+nvim
+ls
+yazi
+nvim
+git status
+nvim
+scoop update
+scoop update --all
+nvim
+lg
+yazi
+nvim
+lg
+nvim
+z nvim
+ls
+git status
+nvim
+git status
+yazi
+nvim
+yazi
+lg
+z nvim
+nvim
+lg
+z nushell
+ls
+z chezmoi
+ls
+chezmoi age decrypt --output 'test.txt' --passphrase 'key.txt.age'
+ls
+yazi
+ls
+yazi
+nvim
+lg
+chezmoi re-add
+z nvim
+lg
+nvim
+nvim
+nvim
+clear
+nvim
+yazi
+lg
+z 
+yazi
+winget update
+winget update --id zen-team.zen-browser
+winget update --id Microsoft.DotNet.DesktopRuntime
+winget update --id Microsoft.DotNet.DesktopRuntime.8
+scoop update
+scoop status
+scoop update --all
+z
+scoop update --all
+scoop update bottom
+scoop -h
+scoop update
+scoop update --all
+scoop install extras/figma
+scoop uninstall extras/figma
+btm
+scoop uninstall extras/figma
+z obsidian
+nvim
+clear
+nvim
+scoop list flex
+scoop flexasio
+scoop search flex
+winget search flex
+winget list flexasio
+z obsidian
+scoop update
+winget update
+z obsidian
+nvim
+scoop update --all
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+z nvim
+nvim
+nvim
+scoop update
+scoop update --all
+nvim
+z local
+yazi
+z obsidian
+z nvim
+z obsidian
+git status
+git log-graph
+git log
+nvim
+winget update
+winget update --id mozilla.firefox.developeredition
+winget update --id microsoft.powertoys
+z local
+update_stylus
+z nushell
+http get 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json'
+http get https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json
+http get 'https://dummyjson.com/test'
+http get -h
+http get -e
+http get -e 'https://dummyjson.com/test'
+http get "https://api.github.com"
+version
+yazi
+nvim
+http get "https://api.github.com"
+http get "https://api.github.com" --insecure
+http get 'https://dummyjson.com/test'
+http get 'https://dummyjson.com/test' --insecure
+http get 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json' --insecure
+z nushell
+update_stylus
+z local
+yazi
+nvim
+z obsidian
+update_stylus
+nvim
+scoop update
+scoop update --all
+z learning
+cd typescript\
+yazi
+cd 01-typescript-tutorial\
+bun install
+nvim
+cd 01-typescript-tutorial\
+cd typescript\
+cd 01-typescript-tutorial\
+bun run dev
+yazi
+cd ..
+yazi
+yz
+bun install
+nvim
+nvim
+btm
+nvim
+cd ..
+yazi
+cd ts-basic\
+nvim
+yazi
+cd ..
+cd ts-react\
+nvim
+cd..
+cd ..
+cd ts-black-jack\
+nvim
+yazi
+nvim
+bun install
+nvim
+nvim
+winget update
+scoop update --all
+yazi
+yz
+nvim
+bun update
+chezmoi update
+update_stylus
+z chezmoi
+yazi
