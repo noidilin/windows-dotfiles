@@ -52,6 +52,7 @@ def replace_mocha_palette [
 def update_stylus [] {
     let url = 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json'
     let file = ( $env.USERPROFILE | path join '.local/etc/stylus/color-fatigue.json' )
-    http get $url | save --force $file
+  # HACK: temporary fix, since I don't understand what is SSL
+    http get --insecure $url | save --force $file
     replace_mocha_palette $file --stylus # update the file with stylus modifications
 }
