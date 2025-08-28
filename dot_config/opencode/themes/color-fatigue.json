@@ -1,0 +1,218 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "colorFatigueBg": "#191919",
+    "colorFatigueFg": "#b3b3b3",
+    "colorFatigueComment": "#555555",
+    "colorFatigueKeyword": "#eaeaea",
+    "colorFatigueFunction": "#c0c0c0",
+    "colorFatigueString": "#707070",
+    "colorFatigueNumber": "#878787",
+    "colorFatigueError": "#b07878",
+    "colorFatigueWarning": "#c8a492",
+    "colorFatigueSuccess": "#778777",
+    "colorFatigueMuted": "#9d9d9d"
+  },
+  "theme": {
+    "primary": {
+      "dark": "#c0baad",
+      "light": "#c0baad"
+    },
+    "secondary": {
+      "dark": "#f7f4ed",
+      "light": "#f7f4ed"
+    },
+    "accent": {
+      "dark": "#c0baad",
+      "light": "#c0baad"
+    },
+    "error": {
+      "dark": "colorFatigueError",
+      "light": "colorFatigueError"
+    },
+    "warning": {
+      "dark": "colorFatigueWarning",
+      "light": "colorFatigueWarning"
+    },
+    "success": {
+      "dark": "colorFatigueSuccess",
+      "light": "colorFatigueSuccess"
+    },
+    "info": {
+      "dark": "#FFC799",
+      "light": "#FFC799"
+    },
+    "text": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "textMuted": {
+      "dark": "colorFatigueMuted",
+      "light": "colorFatigueMuted"
+    },
+    "background": {
+      "dark": "colorFatigueBg",
+      "light": "#FFF"
+    },
+    "backgroundPanel": {
+      "dark": "colorFatigueBg",
+      "light": "#F0F0F0"
+    },
+    "backgroundElement": {
+      "dark": "colorFatigueBg",
+      "light": "#E0E0E0"
+    },
+    "border": {
+      "dark": "#282828",
+      "light": "#D0D0D0"
+    },
+    "borderActive": {
+      "dark": "#FFC799",
+      "light": "#FFC799"
+    },
+    "borderSubtle": {
+      "dark": "#1C1C1C",
+      "light": "#E8E8E8"
+    },
+    "diffAdded": {
+      "dark": "colorFatigueSuccess",
+      "light": "colorFatigueSuccess"
+    },
+    "diffRemoved": {
+      "dark": "colorFatigueError",
+      "light": "colorFatigueError"
+    },
+    "diffContext": {
+      "dark": "colorFatigueMuted",
+      "light": "colorFatigueMuted"
+    },
+    "diffHunkHeader": {
+      "dark": "colorFatigueMuted",
+      "light": "colorFatigueMuted"
+    },
+    "diffHighlightAdded": {
+      "dark": "colorFatigueSuccess",
+      "light": "colorFatigueSuccess"
+    },
+    "diffHighlightRemoved": {
+      "dark": "colorFatigueError",
+      "light": "colorFatigueError"
+    },
+    "diffAddedBg": {
+      "dark": "#0d2818",
+      "light": "#e8f5e8"
+    },
+    "diffRemovedBg": {
+      "dark": "#281a1a",
+      "light": "#f5e8e8"
+    },
+    "diffContextBg": {
+      "dark": "colorFatigueBg",
+      "light": "#F8F8F8"
+    },
+    "diffLineNumber": {
+      "dark": "#505050",
+      "light": "#808080"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#0d2818",
+      "light": "#e8f5e8"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#281a1a",
+      "light": "#f5e8e8"
+    },
+    "markdownText": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "markdownHeading": {
+      "dark": "#FFC799",
+      "light": "#FFC799"
+    },
+    "markdownLink": {
+      "dark": "#FFC799",
+      "light": "#FFC799"
+    },
+    "markdownLinkText": {
+      "dark": "colorFatigueMuted",
+      "light": "colorFatigueMuted"
+    },
+    "markdownCode": {
+      "dark": "colorFatigueMuted",
+      "light": "colorFatigueMuted"
+    },
+    "markdownBlockQuote": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "markdownEmph": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "markdownStrong": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "markdownHorizontalRule": {
+      "dark": "#65737E",
+      "light": "#65737E"
+    },
+    "markdownListItem": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "markdownListEnumeration": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "markdownImage": {
+      "dark": "#FFC799",
+      "light": "#FFC799"
+    },
+    "markdownImageText": {
+      "dark": "colorFatigueMuted",
+      "light": "colorFatigueMuted"
+    },
+    "markdownCodeBlock": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "syntaxComment": {
+      "dark": "colorFatigueComment",
+      "light": "colorFatigueComment"
+    },
+    "syntaxKeyword": {
+      "dark": "colorFatigueKeyword",
+      "light": "colorFatigueKeyword"
+    },
+    "syntaxFunction": {
+      "dark": "colorFatigueFunction",
+      "light": "colorFatigueFunction"
+    },
+    "syntaxVariable": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    },
+    "syntaxString": {
+      "dark": "colorFatigueString",
+      "light": "colorFatigueString"
+    },
+    "syntaxNumber": {
+      "dark": "colorFatigueNumber",
+      "light": "colorFatigueNumber"
+    },
+    "syntaxType": {
+      "dark": "colorFatigueFunction",
+      "light": "colorFatigueFunction"
+    },
+    "syntaxOperator": {
+      "dark": "colorFatigueKeyword",
+      "light": "colorFatigueKeyword"
+    },
+    "syntaxPunctuation": {
+      "dark": "colorFatigueFg",
+      "light": "colorFatigueBg"
+    }
+  }
+}
