@@ -1,62 +1,42 @@
 use_enum_search_for_popups=>bool===False
 filter_internal_tabs=>bool===False
 pop_out_style=>str===Pie-PopUp
-workspace_categories=>pc===Model>>BoxCutter,Cablerator,F2,Hard Ops 9,LoopTools,MACHIN3tools,MESHmachine,QuickCurve 2024,QuickShape 2024,QuickTexture 2024===Icon=>CUBE
-workspace_categories=>pc===Texture>>DECALmachine,Fluent : Materializer,QuickTexture 2024,Zen UV===Icon=>NODE_MATERIAL
-workspace_categories=>pc===Utility>>True Assets,Pose Library===Icon=>MENU_PANEL
+workspace_categories=>pc===Model>>BoxCutter,Cablerator,F2,Hard Ops 9,LoopTools,MACHIN3tools,MESHmachine,QuickCurve 2024,QuickShape 2024,QuickTexture 2024===Icon=>NONE
+workspace_categories=>pc===Texture>>DECALmachine,Fluent : Materializer,QuickTexture 2024,Zen UV===Icon=>NONE
+workspace_categories=>pc===Utility>>True Assets,Pose Library===Icon=>NONE
 focus_panel_categories=>pc===Model>>
 focus_panel_categories=>pc===Texture>>
 focus_panel_categories=>pc===Utility>>
 addons_to_exclude=>str===Photographer,Zen Sets
-addon_info=>order===Tool>>speedflow_companion,bl_ui===Ordered=>
+addon_info=>order===Tool>>bl_ui===Ordered=>
 addon_info=>order===View>>,bl_ui===Ordered=>
-addon_info=>order===Cam>>photographer===Ordered=>
-addon_info=>order===Set>>ZenSets===Ordered=>
-addon_info=>order===Box>>Boxcutter===Ordered=>
-addon_info=>order===HOPS>>HOps===Ordered=>
-addon_info=>order===Q-Tool>>QuickCurve,QuickShape,QuickTexture===Ordered=>
-addon_info=>order===Decal>>DECALmachine===Ordered=>
-addon_info=>order===Z-UV>>ZenUV===Ordered=>
-addon_info=>order===M3>>MESHmachine,MACHIN3tools===Ordered=>
-addon_info=>order===F-Mat>>fluent_materializer===Ordered=>
-addon_info=>order===Asset>>TrueAssets,pose_library===Ordered=>
-addon_info=>order===Animation>>,bl_ui===Ordered=>
-addon_info=>order===PME>>pie_menu_editor===Ordered=>
-addon_info=>order===Edit>>looptools===Ordered=>
+addon_info=>order===Set>>===Ordered=>
+addon_info=>order===HOPS>>===Ordered=>
+addon_info=>order===Decal>>===Ordered=>
+addon_info=>order===M3>>===Ordered=>
+addon_info=>order===Asset>>===Ordered=>
+addon_info=>order===PME>>===Ordered=>
+addon_info=>order===Box>>Boxcutter===Ordered=>Boxcutter
+addon_info=>order===F-Mat>>fluent_materializer===Ordered=>fluent_materializer
 addon_info_for_renaming=>order===Boxcutter>>Box
-addon_info_for_renaming=>order===HOps>>HOPS
 addon_info_for_renaming=>order===photographer>>Cam
-addon_info_for_renaming=>order===MACHIN3tools>>M3
 addon_info_for_renaming=>order===pose_library>>Asset
-addon_info_for_renaming=>order===TrueAssets>>Asset
 addon_info_for_renaming=>order===DECALmachine>>Decal
-addon_info_for_renaming=>order===ZenUV>>Z-UV
 addon_info_for_renaming=>order===fluent_materializer>>F-Mat
-addon_info_for_renaming=>order===MESHmachine>>M3
 addon_info_for_renaming=>order===QuickCurve>>Q-Tool
-addon_info_for_renaming=>order===QuickShape>>Q-Tool
 addon_info_for_renaming=>order===QuickTexture>>Q-Tool
-addon_info_for_renaming=>order===speedflow_companion>>Tool
 addon_info_for_renaming=>order===speedflow>>Tool
-addon_info_for_renaming=>order===ZenSets>>Set
 addon_info_for_renaming=>order===pie_menu_editor>>PME
-addon_info_for_renaming=>order===looptools>>Edit
 addons_to_exclude_image_editor=>str===
 addon_info_image_editor=>order===Mask>>,bl_ui===Ordered=>
 addon_info_image_editor=>order===Tool>>,bl_ui===Ordered=>
 addon_info_image_editor=>order===View>>,bl_ui===Ordered=>
 addon_info_image_editor=>order===Image>>,bl_ui===Ordered=>
 addon_info_image_editor=>order===Scopes>>,bl_ui===Ordered=>
-addon_info_image_editor=>order===Zen UV>>ZenUV===Ordered=>
-addon_info_image_editor=>order===Cam>>photographer===Ordered=>
-addon_info_image_editor=>order===Zen Sets>>ZenSets===Ordered=>
-addon_info_image_editor=>order===Z-UV>>ZenUV===Ordered=>
-addon_info_image_editor=>order===Set>>ZenSets===Ordered=>
-addon_info_for_renaming_image_editor=>order===photographer>>CAM
+addon_info_image_editor=>order===Cam>>===Ordered=>
+addon_info_image_editor=>order===Z-UV>>===Ordered=>
 addon_info_for_renaming_image_editor=>order===ZenUV>>Zen UV
-addon_info_for_renaming_image_editor=>order===ZenSets>>Zen Sets
 addons_to_exclude_node_editor=>str===
-addon_info_node_editor=>order===Node Preview>>,NodePreview===Ordered=>
 addon_info_node_editor=>order===Options>>cycles,bl_ui===Ordered=>
 addon_info_node_editor=>order===Node>>,bl_ui===Ordered=>
 addon_info_node_editor=>order===Tool>>,bl_ui===Ordered=>
@@ -64,17 +44,13 @@ addon_info_node_editor=>order===View>>,bl_ui===Ordered=>
 addon_info_node_editor=>order===Group>>,bl_ui===Ordered=>
 addon_info_node_editor=>order===Node Wrangler>>,node_wrangler===Ordered=>
 addon_info_node_editor=>order===Fluent>>,fluent_materializer===Ordered=>
-addon_info_node_editor=>order===Cam>>photographer===Ordered=>
-addon_info_node_editor=>order===Zen Sets>>,ZenSets===Ordered=>
-addon_info_node_editor=>order===Turbo>>,Turbo Tools===Ordered=>
-addon_info_for_renaming_node_editor=>order===photographer>>CAM
+addon_info_node_editor=>order===Zen Sets>>===Ordered=>
 addon_info_for_renaming_node_editor=>order===NodePreview>>Node Preview
 addon_info_for_renaming_node_editor=>order===cycles>>Options
 addon_info_for_renaming_node_editor=>order===node_wrangler>>Node Wrangler
 addon_info_for_renaming_node_editor=>order===fluent_materializer>>Fluent
-addon_info_for_renaming_node_editor=>order===ZenSets>>Zen Sets
 addon_info_for_renaming_node_editor=>order===Turbo Tools>>Turbo
-draw_side=>str===RIGHT
+draw_side=>str===LEFT
 experimental=>bool===False
 use_sticky_popup=>bool===True
 columm_layout_for_popup=>str===True
@@ -95,4 +71,4 @@ show_delete_buttons_in_quick_settings=>bool===False
 move_dropdowns_to_toolbar=>bool===False
 atl_list=>str===
 zen_uv_fix=>bool===True
-addon_order=>order===Category>>speedflow_companion,bl_ui,bl_ui,photographer,ZenSets,Boxcutter,HOps,QuickCurve,QuickShape,QuickTexture,DECALmachine,ZenUV,MESHmachine,MACHIN3tools,fluent_materializer,TrueAssets,pose_library,bl_ui,pie_menu_editor,looptools
+addon_order=>order===Category>>bl_ui,bl_ui,Boxcutter,fluent_materializer

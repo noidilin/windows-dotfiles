@@ -7,7 +7,9 @@
         icon_alpha="0.75"
         icon_saturation="0.5"
         widget_emboss="#19191926"
-        editor_outline="#191919"
+        editor_border="#161616"
+        editor_outline="#19191915"
+        editor_outline_active="#ffffff2a"
         widget_text_cursor="#6c6a65"
         panel_roundness="0.45"
         transparent_checker_primary="#333333"
@@ -29,6 +31,7 @@
         icon_modifier="#d4e7ffff"
         icon_shading="#ffd7d7ff"
         icon_folder="#ccbab1ff"
+        icon_autokey="#ab3c48ff"
         icon_border_intensity="0"
         >
         <wcol_regular>
@@ -369,7 +372,6 @@
         speaker="#4e4e4e"
         vertex="#4e4e4e"
         vertex_select="#c0baad"
-        vertex_active="#4e4e4e"
         vertex_size="3"
         vertex_bevel="#8fafd7"
         vertex_unreferenced="#4e4e4e"
@@ -404,10 +406,10 @@
         handle_sel_auto="#fff4d6"
         handle_sel_align="#ffe2e2"
         lastsel_point="#eaeaea"
-        extra_edge_len="#4e4e4e"
-        extra_edge_angle="#4d4a42"
-        extra_face_angle="#93b1cc"
-        extra_face_area="#464d46"
+        extra_edge_len="#cccccc"
+        extra_edge_angle="#cccccc"
+        extra_face_angle="#b3b3b3"
+        extra_face_area="#b3b3b3"
         editmesh_active="#eaeaea33"
         normal="#a7cccc"
         vertex_normal="#88a6cc"
@@ -416,13 +418,15 @@
         bone_pose_active="#e5ffff"
         bone_solid="#b3b3b3"
         bone_locked_weight="#b07878b3"
+        frame_current="#6c6a65"
+        before_current_frame="#c8a492"
+        after_current_frame="#769494"
         bundle_solid="#b3b3b3"
         camera_path="#4e4e4e"
         camera_passepartout="#4e4e4e"
         skin_root="#b39191"
         view_overlay="#4e4e4e"
         transform="#eaeaea"
-        frame_current="#6c6a65"
         paint_curve_handle="#f0fff04d"
         paint_curve_pivot="#ffd7d74d"
         outline_width="2"
@@ -682,6 +686,8 @@
         keyframe_jitter_selected="#b0bfb0"
         keyframe_movehold="#707070"
         keyframe_movehold_selected="#c0baad"
+        keyframe_generated="#585858"
+        keyframe_generated_selected="#a28962"
         keyframe_border="#4e4e4eff"
         keyframe_border_selected="#4e4e4eff"
         keyframe_scale_factor="1"
@@ -736,7 +742,6 @@
         grid="#191919ff"
         vertex="#4e4e4e"
         vertex_select="#c0baad"
-        vertex_active="#4e4e4e"
         vertex_size="3"
         vertex_bevel="#4e4e4e"
         vertex_unreferenced="#4e4e4e"
@@ -808,6 +813,13 @@
             </panelcolors>
           </ThemeSpaceGeneric>
         </space>
+        <asset_shelf>
+          <ThemeAssetShelf
+            header_back="#1d1d1dff"
+            back="#303030ff"
+            >
+          </ThemeAssetShelf>
+        </asset_shelf>
       </ThemeImageEditor>
     </image_editor>
     <sequence_editor>
@@ -837,6 +849,8 @@
         keyframe_breakdown_selected="#54bfed"
         keyframe_movehold="#808080"
         keyframe_movehold_selected="#ffaf23"
+        keyframe_generated="#585858"
+        keyframe_generated_selected="#a28962"
         keyframe_border="#000000ff"
         keyframe_border_selected="#000000ff"
         draw_action="#cce3ff"
@@ -845,6 +859,8 @@
         metadatatext="#faf5eb"
         preview_range="#73706866"
         row_alternate="#0000001a"
+        text_strip_cursor="#71a8ffff"
+        selected_text="#ffffff4d"
         >
         <space>
           <ThemeSpaceGeneric
@@ -1004,6 +1020,7 @@
         attribute_node="#4d5a66"
         simulation_zone="#60606633"
         repeat_zone="#76512f33"
+        foreach_geometry_element_zone="#33527f33"
         >
         <space>
           <ThemeSpaceGeneric
@@ -1627,18 +1644,6 @@
         >
       </ThemeFontStyle>
     </panel_title>
-    <widget_label>
-      <ThemeFontStyle
-        points="11"
-        character_weight="400"
-        shadow="1"
-        shadow_offset_x="0"
-        shadow_offset_y="-1"
-        shadow_alpha="0.5"
-        shadow_value="0"
-        >
-      </ThemeFontStyle>
-    </widget_label>
     <widget>
       <ThemeFontStyle
         points="11"
@@ -1651,5 +1656,17 @@
         >
       </ThemeFontStyle>
     </widget>
+    <tooltip>
+      <ThemeFontStyle
+        points="11"
+        character_weight="400"
+        shadow="1"
+        shadow_offset_x="0"
+        shadow_offset_y="-1"
+        shadow_alpha="0.5"
+        shadow_value="0"
+        >
+      </ThemeFontStyle>
+    </tooltip>
   </ThemeStyle>
 </bpy>

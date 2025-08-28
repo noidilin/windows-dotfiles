@@ -1,0 +1,20 @@
+D:\project\3D-12FA3\12FA3.blend
+D:\resource\blender\asset\Objects\interior\light.blend
+D:\resource\blender\asset\Online Assets\models\directional-ceil_ec440217-598c-40cb-8741-45da4fb0fc5a\directional-ceiling-spot_1K_7072a9fc-4522-4c46-a44e-db9e9234d221.blend
+D:\resource\blender\asset\Objects\interior\door.blend
+D:\resource\blender\asset\Online Assets\models\door-modern-wood_bda9ea37-18cc-4685-942e-7cf0abfe386e\door-modern-wood_2K_d0f9b2f0-37f1-4f55-b4ad-9c3e3959c94c.blend
+D:\resource\blender\asset\Online Assets\models\door-1_753bf26a-6dc5-42d5-8e4d-bc6ad9ec2a9d\door-1_2K_bf09c14d-1c6d-40d2-ba73-c9ac80f2a485.blend
+D:\resource\blender\asset\Objects\interior\outlet-switch.blend
+D:\resource\blender\asset\Objects\interior\ikea-NYMANE.blend
+D:\resource\blender\asset\Online Assets\models\light-switch-c_dc8f5a4d-d6b6-4147-8828-63cf9ee7d397\light-switch-c_2K_43b799dd-f003-45df-adfb-dadbc9244711.blend
+D:\resource\blender\asset\Online Assets\models\light-switch-b_d7abb9ff-ff2c-4f78-8763-7ef200c7c3e6\light-switch-b_2K_a3f61862-b2cd-4604-85fc-8b2ccfc4ea73.blend
+D:\resource\blender\asset\Online Assets\models\light-switch-a_48503250-1d13-4fdf-bee4-8c44d7f094c7\light-switch-a_2K_aed129c9-8f91-4492-8896-e56111f0215c.blend
+D:\resource\blender\asset\Online Assets\models\xiaomi-air-fryer_79561d97-a8c0-47f8-9a33-56c2be62d2b5\xiaomi-air-fryer_2K_08d9b3d9-2287-4ee9-b95b-17202d095a2e.blend
+D:\resource\blender\asset\Online Assets\models\nox-table-lamp_f971b416-766e-46c4-9985-e051d5717388\nox-table-lamp_1K_2054dab9-9736-404f-8264-e1ba2ec10d4d.blend
+D:\resource\blender\asset\Online Assets\models\parentesi-flos-s_258ec6f2-ef04-4011-965e-705e05d12332\parentesi-flos-s-lamp_1K_92503bef-4dda-41a2-a85b-c00d1d08aae2.blend
+D:\resource\blender\asset\Online Assets\models\garner-floor-lam_b9bef8fd-0219-4520-a013-21eeca52aca2\garner-floor-lamp-by-four-hands_1K_6e0ad1d8-40d0-4e81-8149-dd9e342805ce.blend
+D:\resource\blender\asset\Online Assets\models\lounge-chair-81x_0f067862-e8d4-486f-8943-5d7b3709085f\lounge-chair-81x122x90_bd597912-29a2-4f12-a471-bbdac66b4334.blend
+D:\resource\blender\asset\Online Assets\models\maija_a3d8d317-8dcf-4a1c-8ce7-bf4638294bca\maija_961ed49c-af18-4f04-8244-48cbec704ded.blend
+D:\resource\blender\asset\Online Assets\models\diffuser-set-per_54b73637-077f-4e64-b77f-299a4a5e73ce\diffuser-set-perfume-candle-statue_2K_654a761a-bbb9-4516-8373-cace995905a1.blend
+D:\resource\blender\asset\Online Assets\models\minimal-scandina_ccbbcfaa-584d-4d1e-ad27-a051fd31a77e\minimal-scandinavian-chair_2K_3518dee3-0340-4387-bc7d-74690493dcc6.blend
+D:\resource\blender\asset\Online Assets\models\stool-21_21f56bc7-b8c0-44ec-b994-02772e38cbd5\stool-21_1K_b3bd283b-21b3-49aa-ba44-eb4da645c0c1.blend
