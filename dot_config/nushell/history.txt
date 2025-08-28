@@ -4013,3 +4013,160 @@ chezmoi update
 update_stylus
 z chezmoi
 yazi
+chezmoi re-add
+chezmoi status
+lg
+yazi
+bun run dev
+bun add --dev prettier prettier-plugin-tailwindcss
+z nvim
+nvim
+nvim
+nvim
+yazi
+nvim
+yazi
+bunx create-next-app@latest .
+bun add --dev @biomejs/biome
+bunx --bun biome migrate eslint --write
+bun biome init
+bunx --bun biome migrate eslint --write
+yazi
+bunx --bun biome migrate prettier --write
+nvim
+yazi
+bun biome init
+yazi
+nvim
+yazi
+nvim
+bun add --dev prettier prettier-plugin-tailwindcss
+bun update
+nvim
+btm
+fastfetch
+bunx --bun shadcn@latest add badge
+bunx shadcn add card
+bunx shadcn add avatar
+z nvim
+nvim
+nvim
+npm list --global
+bun help
+bun audit --help
+bun audio
+bun audit
+bun help
+bun pm --help
+bun pm ls --help
+bun pm ls --global
+z install
+yazi
+bun add --global @vscode/vsce tldr rimraf opencode-ai@latest
+bun pm ls --global
+z nvim
+opencode
+cd
+yz
+bun pm --help
+bun help
+bun remove --global opencode-ai
+bun pm ls --global
+z nvim
+z install
+yazi
+scoop install extras/opencode
+opencode
+z config
+pwd
+ls
+yazi
+z opencode
+ls
+yazi
+mkdir themes
+ls
+cd themes
+z nvim
+yazi
+z nvim
+opencode
+nvim
+z config
+yazi
+cd api
+print ANTHROPIC_API_KEY
+echo ANTHROPIC_API_KEY
+tutor
+open --raw ANTHROPIC_API_KEY
+opencode auth login
+z nvim
+clear
+nvim
+z obsidian
+opencode
+z opencode
+ls
+mkdir command
+ls
+opencode
+nvim
+opencode
+yazi
+ls
+yazi
+nvim
+lg
+yz
+z local
+yazi
+z config
+z chezmoi
+yazi
+cd yazi\
+ls
+cd flavors\
+ls
+cd color-fatigue.yazi\
+ls
+lg
+cd ..
+cd wezterm\
+lg
+z wezterm
+z nvim
+z nushell
+yazi
+lg
+nvim
+lg
+ls
+z chezmoi
+yazi
+lg
+chezmoi add ~/.config/opencode/
+chezmoi status
+chezmoi re-add
+yazi
+z nushell
+nvim
+yazi
+cd ..
+yz
+yazi
+nvim
+chezmoi status
+nvim
+chezmoi re-add
+z local
+chezmoi status
+chezmoi forget ~/.local/etc/blender/preset/
+chezmoi status
+z chezmoi
+yazi
+chezmoi add ~/.local/etc/blender/config/
+chezmoi forget ~/.local/etc/blender/config/cp-keymaps/
+chezmoi forget ~/.local/etc/blender/config/CP-Backups/
+yazi
+chezmoi add ~/.local/etc/blender/scripts/presets/interface_theme/
+chezmoi status

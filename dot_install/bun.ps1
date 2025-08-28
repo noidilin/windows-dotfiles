@@ -9,6 +9,6 @@ $BUN_PACKAGES = @(
 )
 
 Write-Host "installing global bun packages..." -ForegroundColor Gray
-bun install @BUN_PACKAGES -g
+bun add --global @BUN_PACKAGES
 
 Write-Host "bun.ps1 script finished." -ForegroundColor Green
