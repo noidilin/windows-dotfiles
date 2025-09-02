@@ -121,23 +121,23 @@ window_behavior:
 workspaces:
   # other display name: '  󰨞  '
   - name: '1'
-    display_name: '' # dev
+    display_name: '' # explorer
     keep_alive: true
     bind_to_monitor: 0
   - name: '2'
-    display_name: '' # file explorer
+    display_name: '' # dev
     keep_alive: true
     bind_to_monitor: 1
   - name: '3'
     display_name: '' # web
-    keep_alive: true
-    bind_to_monitor: 2
-  - name: '4'
-    display_name: '󰅶' # relax
     keep_alive: false
-    bind_to_monitor: 2
-  - name: '5'
+    bind_to_monitor: 0
+  - name: '4'
     display_name: '' # project
+    keep_alive: false
+    bind_to_monitor: 1
+  - name: '5'
+    display_name: '󰅶' # relax
     keep_alive: false
     bind_to_monitor: 0
   - name: '6'
