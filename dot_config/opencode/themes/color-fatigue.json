@@ -1,102 +1,149 @@
 {
   "$schema": "https://opencode.ai/theme.json",
   "defs": {
-    "colorFatigueBg": "#191919",
-    "colorFatigueFg": "#b3b3b3",
-    "colorFatigueComment": "#555555",
-    "colorFatigueKeyword": "#eaeaea",
-    "colorFatigueFunction": "#c0c0c0",
-    "colorFatigueString": "#707070",
-    "colorFatigueNumber": "#878787",
-    "colorFatigueError": "#b07878",
-    "colorFatigueWarning": "#c8a492",
-    "colorFatigueSuccess": "#778777",
-    "colorFatigueMuted": "#9d9d9d"
+    "mono25": "#eaeaea",
+    "mono24": "#dcdcdc",
+    "mono23": "#cccccc",
+    "mono22": "#c0c0c0",
+    "mono21": "#b3b3b3",
+    "mono20": "#aaaaaa",
+    "mono19": "#9d9d9d",
+    "mono18": "#8e8e8e",
+    "mono17": "#878787",
+    "mono16": "#7f7f7f",
+    "mono15": "#707070",
+    "mono14": "#686868",
+    "mono13": "#5d5d5d",
+    "mono12": "#555555",
+    "mono11": "#4e4e4e",
+    "mono10": "#474747",
+    "mono09": "#414141",
+    "mono08": "#3a3a3a",
+    "mono07": "#353535",
+    "mono06": "#303030",
+    "mono05": "#2a2a2a",
+    "mono04": "#242424",
+    "mono03": "#1e1e1e",
+    "mono02": "#191919",
+    "mono01": "#151515",
+    "mono00": "#101010",
+    "acc08": "#faf5eb",
+    "acc07": "#dad5c8",
+    "acc06": "#c0baad",
+    "acc05": "#b3ad9f",
+    "acc04": "#a69f91",
+    "acc03": "#9a9487",
+    "acc02": "#8e897d",
+    "acc01": "#7f7b70",
+    "acc00": "#706c62",
+    "acc_dim08": "#f7f4ed",
+    "acc_dim07": "#d6d3cc",
+    "acc_dim06": "#bdbab2",
+    "acc_dim05": "#b4b0a7",
+    "acc_dim04": "#a19d97",
+    "acc_dim03": "#97948c",
+    "acc_dim02": "#8e8b85",
+    "acc_dim01": "#7b7974",
+    "acc_dim00": "#6c6a65",
+    "red01": "#cc9393",
+    "red00": "#b07878",
+    "green01": "#9bb09b",
+    "green00": "#778777",
+    "yellow01": "#ebd6b7",
+    "yellow00": "#d6caab",
+    "blue01": "#9db2cf",
+    "blue00": "#7d96ad",
+    "magenta01": "#9f9fbd",
+    "magenta00": "#797994",
+    "cyan01": "#92b3b3",
+    "cyan00": "#769494",
+    "orange01": "#dcb5a5",
+    "orange00": "#c8a492"
   },
   "theme": {
     "primary": {
-      "dark": "#c0baad",
-      "light": "#c0baad"
+      "dark": "acc07",
+      "light": "acc07"
     },
     "secondary": {
-      "dark": "#f7f4ed",
-      "light": "#f7f4ed"
+      "dark": "mono21",
+      "light": "mono21"
     },
     "accent": {
-      "dark": "#c0baad",
-      "light": "#c0baad"
+      "dark": "acc04",
+      "light": "acc04"
     },
     "error": {
-      "dark": "colorFatigueError",
-      "light": "colorFatigueError"
+      "dark": "red00",
+      "light": "red00"
     },
     "warning": {
-      "dark": "colorFatigueWarning",
-      "light": "colorFatigueWarning"
+      "dark": "orange00",
+      "light": "orange00"
     },
     "success": {
-      "dark": "colorFatigueSuccess",
-      "light": "colorFatigueSuccess"
+      "dark": "green00",
+      "light": "green00"
     },
     "info": {
       "dark": "#FFC799",
       "light": "#FFC799"
     },
     "text": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     },
     "textMuted": {
-      "dark": "colorFatigueMuted",
-      "light": "colorFatigueMuted"
+      "dark": "mono13",
+      "light": "mono13"
     },
     "background": {
-      "dark": "colorFatigueBg",
-      "light": "#FFF"
+      "dark": "mono02",
+      "light": "mono23"
     },
     "backgroundPanel": {
-      "dark": "colorFatigueBg",
-      "light": "#F0F0F0"
+      "dark": "mono02",
+      "light": "mono23"
     },
     "backgroundElement": {
-      "dark": "colorFatigueBg",
-      "light": "#E0E0E0"
+      "dark": "mono02",
+      "light": "mono23"
     },
     "border": {
-      "dark": "#282828",
-      "light": "#D0D0D0"
+      "dark": "mono07",
+      "light": "mono18"
     },
     "borderActive": {
-      "dark": "#FFC799",
-      "light": "#FFC799"
+      "dark": "acc04",
+      "light": "acc04"
     },
     "borderSubtle": {
-      "dark": "#1C1C1C",
-      "light": "#E8E8E8"
+      "dark": "mono05",
+      "light": "mono20"
     },
     "diffAdded": {
-      "dark": "colorFatigueSuccess",
-      "light": "colorFatigueSuccess"
+      "dark": "green00",
+      "light": "green00"
     },
     "diffRemoved": {
-      "dark": "colorFatigueError",
-      "light": "colorFatigueError"
+      "dark": "red00",
+      "light": "red00"
     },
     "diffContext": {
-      "dark": "colorFatigueMuted",
-      "light": "colorFatigueMuted"
+      "dark": "mono19",
+      "light": "mono19"
     },
     "diffHunkHeader": {
-      "dark": "colorFatigueMuted",
-      "light": "colorFatigueMuted"
+      "dark": "mono19",
+      "light": "mono19"
     },
     "diffHighlightAdded": {
-      "dark": "colorFatigueSuccess",
-      "light": "colorFatigueSuccess"
+      "dark": "green00",
+      "light": "green00"
     },
     "diffHighlightRemoved": {
-      "dark": "colorFatigueError",
-      "light": "colorFatigueError"
+      "dark": "red00",
+      "light": "red00"
     },
     "diffAddedBg": {
       "dark": "#0d2818",
@@ -107,7 +154,7 @@
       "light": "#f5e8e8"
     },
     "diffContextBg": {
-      "dark": "colorFatigueBg",
+      "dark": "mono02",
       "light": "#F8F8F8"
     },
     "diffLineNumber": {
@@ -123,96 +170,96 @@
       "light": "#f5e8e8"
     },
     "markdownText": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     },
     "markdownHeading": {
-      "dark": "#FFC799",
-      "light": "#FFC799"
+      "dark": "acc08",
+      "light": "acc08"
     },
     "markdownLink": {
-      "dark": "#FFC799",
-      "light": "#FFC799"
+      "dark": "acc_dim05",
+      "light": "acc_dim05"
     },
     "markdownLinkText": {
-      "dark": "colorFatigueMuted",
-      "light": "colorFatigueMuted"
+      "dark": "mono19",
+      "light": "mono19"
     },
     "markdownCode": {
-      "dark": "colorFatigueMuted",
-      "light": "colorFatigueMuted"
+      "dark": "mono19",
+      "light": "mono19"
     },
     "markdownBlockQuote": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     },
     "markdownEmph": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     },
     "markdownStrong": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     },
     "markdownHorizontalRule": {
-      "dark": "#65737E",
-      "light": "#65737E"
+      "dark": "blue00",
+      "light": "blue00"
     },
     "markdownListItem": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     },
     "markdownListEnumeration": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     },
     "markdownImage": {
-      "dark": "#FFC799",
-      "light": "#FFC799"
+      "dark": "acc_dim05",
+      "light": "acc_dim05"
     },
     "markdownImageText": {
-      "dark": "colorFatigueMuted",
-      "light": "colorFatigueMuted"
+      "dark": "mono19",
+      "light": "mono19"
     },
     "markdownCodeBlock": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     },
     "syntaxComment": {
-      "dark": "colorFatigueComment",
-      "light": "colorFatigueComment"
+      "dark": "mono12",
+      "light": "mono12"
     },
     "syntaxKeyword": {
-      "dark": "colorFatigueKeyword",
-      "light": "colorFatigueKeyword"
+      "dark": "mono25",
+      "light": "mono25"
     },
     "syntaxFunction": {
-      "dark": "colorFatigueFunction",
-      "light": "colorFatigueFunction"
+      "dark": "mono22",
+      "light": "mono22"
     },
     "syntaxVariable": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono17",
+      "light": "mono02"
     },
     "syntaxString": {
-      "dark": "colorFatigueString",
-      "light": "colorFatigueString"
+      "dark": "mono15",
+      "light": "mono15"
     },
     "syntaxNumber": {
-      "dark": "colorFatigueNumber",
-      "light": "colorFatigueNumber"
+      "dark": "mono17",
+      "light": "mono17"
     },
     "syntaxType": {
-      "dark": "colorFatigueFunction",
-      "light": "colorFatigueFunction"
+      "dark": "mono23",
+      "light": "mono23"
     },
     "syntaxOperator": {
-      "dark": "colorFatigueKeyword",
-      "light": "colorFatigueKeyword"
+      "dark": "mono21",
+      "light": "mono21"
     },
     "syntaxPunctuation": {
-      "dark": "colorFatigueFg",
-      "light": "colorFatigueBg"
+      "dark": "mono21",
+      "light": "mono02"
     }
   }
 }
