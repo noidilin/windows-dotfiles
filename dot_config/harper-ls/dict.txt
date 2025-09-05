@@ -1,0 +1,5 @@
+LazyVim
+VeryLazy
+autocmds
+hjkl
+stylua
