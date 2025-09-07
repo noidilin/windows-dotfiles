@@ -17,11 +17,10 @@ $SCOOP_BASE = @(
 )
 
 $SCOOP_GUI = @(
-  "versions/firefox-developer"
   "extras/via"
   "extras/flow-launcher"
-  "extras/everything"
   "extras/vscode"
+  "extras/zed"
   "extras/wezterm"
   "extras/blender-launcher"
   "extras/crystaldiskinfo"
@@ -36,9 +35,9 @@ $SCOOP_GUI = @(
 )
 
 $SCOOP_CLI = @(
-  # "extras/dockercompletion"
-  # "extras/scoop-completion"
   "extras/carapace-bin"
+  "extras/sfsu"
+  "extras/opencode"
   "extras/vcredist2022"
   "extras/psreadline"
   "extras/posh-git"

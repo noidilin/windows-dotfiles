@@ -6,6 +6,7 @@ $SCOOP_LANGUAGES = @(
   "main/nodejs-lts"
   "main/bun"
   "main/python"
+  # "main/podman"
   # "main/docker"
   # "main/docker-compose"
 )
