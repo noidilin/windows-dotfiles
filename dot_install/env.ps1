@@ -16,7 +16,7 @@ $NamedEnv = @{
 
 # List of directories to add to PATH
 $PathsToAdd = @(
-  "$HOME\.cache\.bun\bin"
+  "$HOME\.bun\bin"
   "$HOME\.local\bin\example"
 )
 

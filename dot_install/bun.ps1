@@ -4,8 +4,6 @@ $BUN_PACKAGES = @(
   "@vscode/vsce"
   "tldr"
   "rimraf"
-  # "yo"
-  # "generator-code"
 )
 
 Write-Host "installing global bun packages..." -ForegroundColor Gray
