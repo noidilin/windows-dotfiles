@@ -1,5 +1,5 @@
-@-moz-document regexp("^(?!(https|http):\\/\\/(monkeytype\\.com|localhost:(3000|5173)|example\\.com)\\/).*$") {
-  /* force enhanced text rendering */
+@-moz-document regexp("^(?!(https|http):\\/\\/(monkeytype\\.com|localhost:(3000|5173)|tweakcn\\.com)\\/).*$") {
+/* force enhanced text rendering */
   /* stylus regex reference: [Stylus Regex](https://stylus-regex.pabli.dev/) */
 
   :not([class*='icon']):not([class*='button']):not([class*='mjx']):not(
@@ -16,7 +16,7 @@
     text-rendering: geometricPrecision;
     /* text-shadow: 0 0 rgba(128, 128, 128, 0.2) */
   }
-} /* leechblock extension */
+}/* leechblock extension */
 
 .leechblock-timer {
   padding: 4px 8px !important;
@@ -28,7 +28,7 @@
 }
 
 @-moz-document domain("www.youtube.com") {
-  /* youtube progress bar color */
+/* youtube progress bar color */
 
   .ytp-swatch-background-color {
     background-color: rgb(240, 240, 240);
@@ -39,7 +39,7 @@
 }
 
 @-moz-document domain("linux.vbird.org") {
-  /* dark theme for vbird blog */
+/* dark theme for vbird blog */
 
   ::-moz-selection,
   ::selection {
