@@ -4170,3 +4170,1109 @@ chezmoi forget ~/.local/etc/blender/config/CP-Backups/
 yazi
 chezmoi add ~/.local/etc/blender/scripts/presets/interface_theme/
 chezmoi status
+chezmoi re-add
+lg
+yazi
+z obsidian
+z dev
+ls
+yz
+lg
+nvim
+clear
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+nvim
+btm
+z nvim
+nvim
+lg
+z learning
+bun run dev
+nvim
+lg
+z nvim
+nvim
+nvim
+z dev
+yazi
+cd color-fatigue\
+ls
+nvim
+clear
+nvim
+opencode
+yz
+ls
+opencode
+yz
+ls
+yazi
+lg
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+clear
+nvim
+clear
+nvim
+lg
+clear
+nvim
+nvim
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+z wezterm
+nvim
+scoop install extras/zed
+scoop update 
+scoop update --all
+opencode
+opencode
+btm
+scoop update --all
+z config
+yazi
+nvim
+$env.BLENDER_USER_RESOURCES
+z obsidian
+nvim
+z glazewm
+nvim
+z nvim
+nvim
+z config
+nvim starship.toml
+z obsidian
+nvim
+z dev
+cd level
+ls
+cd layers
+ls
+clear
+scoop update
+nvim
+winget update
+scoop update --all
+winget update --id microsoft.windowsterminal
+scoop update -
+scoop update --all
+z glazewm
+nvim
+z chezmoi
+chezmoi status
+chezmoi re-add
+lg
+lg
+z nvim
+nvim
+nvim
+lg
+z opencode
+ls
+yazi
+opencode auth --help
+opencode auth logout
+opencode auth login
+opencode init
+z opencode
+z nvim
+nvim
+z nvim
+nvim
+nvim
+z nvim
+nvim
+yazi
+nvim
+yazi
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+yazi
+lg
+yazi
+nvim
+yazi
+z local
+ls
+yz
+z nvim
+nvim
+z local
+yazi
+z nvim
+nvim
+yazi
+nvim
+lg
+nvim
+lg
+nvim
+lg
+yazi
+lg
+nvim
+lg
+nvim
+yazi
+lg
+nvim
+yazi
+nvim
+yazi
+nvim
+yazi
+nvim
+lg
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+lg
+nvim
+lg
+nvim
+lg
+opencode
+nvim
+opencode
+yazi
+z nvim
+lg
+z obsidian
+yazi
+nvim
+z dev
+cd layers
+nvim
+lg
+nvim
+lg
+z opencode
+nvim
+z chezmoi
+chezmoi status
+opencode
+chezmoi re-add
+lg
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+pwd
+z 
+yazi
+z wezterm
+nvim
+nvim
+z wezterm
+nvimm
+nvim
+lg
+nvim
+lg
+nvim
+lg
+nvim
+lg
+nvim
+yazi
+nvim
+yazi
+nvim
+yazi
+nvim
+yazi
+nvim
+yazi
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+yazi
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+yazi
+lg
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+lg
+opencode
+chezmoi status
+z obsidian
+z nvim
+nvim
+nvim
+yazi
+nvim
+clear
+nvim
+nvim
+lg
+yazi
+nvim
+yazi
+lg
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+lg
+yazi
+nvim
+lg
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+z config
+yazi
+cd nushell
+nvim
+cd ..
+yazi
+cd opencode
+nvim
+yazi
+cd ..\vivid\
+nvim
+vivid preview color-fatigue | nu-highlight | delta
+z nushell
+cd $env.APPDATA
+yazi
+z obsidian
+ls
+z
+z obsidian
+nvim
+cd $env.APPDATA
+cd vivid
+ls
+pwd
+yazi
+z 
+z config
+cd vivid
+ls
+vivid generate color-fatigue
+vivid preview color-fatigue | table
+ls
+$env.LS_COLORS
+nvim
+z obsidian
+vivid -v
+vivid --version
+z scoop
+ls
+cd buckets
+ls
+cd custom
+lg
+nvim
+exa
+scoop install custom/vivid
+nvim
+scoop update custom/vivid -f
+lg
+scoop update
+yazi
+z downloads
+ls
+open vivid-v0.10.1-x86_64-pc-windows-gnu.zip | hash sha256
+open vivid-v0.10.1-i686-pc-windows-msvc.zip | hash sha256
+open vivid-v0.10.1-x86_64-pc-windows-msvc.zip | hash sha256
+nvim
+scoop uninstall custom/vivid
+scoop install custom/vivid
+vivid --version
+vivid generate color-fatigue
+vivid preview color-fatigue | less
+vivid preview color-fatigue | table
+vivid preview color-fatigue | nu-highlight
+vivid themes
+vivid preview color-fatigue | nu-highlight
+$env.LS_COLORS
+vivid preview color-fatigue | table
+ls
+z config
+z vivid
+ls
+cd themes
+cd ..
+nvim
+vivid generate molokai
+vivid generate color-fatigue
+vivid -m 8-bit generate color-fatigue
+vivid -m 24-bit generate color-fatigue
+vivid themes
+lg
+scoop info custom/vivid
+scoop checkver custom/vivid
+scoop help
+scoop config debug
+scoop uninstall custom/vivid
+scoop cache rm custom/vivid
+scoop cache rm vivid
+scoop install custom/vivid
+vivid --version
+eza --color=always
+eza
+nvim
+scoop uninstall custom/vivid
+scoop cache rm vivid
+scoop install custom/vivid
+vivid --version
+vivid generate color-fatigue
+vivid preview color-fatigue | table
+z obsidian
+nvim
+lg
+nvim
+winget search pixpin
+z nvim
+ls
+nvim
+z
+yazi
+cd ../harper-ls/
+ls
+yazi
+nvim
+z chezmoi
+z local
+cd share
+ls
+chezmoi add ~/.local/share/harper-ls/
+z config
+ls
+chezmoi add ~/.config/harper-ls/
+chezmoi status
+chezmoi re-add
+lg
+cd $env.APPDATA
+ls
+yazi
+yazi
+z obsidian
+nvim
+z nvim
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+btm
+z dev
+cd layers
+nvim
+bun run dev
+nvim
+z nvim
+nvim
+lg
+nvim
+winget search edge
+winget search responsively
+scoop install extras/responsively
+z scoop
+yz
+cd ..
+z learning
+cd ..
+cd dev
+ls
+cd newsly\
+bun run dev
+cd ..
+yazi
+z learning
+yz
+ls
+yazi
+bun run dev
+yazi
+bun install
+bun run dev
+rimraf --verbose node_modules\
+yazi
+cd ../project-pizza/
+bun install
+bun run dev
+scoop uninstall extras/responsively
+z local
+cd etc\stylus\
+ls
+open noidilin-style.css
+open --raw noidilin-style.css 
+nvim noidilin-style.css 
+clear
+winget search firefox
+winget list firefox
+btm
+winget uninstall --id Mozilla.Firefox.DeveloperEdition
+bun run dev
+nvim
+z nvim
+nvim
+z obsidian
+scoop update
+winget update
+winget update --help
+winget update
+btm
+scoop update --all
+winget update --all
+z install
+nvim
+scoop cleanup --cache --all
+clear
+scoop cache
+clear
+scoop install extras/sfsu
+sfsu help
+sfsu cache
+sfsu cache rm firefox-developer
+sfsu cache rm *
+sfsu cache rm --help
+sfsu cache rm --all
+sfsu cache rm nodejs
+sfsu cache 
+sfsu cache --help
+sfsu cache remove *
+sfsu cache remove "*"
+scoop cache
+sfsu cleanup --help
+sfsu cleanup --cache --all
+sfsu cleanup 
+sfsu cleanup "*"
+scoop cleanup
+scoop cleanup *
+sfsu help
+sfsu download --help
+sfsu list
+sfsu download main/nu
+version
+sfsu help
+sfsu update
+sfsu download flow-launcher
+scoop update --all
+yazi
+clear
+sfsu list
+sfsu list --help
+sfsu list --sort-by source
+z install
+scoop uninstall everything
+scoop uninstall scoop-completion
+nvim
+chezmoi status
+chezmoi re-add
+z chezmoi
+lg
+z install
+nvim
+z chezmoi
+lg
+z downloads
+yazi
+scoop update flow-launcher
+z scoop
+yazi
+scoop update flow-launcher
+sfsu cleanup "*"
+sfsu cleanup --cache
+sfsu cleanup --cache --all
+yazi
+z obsidian
+z nvim
+nvim
+nvim
+z dev
+cd layers
+nvim
+z nvim
+nvim
+bun run dev
+z nvim
+opencode
+opencode logout
+opencode auth logout
+opencode auth login
+opencode version
+opencode --version
+fastfetch
+nvim
+yazi
+nvim -d 'after\queries\javascript\textobjects.scm' 'after\queries\javascript\textobjects.scm'
+nvim
+nvim
+yazi
+nvim
+nvim
+clear
+lg
+z obsidian
+opencode
+nvim
+yazi
+cd ..
+yazi
+cd self
+yazi
+bunx create-next-app@latest .
+yazi
+bun add -D shadcn
+yazi
+bun pm cache
+yazi
+z
+yazi
+z nvim
+nvim
+nvim
+clear
+z opencode
+ls
+nvim
+z install
+yazi
+nvim
+z nushell
+yazi
+chezmoi add ~/.config/opencode/
+chezmoi status
+nvim
+z chezmoi
+lg
+z obsidian
+bun rm -D shadcn
+bun rm shadcn
+z install
+bun add --global @vscode/vsce tldr rimraf opencode-ai shadcn
+nvim
+nvim
+yazi
+bun rm --global shadcn
+z install
+nvim
+bun add -D shadcn
+z install
+nvim
+bun rm --global opencode-ai
+opencode
+yazi
+z nvim
+nvim
+z dev
+cd layers
+bun add next-themes
+nvim
+nvim
+yazi
+cd ..
+cd layers
+yazi
+bun shadcn add button
+bunx shadcn init
+bun dev
+clear
+bunx shadcn init
+yazi
+rimraf --verbose node_modules\
+bun install
+yazi
+z
+scoop update
+bun pm ls --global
+z dev
+ls
+yazi
+cd self
+yazi
+rimraf --help
+rimraf --verbose .\node_modules\
+cd ..
+yazi
+cd self
+bunx create-next-app@latest .
+yazi
+bunx --bun shadcn@latest init
+yazi
+bun add next-themes
+bun add --dev @biomejs/biome
+yazi
+bunx --bun shadcn@latest add button
+z install
+z
+cd .cache\
+yazi
+z dev
+cd self
+bunx --bun shadcn add badge
+z
+yazi
+nvim
+cd .config\
+nvim
+yazi
+bun pm cache
+z
+bun pm cache
+bun pm --help
+bun pm bin
+bun pm ls
+bun pm cache --help
+bun pm ls --global
+bun pm cache --global
+yazi
+yz
+rimraf --verbose .\cache\
+yazi
+rm -rf .\cache\
+yazi
+cd ..
+yazi
+cd ..
+bun pm cache
+bun pm bin 
+bun pm bin -g
+yz
+nvim .bunfig.toml 
+yazi
+bun pm bin -g
+yazi
+bun pm cache -g
+yazi
+nvim .bunfig.toml 
+bun pm cache -g
+bun pm bin -g
+z obsidian
+nvim
+bun pm ls --global
+yazi
+z 
+cd .bun
+ls
+cd install\
+ls
+cd global
+ls
+yazi
+z
+bun pm ls --global
+bun pm bin -g
+bun add --global @vscode/vsce tldr rimraf
+z install
+nvim
+ls
+pwsh env.ps1
+bun pm bin -g
+yazi
+z
+yazi
+z dev
+cd self
+bunx --bun shadcn@latest add button
+bunx --bun shadcn@latest add badge
+bunx --bun shadcn add card
+yazi
+z nvim
+z nushell
+nvim
+nvim
+bun dev
+nvim
+yazi
+lg
+z learning
+opencode
+bun dev
+bun add --dev prettier prettier-plugin-tailwindcss
+nvim
+yazi
+bunx --bun shadcn search dropdown
+bunx --bun shadcn add dropdown-menu
+bun dev
+yazi
+cd ..
+cd layers
+rimraf --verbose .\node_modules\
+cd ..
+yazi
+cd newsly\
+rimraf --verbose .\node_modules\
+cd ..
+z learning
+yazi
+git status
+lg
+cleawr
+clear
+yazi
+lg
+yazi
+lg
+yazi
+lg
+yazi
+opencode
+z opencode
+ls
+nvim
+z nvim
+nvim
+yazi
+nvim
+lg
+z nvim
+nvim
+nvim
+z dev
+cd self
+cd ..
+yazi
+cd layers
+bun dev
+bun add motion
+bunx --bun shadcn add sheet
+nvim
+bun dev
+nvim
+nvim
+chezmoi status
+chezmoi re-add
+z chezmoi
+lg
+chezmoi add ~/.config/.bunfig.toml
+yazi
+chezmoi forget ~/.config/.bunfig.toml
+chezmoi add --template ~/.config/.bunfig.toml
+yazi
+nvim
+chezmoi execute-template < dot_config\dot_bunfig.toml.tmpl
+open --raw dot_config\dot_bunfig.toml.tmpl | chezmoi execute-template
+lg
+z nvim
+lg
+z dev
+cd self
+nvim
+opencode
+cd ../layers
+bun add split-type
+bunx --bun shadcn add card
+bunx --bun shadcn add hover-card
+bunx --bun shadcn@latest add hover-card
+bun dev
+nvim
+z nvim
+bunx --bun shadcn@latest add hover-card
+nvim
+bunx --bun shadcn@latest add badge
+bunx --bun shadcn add badge
+z dev
+cd self
+bunx --bun shadcn add hover-card
+bunx --bun shadcn add card
+bunx --bun shadcn add badge
+scoop update
+sfsu status
+sfsu --help
+sfsu update --help
+sfsu update
+sfsu status
+scoop update --help
+scoop update main/*
+scoop update cacert
+scoop update opencode
+scoop update carapace-bin
+scoop update ast-grep
+scoop update chezmoi
+sfsu status
+z scoop
+yazi
+z obsidian
+nvim
+npm install --global corepack@latest
+npm list --global
+corepack enable pnpm
+z dev
+cd self
+bunx --bun shadcn add hover-card
+yazi
+z config
+ls
+bun pm list --global
+bun pm ls --global
+rimraf --verbose .\node_modules\
+pnpm install
+z nvim
+yazi
+nvim
+btm
+z dev
+cd self
+pnpm list
+yazi
+pnpm install
+pnpm dlx shadcn@latest add hover-card
+pnpm dlx shadcn@latest add separator
+pnpm
+pnpm list
+rimraf --verbose .\node_modules\
+bun install
+yazi
+bunx --bun shadcn add badge
+yazi
+bun add split-type
+yazi
+nvimm
+nvim
+bunx --bun shadcn add badge
+nvim
+yazi
+lg
+yazi
+lg
+yazi
+bunx --bun shadcn add sheet
+yazi
+bun add motion
+yazi
+bun dev
+yazi
+lg
+fastfetch
+nvim
+bunx --bun shadcn add hover-card
+nvim
+bunx --bun shadcn add hover-card
+nvim
+node --version
+bun --version
+corepack --version
+z nvim
+nvim
+clear
+nvim
+nvim
+bunx --bun shadcn add card
+yazi
+bun dev
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+nvim
+nvim --version
+nvim
+opencode
+scoop install opencode
+opencode
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+z nvim
+nvim
+nvim
+nvim --version
+z ob
+z nvim
+nvim
+z scoop
+yazi
+scoop update opencode
+scoop update
+sfsu status
+sfsu
+sfsu status
+scoop update innounp
+wget update
+winget update
+nvim
+z nvim
+nvim
+lg
+nvi
+bunx --bun shadcn add carousel
+bunx --bun shadcn add accordion
+cd ..
+bunx create-next-app@latest nextjs-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example"
+cd nextjs-dashboard\
+yazi
+bun install
+z nvim
+yazi
+bun dev
+nvim
+nvim
+clear
+nvim
+bun dev
+nvim
+lg
+yazi
+lg
+git remote add origin git@github.com:noidilin/nextjs-dashboard.git
+git remote -v
+git branch -r
+git branch
+git push -u origin main
+yazi
+nvim
+nvim
+bun dev
+nvim
+bun dev
+nvim
+bun dev
+z obsidian
+bun add use-debounce
+clear
+nvim
+bun add next-auth@beta
+nvim
+z config
+yazi
+z glazewm
+yazi
+clear
+z obsidian
+yazi
+cd ..
+yazi
+z learning
+lg
+z dev
+yz
+opencode
+nvim
+opencode
+z dev
+yz
+lg
+z learning
+yazi
+opencode
+z dev
+cd layers
+nvim
+btm
+nvim
+opencode
+yz
+nvim
+lg
+z obsidian
+nvim
+lg
+bun install
+bun dev
+yazi
+.
+start .
+nvim
+yz
+lg
+z glazewm
+nvim
+yazi
+opencode
+scoop update opencode
+scoop update
+sfsu status
+scoop update bun eza
+yazi
+opencode
+bun install
+z nvim
+nvim
+bun dev
+nvim
+nvim
+yz
+z nvim
+nvm
+nvim
+z dev
+yazi
+cd self
+z dev
+nvim
+cd self
+cd ..
+cd layers
+nvim
+cd ..
+yazi
+cd layers
+nvim
+cd ..
+cd newsly\
+nvim
+yazi
+z nvim
+bun dev
+nvim
+nvim
+bun dev
+nvim
+yazi
+yz
+bun dev
+nvim
+yazi
+z obsidian
+z dev
+yazi
+opencode
+nvim
+update_stylus
+z local
+cd etc\
+cd stylus\
+ls
+nvim
+code color-fatigue.json 
+chezmoi apply --help
+chezmoi apply ~/.local/etc/stylus/color-fatigue.json
+yazi
+code color-fatigue.json 
+z chezmoi
+yazi
+z dev
+yazi
+z learning
+z dev
+lg
+yazi
+lg
+yazi
+lg
+yazi
+z obsidian
+z dev
+ls
+nvim AGENTS.md
+yazi
+lg
+yazi
+lg
+yazi
+lg
+git fetch --prune
+git status
+lg
+yazi
+lg
+yazi
+lg
+yazi
+yz
+rimraf --verbose .\node_modules\
+yz
+cd ..
+rimraf --verbose --glob -- ./**/**/node_modules
+rimraf --verbose --glob -- './**/**/node_modules'
+opencode
+z learning
+lg
+git subtree add --prefix=next/project/layers/ "D:/project/dev/layers/" main
+yazi
+lg
+nvim
+z chezmoi
+lg
+chezmoi status
