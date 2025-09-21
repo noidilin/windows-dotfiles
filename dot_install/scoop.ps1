@@ -7,6 +7,9 @@ $SCOOP_BASE = @(
   "main/wget"
   "main/openssh"
   "neorocks-scoop/luarocks" # For nvim lazy, rest.nvim
+)
+
+$SCOOP_FONT = @(
   "nerd-fonts/CommitMono-NF-Mono"
   "nerd-fonts/jf-open-huninn"
   "nerd-fonts/GlowSansTC-Compressed"
@@ -36,37 +39,37 @@ $SCOOP_GUI = @(
 
 $SCOOP_CLI = @(
   "extras/carapace-bin"
-  "extras/sfsu"
+  "extras/lazygit"
   "extras/opencode"
-  "extras/vcredist2022"
   "extras/psreadline"
   "extras/posh-git"
   "extras/psfzf"
+  "extras/sfsu"
+  "extras/vcredist2022"
   # "main/lazydocker"
-  "main/neovim"
-  "main/starship"
-  "main/fastfetch"
-  "main/bottom"
-  "main/gsudo"
-  "main/eza"
-  "main/bat"
-  "main/less"
-  "main/delta"
-  "extras/lazygit"
-  "main/fzf"
-  "main/fd"
-  "main/sd"
-  "main/grep"
-  "main/ripgrep"
   "main/ast-grep"
-  "main/zoxide"
+  "main/bat"
+  "main/bottom"
+  "main/delta"
+  "main/eza"
+  "main/fastfetch"
+  "main/fd"
   "main/ffmpeg"
+  "main/fzf"
+  # "main/gh"
+  "main/grep"
+  "main/gsudo"
   "main/imagemagick"
+  "main/less"
+  "main/neovim"
+  "main/ripgrep"
+  "main/sd"
+  "main/starship"
   "main/yazi"
+  "main/zoxide"
   # "main/jq"
   # "extra/jqp"
   # "main/sed"
-  # "main/gh"
   # "main/glow"
   # "main/unar"
   # "main/xh"
@@ -82,18 +85,19 @@ $SCOOP_CLI = @(
 
 <#
 $SCOOP_OTHERS = @(
+  # "extras/putty"
   # "extras/qbittorrent-enhanced"
+  # "main/uutils-coreutils"
   # "extras/v2rayn"
   # "extras/winscp"
-  # "main/openssl"
-  # "main/uutils-coreutils"
   # "nonportable/winfsp-np"
-  # "extras/putty"
+  # "main/openssl"
 )
 #>
 
 Write-Host "installing scoop apps..." -ForegroundColor Gray
 scoop install $SCOOP_BASE
+scoop install $SCOOP_FONT
 scoop install $SCOOP_GUI
 scoop install $SCOOP_CLI
 # FIX: can't add blank array to installation list
