@@ -3,6 +3,7 @@ $env.EDITOR = 'nvim'
 $env.PAGER = 'delta'
 $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 $env.LS_COLORS = (vivid generate color-fatigue | str trim)
+$env.CC = 'gcc' # for tree-sitter
 
 export const ENV_DIR = ($nu.default-config-dir | path join 'env')
 
