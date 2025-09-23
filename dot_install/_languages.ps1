@@ -3,9 +3,6 @@ Write-Host "starting languages.ps1 script..." -ForegroundColor White
 $SCOOP_LANGUAGES = @(
   "main/mingw"
   "main/rustup-gnu"
-  "main/nodejs-lts"
-  "main/bun"
-  "main/python"
   # "main/podman"
   # "main/docker"
   # "main/docker-compose"

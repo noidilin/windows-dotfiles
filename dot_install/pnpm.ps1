@@ -1,7 +1,15 @@
+# WARN: Prerequisite: 
+# 1. add PNPM_HOME=$XDG_DATA_HOME/pnpm/ to environment variable
+# 2. add path of PNPM_HOME into PATH
+# 3. `scoop install main/mise`
+# 4. `mise install`, which will:
+#   a. install node lts version
+#   b. execute `corepack enable` after installation
+
 Write-Host "starting pnpm.ps1 script..." -ForegroundColor White
 
 $PNPM_PACKAGES = @(
-  "@vscode/vsce"
+  # "@vscode/vsce"
   "tldr"
   "rimraf"
   # "yo"
@@ -9,7 +17,6 @@ $PNPM_PACKAGES = @(
 )
 
 # Write-Host "initializing pnpm env variable..." -ForegroundColor Gray
-# ISSUE: might need to restart device in order to add package globally
 pnpm setup
 
 Write-Host "installing global pnpm packages..." -ForegroundColor Gray

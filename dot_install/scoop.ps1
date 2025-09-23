@@ -9,6 +9,12 @@ $SCOOP_BASE = @(
   "neorocks-scoop/luarocks" # For nvim lazy, rest.nvim
 )
 
+$SCOOP_LANGUAGES = @(
+  "main/mingw"
+  "main/mise"
+  # "main/rustup-gnu"
+)
+
 $SCOOP_FONT = @(
   "nerd-fonts/CommitMono-NF-Mono"
   "nerd-fonts/jf-open-huninn"
@@ -95,8 +101,17 @@ $SCOOP_OTHERS = @(
 )
 #>
 
-Write-Host "installing scoop apps..." -ForegroundColor Gray
+Write-Host "installing basic apps with scoop..." -ForegroundColor Gray
 scoop install $SCOOP_BASE
+Write-Host "basic apps installation finished." -ForegroundColor White
+
+Write-Host "installing programming languages with scoop..." -ForegroundColor Gray
+scoop install $SCOOP_LANGUAGES
+Write-Host "installing programming languages with mise..." -ForegroundColor Gray
+mise install
+Write-Host "programming languages installation finished." -ForegroundColor White
+
+Write-Host "installing the rest of scoop apps..." -ForegroundColor Gray
 scoop install $SCOOP_FONT
 scoop install $SCOOP_GUI
 scoop install $SCOOP_CLI
