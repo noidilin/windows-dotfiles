@@ -6,7 +6,6 @@ $SCOOP_BASE = @(
   "main/unrar"
   "main/wget"
   "main/openssh"
-  "neorocks-scoop/luarocks" # For nvim lazy, rest.nvim
 )
 
 $SCOOP_LANGUAGES = @(
