@@ -4,6 +4,7 @@ $SCOOP_BASE = @(
   "main/7zip"
   "main/gzip"
   "main/unrar"
+  "main/unzip"
   "main/wget"
   "main/openssh"
 )
@@ -39,19 +40,21 @@ $SCOOP_GUI = @(
   "extras/potplayer"
   # "main/spicetify-cli"
   # "extras/spicetify-themes"
-  # "extra/spotify"
+  # "extras/spotify"
 )
 
 $SCOOP_CLI = @(
   "extras/carapace-bin"
   "extras/lazygit"
   "extras/opencode"
-  "extras/psreadline"
   "extras/posh-git"
+  "extras/psreadline"
   "extras/psfzf"
   "extras/sfsu"
   "extras/vcredist2022"
-  # "main/lazydocker"
+  # "main/podman"
+  # "main/docker"
+  # "main/docker-compose"
   "main/ast-grep"
   "main/bat"
   "main/bottom"
@@ -62,10 +65,12 @@ $SCOOP_CLI = @(
   "main/ffmpeg"
   "main/fzf"
   # "main/gh"
+  "main/gpg"
   "main/grep"
   "main/gsudo"
   "main/imagemagick"
   "main/less"
+  # "main/lazydocker"
   "main/neovim"
   "main/ripgrep"
   "main/sd"
@@ -79,12 +84,9 @@ $SCOOP_CLI = @(
   # "main/unar"
   # "main/xh"
   # "main/yq"
-  # "main/actionlint"
-  # "main/gnupg"
   # "main/yt-dlp"
   # "main/rclone"
   # "main/vivetool"
-  # "main/wakatime-cli"
   # "main/goodbyedpi"
 )
 
@@ -114,7 +116,7 @@ Write-Host "installing the rest of scoop apps..." -ForegroundColor Gray
 scoop install $SCOOP_FONT
 scoop install $SCOOP_GUI
 scoop install $SCOOP_CLI
-# FIX: can't add blank array to installation list
+# NOTE: can't add blank array to installation list
 # scoop install $SCOOP_OTHERS
 
 # NOTE: recently added, not tested yet
