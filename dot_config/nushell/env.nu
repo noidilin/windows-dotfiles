@@ -19,6 +19,10 @@ source ($ENV_DIR | path join 'key.nu')
 # init-atuin
 # hide init-atuin
 
+use $ENV_DIR mise init-mise
+init-mise
+hide init-mise
+
 use $ENV_DIR zoxide init-zoxide
 init-zoxide
 hide init-zoxide

@@ -44,6 +44,10 @@ source pbr-move-preview.nu
 # source $ATUIN_INIT_PATH
 # hide ATUIN_INIT_PATH
 
+use $ENV_DIR mise MISE_INIT_PATH
+source $MISE_INIT_PATH
+hide MISE_INIT_PATH
+
 use $ENV_DIR zoxide ZOXIDE_INIT_PATH
 source $ZOXIDE_INIT_PATH
 hide ZOXIDE_INIT_PATH

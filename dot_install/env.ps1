@@ -1,23 +1,29 @@
 Write-Host "starting env.ps1 script..." -ForegroundColor White
 
 $NamedEnv = @{
-  XDG_CONFIG_HOME = "$HOME\.config"; # config files (write)
   XDG_DATA_HOME = "$HOME\.local\share"; # user data (write)
+  XDG_CONFIG_HOME = "$HOME\.config"; # config files (write)
+  XDG_STATE_HOME = "$HOME\.local\state"; # user state (write)
   XDG_CACHE_HOME = "$HOME\.cache"; # non-essential data (read/write)
   EZA_CONFIG_DIR = "$HOME\.config\eza"; # eza theme
   BAT_CONFIG_DIR = "$HOME\.config\bat"; # bat config
   YAZI_CONFIG_HOME = "$HOME\.config\yazi";
   YAZI_FILE_ONE = "$HOME\scoop\apps\git\current\usr\bin\file.exe"; # preview feature
   BLENDER_USER_RESOURCES = "$HOME\.local\etc\blender";
+  PNPM_HOME = "$HOME\.dev\pnpm"
+  BUN_INSTALL_GLOBAL_DIR = "$HOME\.dev\bun\install\global" # where `bun install --global` installs packages
+  BUN_INSTALL_BIN = "$HOME\.dev\bun\bin" # where globally-installed package bins are linked
+  BUN_INSTALL_CACHE_DIR = "$HOME\.dev\bun\install\cache" # all downloaded packages are stored in global cache
+  CARGO_HOME = "$HOME\.dev\cargo";
+  RUSTUP_HOME = "$HOME\.dev\rustup"
   # npm_config_cache = "D:\archive\cache\npm";
-  # CARGO_HOME = "D:\archive\packages\cargo";
   # PIP_CACHE_DIR = "D:\archive\cache\pip";
 }
 
 # List of directories to add to PATH
 $PathsToAdd = @(
-  "$HOME\.bun\bin"
-  "$HOME\.local\bin\example"
+  "$HOME\.dev\pnpm"
+  "$HOME\.dev\bun\bin"
 )
 
 Write-Host "setting up environment variables..." -ForegroundColor Gray
