@@ -43,20 +43,16 @@ export def main [] {
       mode: [vi_normal vi_insert]
       event: { send: menupageprevious }
     }
-
-    # ISSUE: not working
-    # {
-    #   name: reload_config
-    #   modifier: none
-    #   keycode: f8
-    #   mode: [vi_normal vi_insert]
-    #   event: [
-    #     {
-    #       send: executehostcommand,
-    #       cmd: $"clear;source '($nu.env-path)';source '($nu.config-path)';"
-    #     }
-    #   ]
-    # }
+    {
+      name: reload_config
+      modifier: none
+      keycode: f8
+      mode: [vi_normal vi_insert]
+      event: {
+        send: ExecuteHostCommand,
+        cmd: $"clear;source '($nu.env-path)';source '($nu.config-path)';print 'Config reloaded.\n'"
+      }
+    }
 
     # menu - fzf
     {
@@ -100,32 +96,6 @@ export def main [] {
         "
       }
     }
-    # {
-    #   name: fzf_files
-    #   modifier: control
-    #   keycode: char_t
-    #   mode: [vi_normal vi_insert]
-    #   event: {
-    #     send: ExecuteHostCommand
-    #     cmd: "
-    #       commandline edit --insert (
-    #         fd --hidden --strip-cwd-prefix --exclude .git
-    #           | lines
-    #           | str join (char -i 0)
-    #           | fzf
-    #             --multi
-    #             --scheme=path
-    #             --read0
-    #             --layout=reverse
-    #             --height=80%
-    #             --bind=change:top
-    #           | decode utf-8
-    #           | lines
-    #           | str join ' '
-    #       )
-    #     "
-    #   }
-    # }
     {
         name: fzf_dirs
         modifier: alt
