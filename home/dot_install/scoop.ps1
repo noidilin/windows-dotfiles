@@ -25,12 +25,17 @@ $SCOOP_FONT = @(
   "nerd-fonts/GlowSansTC-Wide"
 )
 
+$SCOOP_EDITOR = @(
+  # "extras/wezterm"
+  "main/neovim"
+  "custom/wezterm"
+  "extras/vscode"
+  "extras/zed"
+)
+
 $SCOOP_GUI = @(
   "extras/via"
   "extras/flow-launcher"
-  "extras/vscode"
-  "extras/zed"
-  "extras/wezterm"
   "extras/blender-launcher"
   "extras/crystaldiskinfo"
   "extras/rufus"
@@ -44,6 +49,7 @@ $SCOOP_GUI = @(
 )
 
 $SCOOP_CLI = @(
+  "custom/vivid"
   "extras/carapace-bin"
   "extras/lazygit"
   "extras/opencode"
@@ -71,7 +77,6 @@ $SCOOP_CLI = @(
   "main/imagemagick"
   "main/less"
   # "main/lazydocker"
-  "main/neovim"
   "main/ripgrep"
   "main/sd"
   "main/starship"
@@ -114,6 +119,7 @@ Write-Host "programming languages installation finished." -ForegroundColor White
 
 Write-Host "installing the rest of scoop apps..." -ForegroundColor Gray
 scoop install $SCOOP_FONT
+scoop install $SCOOP_EDITOR
 scoop install $SCOOP_GUI
 scoop install $SCOOP_CLI
 # NOTE: can't add blank array to installation list

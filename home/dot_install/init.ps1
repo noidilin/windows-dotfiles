@@ -18,8 +18,8 @@ scoop install git
 
 Write-Host "adding scoop bucket..." -ForegroundColor Gray
 scoop bucket add extras
-scoop bucket add versions
 scoop bucket add nerd-fonts
+scoop bucket add custom https://github.com/noidilin/scoop.git
 
 Write-Host "installing initial apps..." -ForegroundColor Gray
 scoop install @SCOOP_INIT
