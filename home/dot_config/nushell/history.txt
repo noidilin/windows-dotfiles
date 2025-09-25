@@ -5276,3 +5276,670 @@ nvim
 z chezmoi
 lg
 chezmoi status
+chezmoi re-add
+lg
+z learning
+lg
+git subtree add --prefix=next/project/newsly/ "D:/project/dev/newsly/" main
+lg
+git subtree add --prefix=next/project/self/ "D:/project/dev/self/" main
+lg
+yazi
+git subtree add --prefix=next/project/dashboard/ "D:/project/dev/dashboard/" main
+lg
+z nvim
+lg
+sfsu status
+sfsu help
+sfsu update
+sfsu bucket update
+scoop update
+scoop status
+scoop update lazygit opencode
+winget update
+winget pin --help
+winget pin add -h
+winget pin add --id WavesAudio.WavesCentral
+winget update
+winget update --all
+winget update
+scoop install main/tree-sitter
+z obsidian
+z nvim
+nvim
+z local
+yazi
+z nvim
+nvim
+tree-sitter init-config
+z roaming
+ls
+cc --help
+cc --version
+rustc --version
+rustc --help
+nvim
+lg
+yazi
+z local
+yazi
+nvim
+z install
+sfsu list --sort-by source
+z obsidian
+rustup show
+rustup self update
+which eza | get path | is-empty
+which gcc
+gcc --version
+z nushell
+nvim
+nvim
+nvim
+z nvim
+cc --version
+nvim
+lg
+nvim
+lg
+nvim
+which gcc
+nvim
+z install
+nvim --version
+tree-sitter --version
+nvim
+chezmoi status
+chezmoi re-add
+z chezmoi
+lg
+z install
+nvim
+chezmoi re-add
+lg
+z obsidian
+nvim
+z dev
+ls
+yazi
+cd shadcn\
+bun dev
+cd ..
+yazi
+cd shadcn\
+rimraf --verbose .\node_modules\
+cd ..
+yazi
+cd colorscheme-test\
+rimraf --verbose .\node_modules\
+yazi
+cd ..
+yazi
+ls
+yazi
+yz
+ls
+yazi
+bun create vite
+bun create vite .
+yazi
+clear
+bun add tailwindcss @tailwindcss/vite
+yazi
+bun add --dev @biomejs/biome
+yazi
+bun add --dev @types/node
+nvim
+bun add --dev prettier prettier-plugin-tailwindcss
+bunx --bun shadcn@latest init
+yazi
+z local
+yz
+yazi
+z nvim
+yazi
+nvim
+ls ($env.LOCALAPPDATA | path join 'nvim-data' 'shada' ) | get name | each {|file| rm -fv $file}
+bunx --bun shadcn@latest add button
+bun dev
+bun add --dev react-scan
+z dev
+yazi
+bunx --bun shadcn add dropdown-menu
+z obsidian
+nvim
+z dev
+bun dev
+nvim
+yazi
+nvim
+z obsidian
+$nu.config-path
+$nu.default-config-dir
+source $nu.default-config-dir
+source $nu.config-path
+z nushell
+ls
+clear
+source $nu.env-path
+clear
+source $nu.env-path
+source $nu.config-path
+clear
+source $nu.env-path
+source $nu.config-path
+source $nu.env-path
+source $nu.config-path
+z nvim
+nvim
+z nvim
+nvim
+nvim
+z obsidian
+nvim
+sfsu update
+scoop update
+sfsu list
+sfsu status
+scoop update opencode
+scoop update flow-launcher
+sfsu cleanup --help
+sfsu cleanup --all --dry-run
+sfsu cleanup --cache --dry-run
+sfsu cleanup --cache --all --dry-run
+sfsu cleanup --cache --all
+sfsu list
+clear
+bun add react-router
+bunx --bun shadcn@latest add https://neobrutalism.dev/r/sidebar.json
+bun dev
+nvim
+yazi
+bunx --bun shadcn@latest add https://neobrutalism.dev/r/breadcrumb.json
+bunx --bun shadcn@latest add https://neobrutalism.dev/r/collapsible.json
+bunx --bun shadcn@latest add https://neobrutalism.dev/r/avatar.json
+clear
+bun dev
+nvim
+z dev
+ls
+yazi
+z learning
+lg
+yazi
+lg
+z dev
+ls
+yazi
+cd dashboard\
+rimraf --verbose .\node_modules\
+cd ..
+ls
+yazi
+z config
+ls
+bun dev
+yazi
+chezmoi status
+chezmoi re-add
+z chezmoi
+lg
+z nvim
+clear
+echo 'hello'
+clear
+echo 'hello'
+sleep --help
+sleep 1sec; echo done
+z dev
+yazi
+cd self
+sleep 1sec; echo done
+ls
+yazi
+yz
+sfsu list node-lts
+z nvim
+z dev
+cd self
+sleep 1sec; echo done
+z chezmoi
+sleep 1sec; echo done
+nvim
+nvim starship.toml
+chezmoi re-add
+lg
+z install
+sfsu list --help
+sfsu list --bucket main
+z nushell
+nvim
+sleep 1sec; echo done
+nvim
+sleep 1sec; echo done
+z wezterm
+nvim
+z nvim
+nvim
+z obsidian
+nvim
+z local
+nvim
+yz
+grep -rl 'ui\.foldexpr' . 
+rg -rl 'ui\.foldexpr' . 
+ls **/* | where type == file | each {|f|<\n>let content = (open $f.name | str replace -a 'ui.foldexpr' 'treesitter.foldexpr')<\n>$content | save -f $f.name }
+grep -rl 'ui\.foldexpr' . 
+grep -rl 'treesitter\.foldexpr' . 
+z obsidian
+z install
+nvim
+pwsh env.ps1
+nvim
+yazi
+nvim
+yazi
+$env.XDG_STATE_HOME
+z obsidian
+nvim
+yazi
+yazi
+z install
+ls
+nvim
+scoop install main/mise
+sfsu list --bucket main
+sfsu list --bucket extra
+sfsu list --bucket extras
+clear
+sfsu list --bucket extras
+sfsu help
+sfsu list --bucket extras
+z config
+ls
+mkdir mise
+ls
+cd mise
+pwd
+z nushell
+z
+yazi
+mise doctor
+nvim
+python --version
+nvim config.toml
+yazi
+nvim mise.toml 
+yazi
+mise doctor
+nvim config.toml
+mise doctor
+nvim config.toml
+mise doctor
+sfsu list --bucket main
+sfsu list --bucket extras
+sfsu list
+sfsu list --sort-by source
+mise ls-remote python
+mise ls-remote lua
+mise ls-remote bun
+mise doctor
+mise use -g
+clear
+mise ls-remote rust
+mise doctor
+$env.RUSTUP_TOOLCHAIN
+$env.RUSTUP_HOME
+$env.CARGO_HOME
+mise doctor
+nvim config.toml
+sfsu list --bucket main
+scoop uninstall main/python
+scoop uninstall main/nodejs-lts
+z nvim
+nvim
+nvim config.toml
+mise doctor
+mise install
+scoop install main/gpg
+z install
+nvim
+mise doctor
+luarocks --version
+sfsu list --sort-by source
+scoop uninstall neorocks-scoop/luarocks
+sfsu list --sort-by source
+scoop uninstall versions/lua51
+scoop install main/unzip
+mise doctor
+nvim
+sfsu list --bucket main
+z obsidian
+scoop uninstall main/bun
+mise doctor
+mise install
+bun pm ls --global
+rimraf --help
+sfsu list --bucket main
+nvim
+nvim config.toml
+nvim
+rustup self uninstall
+rustup help
+rustup check
+rustup toolchain list
+rustup toolchain uninstall --help
+rustup toolchain uninstall nightly
+rustup toolchain uninstall nightly-gnu
+scoop uninstall main/rustup-gnu
+mise doctor
+z 
+mise doctor
+yz
+ls
+yazi
+rimraf --help
+btm
+bun pm ls --global
+z install
+corepack --version
+corepack enable pnpm
+npm list --global
+corepack disable pnpm
+npm uninstall -g corepack
+npm list --global
+z config
+z mise
+nvim
+mise help
+mise uninstall node
+nvim
+mise doctor
+mise install
+npm list --global
+corepack enable --help
+nvim config.toml
+mise doctor
+bun pm ls --global
+bun pm rm --global rimraf tldr @vscode/vsce
+bun rm --global rimraf tldr @vscode/vsce
+bun pm ls --global
+z
+cd .bun
+yazi
+corepack enable
+pnpm add tldr rimraf -g
+z obsidian
+pnpm setup --help
+pnpm setup
+$env.PNPM_HOME
+mise doctor
+$env.PNPM_HOME
+pnpm add tldr rimraf -g
+pwsh env.ps1
+pnpm add tldr rimraf -g
+nvim
+z
+yz
+ls
+rimraf nodejs
+rimraf --verbose .\nodejs\
+z
+cd .bun
+yazi
+z scoop
+cd persist\
+ls
+rimraf --verbose .\nodejs\
+ls
+rimraf --verbose .\luarocks\
+z 
+cd .bun
+ls
+yazi
+cd install\
+ls
+rimraf --verbose .\global\
+rm -rf .\global\
+ls
+z scoop
+cd persist\
+ls
+rimraf --verbose .\luarocks\
+pnpm list
+pnpm list -
+pnpm list -g
+bun pm ls
+bun pm ls --global
+nvim
+z scoop
+cd persist\
+rimraf --verbose .\luarocks\
+z install
+pwsh env.ps1
+mise doctor
+rimraf --verbose .\luarocks\
+ls
+rimraf --verbose .\nodejs-lts\
+ls
+rimraf --verbose .\rustup-gnu\
+ls
+rimraf --verbose .\python\
+ls
+yazi
+nvim
+mise doctor
+z mise
+nvim
+mise doctor
+mise reshim
+pnpm list -g
+mise doctor
+z obsidian
+mise doctor
+mise install
+nvim
+z local
+cd share\mise\
+nvim
+mise doctor
+mise install
+cargo --version
+rustc --version
+yazi
+mise uninstall core:rust
+mise uninstall rust
+mise doctor
+z
+ls
+yazi
+z chezmoi
+yazi
+cd dot_config\
+ls
+nvim dot_bunfig.toml.tmpl
+z
+ls
+yazi
+z install
+z
+yazi
+pnpm rm rimraf tldr -g
+yazi
+pwsh env.ps1
+$env.PNPM_HOME
+$env.CARGO_HOME
+$env.RUSTUP_HOME
+nvim
+mise doctor
+nvim
+z chezmoi
+chezmoi apply ~/.config/.bunfig.toml
+bun pm ls
+bun pm bin -g
+bun pm bin
+bun pm bin -g
+pnpm setup
+pnpm add tldr rimraf -g
+z .dev
+rimraf --verbose .\pnpm-legacy\
+cd bun
+cd install\
+rimraf --verbose .\cache\
+nvim
+bun pm bin -g
+mise uninstall bun
+mise doctor
+yazi
+mise install bun
+bun pm bin -g
+bun help
+bun pm help
+bun pm --help
+bun pm cache -g
+z install
+pwsh env.ps1
+bun pm cache -g
+bun pm bin -g
+bun pm ls
+bun pm ls --global
+z config
+yazi
+bun pm cache -g
+yazi
+bun pm cache -g
+bun add cowsay -g
+cowsay 'hello world'
+bun pm cache -g
+bun pm bin -g
+bun pm ls -g
+bun pm bin -g
+bun pm cache -g
+z obsidian
+chezmoi re-add
+lg
+z chezmoi
+bun pm ls -g
+bun pm bin -g
+bun pm cache -g
+lg
+chezmoi add ~/.config/mise/
+lg
+yazi
+lg
+chezmoi add ~/.config/nushell/env/mise.nu
+z config
+lg
+yazi
+yazi
+z
+yz
+ls
+rimraf --verbose .\node\
+ls
+rimraf --verbose .\pnpm\
+lg
+chezmoi add ~/.install/
+lg
+yazi
+z install
+nvim
+chezmoi re-add
+lg
+mise doctor
+clear
+z 
+yazi
+z
+yazi
+z wezterm
+lg
+cd ..
+mise install
+cargo --version
+rustc --version
+z obsidian
+z install
+nvim
+rustup toolchain list
+mise help
+mise ls 
+cargo help
+cargo --list
+cargo info
+z .dev
+ls
+yazi
+bun pm ls -g
+bun pm bin -g
+bun pm cache -g
+rustup show
+z mise
+ls
+nvim
+z install
+z mise
+mise uninstall rust
+nvim
+nvim
+mise doctor
+$env.RUSTUP_TOOLCHAIN
+mise install
+nvim
+mise install
+rustup show
+nvim
+nvim
+rustup set profile minimal
+rustup help
+rustup component list --installed
+rustup component --help
+rustup component remove rust-docs
+rustup component remove rustfmt
+rustup component remove clippy
+rustup component list --installed
+rustup toolchain list
+rustup help
+rustup toolchain list
+rustup default 1.90.0-msvc
+rustup component list
+rustup component list --installed
+nvim
+rustup toolchain list
+rustup show
+rustup component list --installed
+rustup component remove clippy
+rustup component remove rustfmt
+rustup component remove rust-docs
+rustup component list --installed
+nvim
+nvim
+rustup show
+rustup default stable-x86_64-pc-windows-gnu
+rustup show
+nvim
+mise doctor
+nvim
+mise doctor
+rustup toolchain list
+rustup toolchain --help
+nvim
+mise doctor
+nvim
+mise uninstall rust
+mise doctor
+btm
+yazi
+mise doctor
+mise install
+rustup show
+z obsidian
+chezmoi status
+chezmoi re-add
+z chezmoi
+yazi
+chezmoi status
+z mise
+nvim
+mise doctor
+rustup show
