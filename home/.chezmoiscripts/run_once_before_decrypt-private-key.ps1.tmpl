@@ -1,7 +1,7 @@
 {{ if eq .chezmoi.os "windows" }}
 
-$KeyPath = Join-Path -Path $HOME -ChildPath ".config/chezmoi/key.txt"
-$SourceFile = Join-Path -Path "{{ .chezmoi.sourceDir }}" -ChildPath "key.txt.age"
+$KeyPath = Join-Path -Path $HOME -ChildPath ".config/.age-key.txt"
+$SourceFile = Join-Path -Path "{{ .chezmoi.sourceDir }}" -ChildPath "age-key.txt.age"
 
 # Check if the decrypted key file exists
 if (-Not (Test-Path -Path $KeyPath)) {

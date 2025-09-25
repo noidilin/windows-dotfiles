@@ -6,9 +6,8 @@ The `.install` dir contains all the installation scripts that can setup environm
 - `env`: setup `XDG` dir and the config path for `bat` `eza`, `yazi`
 - `symlinks`: setup symbolic links
   - for apps that won't utilize `XDG` dir, and depends on the original config dir to work.
-- `languages`: install programming language
 - `scoop`: install apps with `scoop`
-- `npm`: install `npm` packages globally
+- `pnpm`: install `pnpm` packages globally
 - `winget`: install apps with `winget`
 
 > [!note] XDG directory
@@ -40,22 +39,41 @@ In addition, `batch` scripts streamline all the installation scripts. However, i
 Since I stored some api keys for AI chat bot in my dotfiles, I encrypted it with `chezmoi` using `age` encryption. However, `chezmoi` needs to setup a `age` private key first to encrypt and decrypt the secret files.
 
 reference: [Encryption - chezmoi](https://www.chezmoi.io/user-guide/frequently-asked-questions/encryption/)
+
 The strategy:
 
-1. generate an age private key, which will be used to encrypt and decrypt secrets
-   a. `chezmoi cd ~`
-   b. `age-keygen | age --armor --passphrase > key.txt.age`
-2. encrypt the private key with a passphrase, so that it can be push to remote repo
-   a. I can memorize passphrase and decrypt the private key with it
-   b. there is no need for me to store private key in the physical drive
-3. setup `chezmoi` script template to decrypt the private key if needed
-   a. check if the key exist
-   b. `mkdir` for the key's parent dir
-   c. `chezmoi age decrypt --output {private-key} --passphrase {encrypted-private-key}`
-   d. set private key permission `chmod 600 {private-key}`
-4. configure `chezmoi.toml` to use the private key, and `age` encryption
-   a. `[age.identity]`: private key path
-   b. `[age.recipient]`: public key of the private key
-   c. `encryption = "age"`
-5. add my secret files with encryption
-   a. `chezmoi add --encrypt {file}`
+1. Generate an age private key, which will be used to encrypt and decrypt secrets
+
+```sh
+chezmoi cd ~
+age-keygen | age --armor --passphrase > key.txt.age
+```
+
+> [!hint] the mysterious key.txt
+> The 'key.txt' will be the private key to encrypt and decrypt files processed with `chezmoi add --encrypt {file}`
+> I can further encrypt this private key with a passphrase to safely save it to remote repo.
+> The passphrase will be used to decrypt the private key when setting up a new device.
+
+2. Setup `chezmoi` script template to decrypt the private key if needed
+
+```sh
+# pseudo code
+# check if the key exist
+# `mkdir` for the key's parent dir
+# `chezmoi age decrypt --output {private-key} --passphrase {encrypted-private-key}`
+# set private key permission `chmod 600 {private-key}`
+```
+
+3. Configure `chezmoi.toml` to use the private key, and `age` encryption
+
+```toml
+encryption = "age"
+[age.identity]: private key path
+[age.recipient]: public key of the private key
+```
+
+4. Add my secret files with encryption
+
+```sh
+chezmoi add --encrypt {file}
+```
