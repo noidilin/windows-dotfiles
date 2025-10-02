@@ -38,8 +38,8 @@ def replace_mocha_palette [
         $temp
             | str replace --all '"updateInterval":24,"updateOnlyEnabled":true' '"updateInterval":0,"updateOnlyEnabled":true'
             | str replace --all '"name":"accentColor","value":null' '"name":"accentColor","value":"rosewater"'
-            | str replace --all '#f5e0dc' '#c0baad'
-            | str replace --all '#f2cdcd' '#a69f91'
+            | str replace --all '#f5e0dc' '#faf5eb'
+            | str replace --all '#f2cdcd' '#dad5c8'
     } else {
         $temp
             | str replace --all '#f5e0dc' '#dcb5a5'
@@ -49,10 +49,47 @@ def replace_mocha_palette [
     $result | save --force $file_path
 }
 
-def update_stylus [] {
-    let url = 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json'
-    let file = ( $env.USERPROFILE | path join '.local/etc/stylus/color-fatigue.json' )
-  # HACK: temporary fix, since I don't understand what is SSL
-    http get --insecure $url | save --force $file
-    replace_mocha_palette $file --stylus # update the file with stylus modifications
+def stylus-update [
+  accent: string = 'rosewater'
+  url: string = 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json'
+  lib: string = 'https://noidilin.github.io/color-fatigue/lib/lib.less'
+] {
+  let file = ( $env.USERPROFILE | path join '.local/etc/stylus/color-fatigue.json' )
+  
+  # First, let's see what we're working with
+  let data = (http get $url | decode utf-8 | from json)
+  
+  # Check if it's wrapped in an object or is a direct array
+  let json_data = (
+    if ($data | describe) =~ "list" {
+      # It's an array, process directly
+      $data | each { |style| 
+        if ($style | get --optional usercssData.vars.accentColor) != null {
+          $style | update usercssData.vars.accentColor.value $accent
+        } else {
+          $style
+        }
+      }
+    } else {
+      # It might be wrapped, adjust as needed
+      $data
+    }
+    | to json --indent 2
+  )
+  
+  $json_data
+    | str replace --all "https://userstyles.catppuccin.com/lib/lib.less" $lib
+    | save --force $file
+  
+  print $"✓ Created ($file) with ($accent) accent"
+}
+
+def stylus-examine [] {
+  let file_content = (open ~/.local/etc/stylus/color-fatigue.json)
+
+  print "=== Verification Summary ==="
+  print $"Total styles: ($file_content | length)"
+  print $"Accent colors: ($file_content | each { |s| $s.usercssData?.vars?.accentColor?.value } | uniq)"
+  print $"Custom lib URL present: ($file_content | to json | str contains 'noidilin.github.io/color-fatigue')"
+  print $"Old lib URL present: ($file_content | to json | str contains 'userstyles.catppuccin.com')"
 }
