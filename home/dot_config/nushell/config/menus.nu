@@ -1,10 +1,10 @@
 export def main [] {
   let menu_style = {
-    text: "#707070"
-    selected_text: { attr: r }
-    description_text: { fg: "#5d5d5d" attr: i }
+    text: { fg: "#707070" }
     match_text: { attr: u }
-    selected_match_text: { attr: ur }
+    description_text: { fg: "#5d5d5d" attr: i }
+    selected_text: { fg: "#b3b3b3" bg: "#353535" }
+    selected_match_text: { fg: "#cccccc" bg: "#353535" attr: u }
   }
 
   return [
@@ -26,17 +26,17 @@ export def main [] {
       marker: ""
       type: {
         layout: ide
-        min_completion_width: 0
-        max_completion_width: 50
-        max_completion_height: 10
-        padding: 0
-        border: true
-        cursor_offset: 0
+        min_completion_width: 25       # Ensure min width for readability
+        max_completion_width: 50       # Wider completion area
+        max_completion_height: 10      # More visible items
+        padding: 3                     # More breathing room
         description_mode: "prefer_right"
-        min_description_width: 0
-        max_description_width: 50
-        max_description_height: 10
-        description_offset: 1
+        min_description_width: 25      # Readable descriptions
+        max_description_width: 50      # More space for docs
+        max_description_height: 10     # Taller description area
+        description_offset: 2          # More separation
+        border: false
+        cursor_offset: 0
         correct_cursor_pos: false
       }
       style: $menu_style

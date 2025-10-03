@@ -1,33 +1,49 @@
 export def main [] {
   return [
+    # readline completion menu
     {
-      name: completion_menu
+      name: ide_completion_menu
       modifier: none
       keycode: tab
       mode: [vi_normal vi_insert]
-      event: { send: menu name: completion_menu }
+      event: {
+        until: [
+          { send: menu name: ide_completion_menu }
+          { send: menunext }
+        ]
+      }
     }
-    # ISSUE: space key can't trigger correctly in windows wezterm
-    # {
-    #   name: ide_completion_menu
-    #   modifier: control
-    #   keycode: space
-    #   mode: [vi_normal vi_insert]
-    #   event: { send: menu name: ide_completion_menu }
-    # }
+
+    # other readline menu
+    {
+      name: commands_menu
+      modifier: control
+      keycode: char_u
+      mode: [vi_normal vi_insert]
+      event: { send: menu name: commands_menu }
+    }
+    {
+      name: vars_menu
+      modifier: control
+      keycode: char_v
+      mode: [vi_normal vi_insert]
+      event: { send: menu name: vars_menu }
+    }
+    {
+      name: help_menu
+      modifier: none
+      keycode: f9
+      mode: [vi_normal vi_insert]
+      event: { send: menu name: help_menu }
+    }
+
+    # menu behavior
     {
       name: complete_suggestion
       modifier: control
       keycode: char_y
       mode: [vi_normal vi_insert]
       event: { send: enter }
-    }
-    {
-      name: submit
-      modifier: none
-      keycode: enter
-      mode: [vi_normal vi_insert]
-      event: { send: submit }
     }
     {
       name: next_page
@@ -42,16 +58,6 @@ export def main [] {
       keycode: char_b
       mode: [vi_normal vi_insert]
       event: { send: menupageprevious }
-    }
-    {
-      name: reload_config
-      modifier: none
-      keycode: f8
-      mode: [vi_normal vi_insert]
-      event: {
-        send: ExecuteHostCommand,
-        cmd: $"clear;source '($nu.env-path)';source '($nu.config-path)';print 'Config reloaded.\n'"
-      }
     }
 
     # menu - fzf
@@ -111,44 +117,17 @@ export def main [] {
         }
     }
 
-    # menu - nushell
+    # custom menu
     {
-      name: commands_menu
-      modifier: control
-      keycode: char_u
-      mode: [vi_normal vi_insert]
-      event: { send: menu name: commands_menu }
-    }
-    {
-      name: vars_menu
-      modifier: control
-      keycode: char_v
-      mode: [vi_normal vi_insert]
-      event: { send: menu name: vars_menu }
-    }
-    {
-      name: help_menu
+      name: reload_config
       modifier: none
-      keycode: f9
+      keycode: f8
       mode: [vi_normal vi_insert]
-      event: { send: menu name: help_menu }
+      event: {
+        send: ExecuteHostCommand,
+        cmd: $"clear;source '($nu.env-path)';source '($nu.config-path)';print 'Config reloaded.\n'"
+      }
     }
-
-    # add undo and redo
-    # {
-    #   name: undo_change
-    #   modifier: control
-    #   keycode: char_z
-    #   mode: [vi_normal vi_insert]
-    #   event: { edit: undo }
-    # }
-    # {
-    #   name: redo_change
-    #   modifier: control_shift
-    #   keycode: char_z
-    #   mode: [vi_normal vi_insert]
-    #   event: { edit: redo }
-    # }
 
     # disable default
     {
