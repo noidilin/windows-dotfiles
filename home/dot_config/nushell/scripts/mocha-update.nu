@@ -51,9 +51,9 @@ def replace_mocha_palette [
 
 def stylus-update [
   accent: string = 'rosewater'
-  url: string = 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json'
   lib: string = 'https://noidilin.github.io/color-fatigue/lib/lib.less'
 ] {
+  let url: string = 'https://github.com/catppuccin/userstyles/releases/download/all-userstyles-export/import.json'
   let file = ( $env.USERPROFILE | path join '.local/etc/stylus/color-fatigue.json' )
   
   # First, let's see what we're working with
