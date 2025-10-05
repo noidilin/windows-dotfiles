@@ -12,19 +12,18 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Write-Host "installing execution policy for scoop..." -ForegroundColor Gray
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
-# NOTE: fix error. git need to be installed before adding bucket
+# NOTE: git need to be installed before adding bucket
 Write-Host "installing git..." -ForegroundColor Gray
 scoop install git
 
 Write-Host "adding scoop bucket..." -ForegroundColor Gray
 scoop bucket add extras
 scoop bucket add nerd-fonts
-scoop bucket add custom https://github.com/noidilin/scoop.git
 
 Write-Host "installing initial apps..." -ForegroundColor Gray
 scoop install @SCOOP_INIT
 
-# NOTE: recently added, not tested yet!
+# TODO: recently added, not tested yet!
 Write-Host "running post-install script for scoop..." -ForegroundColor Gray
 reg import "$env:USERPROFILE\scoop\apps\pwsh\current\install-explorer-context.reg"
 reg import "$env:USERPROFILE\scoop\apps\pwsh\current\install-file-context.reg"

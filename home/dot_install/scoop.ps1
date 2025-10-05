@@ -1,5 +1,10 @@
 Write-Host "starting scoop.ps1 script..." -ForegroundColor White
 
+# NOTE: set up ssh private key before this
+Write-Host "adding third-party scoop bucket..." -ForegroundColor Gray
+# scoop bucket add custom git@github.com:noidilin/scoop.git
+scoop bucket add wezterm-alt-icon git@github.com:noidilin/wezterm-alt-icon.git
+
 $SCOOP_BASE = @(
   "main/7zip"
   "main/gzip"
@@ -26,9 +31,8 @@ $SCOOP_FONT = @(
 )
 
 $SCOOP_EDITOR = @(
-  # "extras/wezterm"
   "main/neovim"
-  "custom/wezterm"
+  "wezterm-alt-icon/wezterm"
   "extras/vscode"
   "extras/zed"
 )
