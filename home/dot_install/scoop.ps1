@@ -3,6 +3,7 @@ Write-Host "starting scoop.ps1 script..." -ForegroundColor White
 $SCOOP_BASE = @(
   "main/7zip"
   "main/gzip"
+  # "main/unar"
   "main/unrar"
   "main/unzip"
   "main/wget"
@@ -12,7 +13,6 @@ $SCOOP_BASE = @(
 $SCOOP_LANGUAGES = @(
   "main/mingw"
   "main/mise"
-  # "main/rustup-gnu"
 )
 
 $SCOOP_FONT = @(
@@ -43,14 +43,14 @@ $SCOOP_GUI = @(
   "extras/obs-studio"
   "extras/obsidian"
   "extras/potplayer"
-  # "main/spicetify-cli"
+  # "main/spicetify-cli" # tool for customizing the Spotify client.
   # "extras/spicetify-themes"
   # "extras/spotify"
 )
 
 $SCOOP_CLI = @(
-  "custom/vivid"
   "extras/carapace-bin"
+  # "extra/jqp" # TUI playground to experiment with jq
   "extras/lazygit"
   "extras/opencode"
   "extras/posh-git"
@@ -70,40 +70,37 @@ $SCOOP_CLI = @(
   "main/fd"
   "main/ffmpeg"
   "main/fzf"
-  # "main/gh"
+  "main/gh"
   "main/gpg"
   "main/grep"
   "main/gsudo"
   "main/imagemagick"
+  # "main/jq" # command-line JSON processor
   "main/less"
   # "main/lazydocker"
   "main/ripgrep"
-  "main/sd"
-  "main/sed"
+  "main/sd" # sed alternative
+  "main/sed" # sed (stream editor) is a non-interactive command-line text editor
   "main/starship"
+  "main/vivid"
+  # "main/xh" # friendly and fast tool for sending HTTP requests
   "main/yazi"
+  # "main/yq" # a portable command-line YAML, JSON, XML, CSV, TOML and properties processor
   "main/zoxide"
-  # "main/jq"
-  # "extra/jqp"
-  # "main/glow"
-  # "main/unar"
-  # "main/xh"
-  # "main/yq"
-  # "main/yt-dlp"
-  # "main/rclone"
-  # "main/vivetool"
-  # "main/goodbyedpi"
+  # "main/glow" # terminal based markdown reader 
+  # "main/yt-dlp" # command-line audio/video downloader 
+  # "main/rclone" # sync files and directories to and from multiple cloud / FTP / HTTP hosters.
 )
 
 <#
 $SCOOP_OTHERS = @(
-  # "extras/putty"
-  # "extras/qbittorrent-enhanced"
-  # "main/uutils-coreutils"
-  # "extras/v2rayn"
-  # "extras/winscp"
-  # "nonportable/winfsp-np"
-  # "main/openssl"
+  # "main/uutils-coreutils" # rust implementation of GNU coreutils
+  # "main/openssl" # TLS/SSL toolkit
+  # "extras/putty" # implementation of SSH and Telnet, along with an xterm terminal emulator.
+  # "extras/qbittorrent-enhanced" # reliable P2P Bittorent client.
+  # "extras/v2rayn" # desktop proxy software for bypassing internet restrictions
+  # "extras/winscp" # copy files between a local computer and remote servers using FTP, FTPS, SCP, SFTP, WebDAV or S3 file transfer protocols
+  # "nonportable/winfsp-np" # set of software components that allows the creation of user mode file systems.
 )
 #>
 
