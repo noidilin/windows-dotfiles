@@ -5,8 +5,13 @@
 bun = "latest"
 node = { version = "lts", postinstall = "corepack enable" }
 python = "latest"
+# uv = "latest" # still not supported by mise core yet, managed with scoop by now
 
 [tools."rust"]
 version = "stable-gnu"
 profile = "minimal"
 # targets = "x86_64-pc-windows-gnu, aarch64-apple-darwin, x86_64-unknown-linux-gnu"
+
+[settings]
+experimental = true
+python.uv_venv_auto = true # use the virtual environment created by uv
